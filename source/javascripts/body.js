@@ -1,4 +1,6 @@
-//= require jquery
-//= require bootstrap-sprockets
-//= require magnific-popup
-//= require_tree ./body
+//= require jquery/dist/jquery
+//= require what-input/what-input.min
+//= require foundation-sites/dist/foundation.min
+
+$(document).foundation();
+
