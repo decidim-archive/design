@@ -25,6 +25,7 @@ Uses Grunt to automatize SVG inline generation.
 ```
 npm install
 bundle install
+bower install
 bundle exec middleman server
 ```
 
