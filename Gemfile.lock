@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:MarsBased/middleman-email.git
-  revision: 00899c7349920bf4736f77ecf40eec5aaf6c40fb
+  revision: 3ef5f034c480a2ec041e90519b4cc04037215c34
   specs:
     middleman-email (0.0.1)
       mail
@@ -12,7 +12,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    activesupport (4.2.6)
+    activesupport (4.2.7)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
