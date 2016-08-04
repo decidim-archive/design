@@ -6,7 +6,8 @@ gem 'middleman-livereload', '~> 3.1.0'
 gem 'font-awesome-sass', '~> 4.3.0', require: false
 
 gem 'middleman-autoprefixer'
-gem 'middleman-email', git: "git@github.com:MarsBased/middleman-email.git"
+gem 'middleman-email', github: 'marsbased/middleman-email'
+
 
 gem 'middleman-deploy', '~> 1.0'
 
