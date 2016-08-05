@@ -1,0 +1,28 @@
+/* Variables */
+
+$card-bg: $white;
+$card-border: 1px solid $medium-gray;
+$card-border-radius: 4px;
+$card-shadow: 0 2px 7px rgba(black,.1);
+
+$card-padding: 1em;
+
+$card-footer-bg: $light-gray;
+
+/* Cards */
+.card{
+  background: $card-bg;
+  border: $card-border;
+  border-radius: $card-border-radius;
+  box-shadow: $card-shadow;
+}
+
+.card__content{
+   padding: $card-padding;
+}
+
+.card__footer{
+  background: $card-footer-bg;
+  border-top: $card-border;
+  border-radius: 0 0 $card-border-radius $card-border-radius;
+}
