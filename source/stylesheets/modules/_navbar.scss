@@ -1,61 +1,41 @@
 /* Variables */
 
-// Adjust width accordingly (use even #'s)
-$logo-width: 118px;
-// Reduce px value to increase space between logo and menu text
-$logo-padding: $logo-width - 32px; 
-// Leave alone
-$logo-margin: - ($logo-width / 2);
+$navbar-bg: $dark-gray;
+$navbar-bg-hover: rgba(white,.02);
+$navbar-color: rgba(white,.5);
+$navbar-color-hover: $white;
+$navbar-active-color: $white;
+$navbar-active-bg: $navbar-bg-hover;
+$navbar-active-border: 4px solid $primary;
 
-/* Small Navigation */
-.logo-small {
-  float: right;
+/* Navigation */
+
+.navbar{
+  background: $navbar-bg;
 }
 
-.title-bar {
-  padding: 0 .5rem;
+.main-nav{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  >li{
+    display: inline-block;
+  }
 }
 
-.menu-icon,
-.title-bar-title {
-  position: relative;
-  top: 10px;
+.main-nav__link{
+  display: block;
+  padding: 1em 2em;
+  color: $navbar-color;
+  &:hover{
+    background: $navbar-bg-hover;
+    color: $navbar-color-hover;
+  }
 }
 
-/* Medium-Up Navigation */
-@media only screen and (min-width: 40rem) { 
-
-  .logo-wrapper {
-    position: relative;
-    
-    .logo {
-      width: $logo-width;
-      height:  92px;
-      position: absolute;
-      left: 50%;
-      right: 50%;
-      top: -6px;
-      margin-left: $logo-margin;
-    }
-  }
-
-  // Right part
-  .top-bar-right {
-    width: 50%;
-    padding-left: $logo-padding;
-    
-    ul {
-      float: left;
-    }
-  }
-  
-  // Left part
-  .top-bar-left {
-    width:  50%;
-    padding-right: $logo-padding;
-    
-    ul {
-      float: right;
-    }
-  }
+.main-nav__link--active{
+  color: $navbar-active-color;
+  background: $navbar-active-bg;
+  border-top: $navbar-active-border;
 }
