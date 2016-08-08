@@ -1,0 +1,21 @@
+/* Variables */
+
+$process-nav-color: $body-font-color;
+
+/* Navigation */
+
+.process-nav{
+  list-style: none;
+  margin: 0;
+  border-bottom: $border;
+  >li{
+    display: inline-block;
+  }
+}
+
+.process-nav__link{
+  display: block;
+  padding: 1em 0;
+  color: $process-nav-color;
+  text-transform: uppercase;
+}
