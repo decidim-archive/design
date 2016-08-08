@@ -1,21 +1,26 @@
 /* Variables */
 
 $process-nav-color: $body-font-color;
+$process-nav-padding-x: 1rem;
+$process-nav-padding-y: $container-padding-y;
 
 /* Navigation */
 
 .process-nav{
-  list-style: none;
-  margin: 0;
   border-bottom: $border;
-  >li{
+  padding: $process-nav-padding-x $process-nav-padding-y;
+  ul{
+    margin: 0;
+    list-style: none;
+  }
+  li{
     display: inline-block;
+    margin-right: 1rem;
   }
 }
 
 .process-nav__link{
   display: block;
-  padding: 1em 0;
   color: $process-nav-color;
   text-transform: uppercase;
 }
