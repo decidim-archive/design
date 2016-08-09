@@ -39,11 +39,9 @@ $tags-border: $border;
   border-radius: 0 0 $card-border-radius $card-border-radius;
 }
 
-/* Cards-variants */
-
-.card--proposal{
-  a{
-    color: $card-proposal;
+.card__button{
+  .card--proposal &{
+    background-color: $card-proposal;
   }
 }
 
@@ -61,6 +59,9 @@ $tags-border: $border;
       display: block;
       border: $tags-border;
       padding: 0 .5rem;
+      .card--proposal & {
+        color: $card-proposal;
+      }
     }
   }
 }
