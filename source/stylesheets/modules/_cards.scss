@@ -8,11 +8,11 @@ $card-shadow: 0 2px 7px rgba(black,.1);
 $card-padding: 1rem;
 $card-margin-bottom: map-get($grid-column-gutter, medium);
 
-$card-desc-color: lighten($body-font-color, 30);
+$card-desc-color: $muted;
 
 $card-footer-bg: $light-gray;
 
-$card-proposal: $proposals; 
+$card-proposal: $proposals;
 
 $tags-border: $border;
 
@@ -33,13 +33,8 @@ $tags-border: $border;
   color: $card-desc-color;
 }
 
-.card__footer{
-  background: $card-footer-bg;
-  border-top: $card-border;
-  border-radius: 0 0 $card-border-radius $card-border-radius;
-}
-
 .card__button{
+  margin-bottom: 0;
   .card--proposal &{
     background-color: $card-proposal;
   }
@@ -67,8 +62,14 @@ $tags-border: $border;
 }
 
 /* Card footer */
-.card__footer .card__content{
-  display: flex;
+
+.card__footer{
+  background: $card-footer-bg;
+  border-top: $card-border;
+  border-radius: 0 0 $card-border-radius $card-border-radius;
+  .card__content{
+    display: flex;
+  }
 }
 
 .card__author{
@@ -79,6 +80,7 @@ $tags-border: $border;
 
 .card__date{
   display: block;
+  color: $muted;
 }
 
 .card__voting{
@@ -87,7 +89,9 @@ $tags-border: $border;
 }
 
 .card__vote-number{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .card__vote{
