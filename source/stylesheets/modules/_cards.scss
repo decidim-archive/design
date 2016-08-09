@@ -64,3 +64,30 @@ $tags-border: $border;
     }
   }
 }
+
+/* Card footer */
+.card__footer .card__content{
+  display: flex;
+}
+
+.card__author{
+  display: inline-block;
+  flex-grow: 1;
+  align-self: center;
+}
+
+.card__date{
+  display: block;
+}
+
+.card__voting{
+  display: inline-block;
+  text-align: center;
+}
+
+.card__vote-number{
+  font-size: 1.5rem;
+}
+
+.card__vote{
+}
