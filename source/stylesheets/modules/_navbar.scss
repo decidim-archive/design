@@ -18,7 +18,14 @@ $navbar-active-border: 4px solid $primary;
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+
+  @include breakpoint(medium) {
+    display: flex;
+  }
+
   >li{
     display: inline-block;
     flex: 1;
