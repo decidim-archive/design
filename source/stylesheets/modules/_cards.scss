@@ -8,7 +8,13 @@ $card-shadow: 0 2px 7px rgba(black,.1);
 $card-padding: 1rem;
 $card-margin-bottom: map-get($grid-column-gutter, medium);
 
+$card-desc-color: lighten($body-font-color, 30);
+
 $card-footer-bg: $light-gray;
+
+$card-proposal: $proposals; 
+
+$tags-border: $border;
 
 /* Cards */
 .card{
@@ -23,8 +29,38 @@ $card-footer-bg: $light-gray;
    padding: $card-padding;
 }
 
+.card__desc{
+  color: $card-desc-color;
+}
+
 .card__footer{
   background: $card-footer-bg;
   border-top: $card-border;
   border-radius: 0 0 $card-border-radius $card-border-radius;
+}
+
+/* Cards-variants */
+
+.card--proposal{
+  a{
+    color: $card-proposal;
+  }
+}
+
+/* Tags */
+
+.tags{
+  list-style: none;
+  margin: 0;
+  font-size: 90%;
+  >li{
+    display: inline-block;
+    margin-right: .3rem;
+    margin-bottom: .5rem;
+    >a{
+      display: block;
+      border: $tags-border;
+      padding: 0 .5rem;
+    }
+  }
 }
