@@ -18,6 +18,9 @@ $process-nav-meetings: #FABC6C;
   ul{
     margin: 0;
     list-style: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
   }
   li{
     display: inline-block;
