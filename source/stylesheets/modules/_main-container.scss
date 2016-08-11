@@ -4,18 +4,25 @@ $container-bg: $white;
 $container-border: $border;
 $container-shadow: 0 2px 7px rgba(black,.1);
 
-$container-padding-x: 2rem;
-$container-padding-y: 2rem;
-
+$container-padding-x: 0;
+$container-padding-y: 1rem;
+$container-padding-2x: 2rem;
+$container-padding-2y: 2rem;
 
 /* Main container */
 
 .main-container{
-  background: $container-bg;
-  border: $container-border;
-  box-shadow: $container-shadow;
+  @include breakpoint(medium){
+    background: $container-bg;
+    border: $container-border;
+    box-shadow: $container-shadow;
+  }
 }
 
 .main-container__content{
-  padding: $container-padding-x $container-padding-y;
+  padding: $container-padding-y $container-padding-x;
+  
+  @include breakpoint(medium){
+    padding: $container-padding-2y $container-padding-2x;
+  }
 }
