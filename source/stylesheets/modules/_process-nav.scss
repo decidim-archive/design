@@ -1,0 +1,94 @@
+/* Variables */
+
+$process-nav-color: $body-font-color;
+$process-nav-padding-x: 1rem;
+$process-nav-padding-y: $container-padding-y;
+
+$process-nav-info: $primary;
+$process-nav-proposals: $proposals;
+$process-nav-actions: $actions;
+$process-nav-debates: $debates;
+$process-nav-meetings: $meetings;
+
+/* Navigation */
+
+.process-nav{
+  border-bottom: $border;
+  padding: $process-nav-padding-x $process-nav-padding-y;
+  ul{
+    margin: 0;
+    list-style: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  li{
+    display: inline-block;
+    margin-right: 1.5rem;
+  }
+}
+
+.process-nav__link{
+  display: block;
+  color: $process-nav-color;
+  text-transform: uppercase;
+  &:hover{
+    color: $process-nav-color;
+  }
+
+  svg{
+    margin-right: .2em;
+    vertical-align: -9px;
+  }
+}
+
+.process-nav__link:hover span,
+.process-nav__link.is-active span{
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.process-nav__link--info{
+  i{
+    color: $process-nav-info;
+  }
+  span{
+    border-bottom-color: $process-nav-info;
+  }
+}
+
+.process-nav__link--proposals{
+  i{
+    color: $process-nav-proposals;
+  }
+  span{
+    border-bottom-color: $process-nav-proposals;
+  }
+}
+
+.process-nav__link--actions{
+  i{
+    color: $process-nav-actions;
+  }
+  span{
+    border-bottom-color: $process-nav-actions;
+  }
+}
+
+.process-nav__link--debates{
+  i{
+    color: $process-nav-debates;
+  }
+  span{
+    border-bottom-color: $process-nav-debates;
+  }
+}
+
+.process-nav__link--meetings{
+  i{
+    color: $process-nav-meetings;
+  }
+  span{
+    border-bottom-color: $process-nav-meetings;
+  }
+}

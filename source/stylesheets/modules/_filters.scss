@@ -1,0 +1,16 @@
+//Variables
+
+$filters-bg: $light-gray;
+$filters-border: $border;
+
+
+//Styles
+.filters-wrapper{
+  display: flex;
+}
+
+.filters{
+  min-height: 100%;
+  background-color: $filters-bg;
+  border-right: $filters-border;
+}

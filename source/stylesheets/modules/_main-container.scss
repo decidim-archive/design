@@ -1,0 +1,21 @@
+/* Variables */
+
+$container-bg: $white;
+$container-border: $border;
+$container-shadow: 0 2px 7px rgba(black,.1);
+
+$container-padding-x: 2rem;
+$container-padding-y: 2rem;
+
+
+/* Main container */
+
+.main-container{
+  background: $container-bg;
+  border: $container-border;
+  box-shadow: $container-shadow;
+}
+
+.main-container__content{
+  padding: $container-padding-x $container-padding-y;
+}

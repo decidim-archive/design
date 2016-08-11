@@ -1,0 +1,13 @@
+.wrapper{
+  padding: 5em 0;
+}
+
+//Flexbox sticky footer
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-separator{
+  flex-grow: 1;
+}
