@@ -3,6 +3,8 @@
 $filters-bg: $light-gray;
 $filters-border: $border;
 
+$order-border: $border;
+
 
 //Styles
 .filters-wrapper{
@@ -13,4 +15,10 @@ $filters-border: $border;
   min-height: 100%;
   background-color: $filters-bg;
   border-right: $filters-border;
+}
+
+/*Order by styles*/
+.cards-view{
+  border-bottom: $order-border;
+  margin-bottom: 1rem;
 }
