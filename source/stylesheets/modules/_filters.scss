@@ -6,7 +6,9 @@ $filters-border: $border;
 
 //Styles
 .filters-wrapper{
-  display: flex;
+  @include breakpoint(medium){
+    display: flex;
+  }
 }
 
 .filters{
