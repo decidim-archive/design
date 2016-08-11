@@ -1,11 +1,17 @@
 .wrapper{
-  padding: 5em 0;
+  padding: 5rem 1rem;
+  @include breakpoint(large){
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 //Flexbox sticky footer
 body{
   display: flex;
   flex-direction: column;
+  height: auto;
+  min-height: 100%;
 }
 
 .footer-separator{
