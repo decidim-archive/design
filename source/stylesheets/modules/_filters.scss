@@ -5,6 +5,8 @@ $filters-border: $border;
 $filters-padding: 1rem;
 $filters-margin-small: 1rem;
 
+$order-border: $border;
+
 
 //Styles
 .filters-wrapper{
@@ -19,12 +21,32 @@ $filters-margin-small: 1rem;
   border: $filters-border;
   margin-top: $filters-margin-small;
   padding: $filters-padding;
-  
   @include breakpoint(medium){
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
     padding: 0;
     margin-top: 0;
+    border-right: $filters-border;
+  }
+}
+
+/*Order by styles*/
+.cards-view{
+  border-bottom: $order-border;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.cards-view__order{
+  margin-left: auto;
+  display: flex;
+  .menu{
+    margin-left: auto;
+    .is-dropdown-submenu-parent > a{
+      padding: 0;
+      margin-left: 1rem;
+      margin-top: .25rem;
+    }
   }
 }
