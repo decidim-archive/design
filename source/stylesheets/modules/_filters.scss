@@ -2,33 +2,19 @@
 
 $filters-bg: $light-gray;
 $filters-border: $border;
-$filters-padding: 1rem;
-$filters-margin-small: 1rem;
 
 $order-border: $border;
 
 
 //Styles
 .filters-wrapper{
-  @include breakpoint(medium){
-    display: flex;
-  }
+  display: flex;
 }
 
 .filters{
   min-height: 100%;
   background-color: $filters-bg;
-  border: $filters-border;
-  margin-top: $filters-margin-small;
-  padding: $filters-padding;
-  @include breakpoint(medium){
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 0;
-    padding: 0;
-    margin-top: 0;
-    border-right: $filters-border;
-  }
+  border-right: $filters-border;
 }
 
 /*Order by styles*/
