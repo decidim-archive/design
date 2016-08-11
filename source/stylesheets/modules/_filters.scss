@@ -2,6 +2,8 @@
 
 $filters-bg: $light-gray;
 $filters-border: $border;
+$filters-padding: 1rem;
+$filters-margin-small: 1rem;
 
 
 //Styles
@@ -14,5 +16,15 @@ $filters-border: $border;
 .filters{
   min-height: 100%;
   background-color: $filters-bg;
-  border-right: $filters-border;
+  border: $filters-border;
+  margin-top: $filters-margin-small;
+  padding: $filters-padding;
+  
+  @include breakpoint(medium){
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    padding: 0;
+    margin-top: 0;
+  }
 }
