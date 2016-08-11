@@ -13,6 +13,7 @@ $card-desc-color: $muted;
 $card-footer-bg: $light-gray;
 
 $card-proposal: $proposals;
+$card-action: $actions;
 
 $tags-border: $border;
 
@@ -57,6 +58,9 @@ $tags-border: $border;
       .card--proposal & {
         color: $card-proposal;
       }
+      .card--action & {
+        color: $card-action;
+      }
     }
   }
 }
@@ -95,5 +99,36 @@ $tags-border: $border;
   line-height: 1;
 }
 
-.card__vote{
+/* Card data */
+
+.card-data{
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-data__item{
+  display: inline-block;
+  flex-basis: 33.33%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $small-font-size;
+  line-height: 1;
+  color: $muted;
+  padding: .5em;
+  border-right: $border;
+  &:nth-of-type(n+4){
+    border-top: $border;
+  }
+  &:nth-of-type(3n){
+    border-right: 0;
+  }
+}
+.card-data__item__number{
+  display: block;
+  line-height: 1;
+  font-weight: 600;
+  font-size: rem-calc(20);
+  color: $body-font-color;
+  margin-bottom: .2rem;
 }
