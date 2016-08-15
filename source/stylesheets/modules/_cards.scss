@@ -14,8 +14,16 @@ $card-footer-bg: $light-gray;
 
 $card-proposal: $proposals;
 $card-action: $actions;
+$card-debate: $debates;
 
 $tags-border: $border;
+
+$card-author-badge-color: $white;
+$card-author-badge-bg: $primary;
+
+$datetime-color: $white;
+$datetime-bg: $primary;
+$datetime-font-weight: 600;
 
 /* Cards */
 .card{
@@ -32,12 +40,19 @@ $tags-border: $border;
 
 .card__desc{
   color: $card-desc-color;
+  clear: both;
 }
 
 .card__button{
   margin-bottom: 0;
   .card--proposal &{
     background-color: $card-proposal;
+  }
+  .card--action &{
+    background-color: $card-action;
+  }
+  .card--debate &{
+    background-color: $card-debate;
   }
 }
 
@@ -61,9 +76,43 @@ $tags-border: $border;
       .card--action & {
         color: $card-action;
       }
+      .card--debate & {
+        color: $card-debate;
+      }
     }
   }
 }
+
+/* Card datetime */
+
+.card__datetime{
+  float: left;
+  text-align: center;
+  background-color: $datetime-bg;
+  color: $datetime-color;
+  padding: .3em .5em;
+  margin: 0 .5em .5em 0;
+  font-weight: $datetime-font-weight;
+  .card--debate &{
+    background-color: $card-debate;
+  }
+}
+
+.card__datetime__date{
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+
+.card__datetime__month{
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+}
+
+.card__datetime__time{
+  font-size: .8rem;
+}
+
 
 /* Card footer */
 
@@ -71,6 +120,7 @@ $tags-border: $border;
   background: $card-footer-bg;
   border-top: $card-border;
   border-radius: 0 0 $card-border-radius $card-border-radius;
+  clear: both;
   .card__content{
     display: flex;
   }
@@ -80,6 +130,16 @@ $tags-border: $border;
   display: inline-block;
   flex-grow: 1;
   align-self: center;
+}
+
+.card__author-badge{
+  display: inline-block;
+  padding: 0 0.5em .05em;
+  font-size: .7rem;
+  text-align: center;
+  border-radius: 2px;
+  background-color: $card-author-badge-bg;
+  color: $card-author-badge-color;
 }
 
 .card__date{
@@ -131,4 +191,21 @@ $tags-border: $border;
   font-size: rem-calc(20);
   color: $body-font-color;
   margin-bottom: .2rem;
+}
+
+
+/* Card with image */
+.card__img{
+  text-align: center;
+  @include breakpoint(large){
+    float: right;
+    width: 35%;
+  }
+}
+
+.card__content--img{
+  @include breakpoint(large){
+    float: left;
+    width: 60%;
+  }
 }
