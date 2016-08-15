@@ -1,0 +1,51 @@
+<div class="process-nav">
+  <div class="row">
+    <ul class="columns large-12">
+      <li>
+        <a href="/info" class="process-nav__link process-nav__link--info
+          <% if current_page.data.activepage == "info" %>is-active<% end %>">
+          <svg width="30" height="30">
+            <use xlink:href="#shape-icon-info" />
+          </svg>
+          <span>Informació</span>
+        </a>
+      </li>
+      <li>
+        <a href="/proposals" class="process-nav__link process-nav__link--proposals
+          <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
+          <svg width="30" height="30">
+            <use xlink:href="#shape-icon-proposals" />
+          </svg>
+          <span>Propostes</span>
+        </a>
+      </li>
+      <li>
+        <a href="/actions" class="process-nav__link process-nav__link--actions
+          <% if current_page.data.activepage == "actions" %>is-active<% end %>">
+          <svg width="30" height="30">
+            <use xlink:href="#shape-icon-actions" />
+          </svg>
+          <span>Actuacions</span>
+        </a>
+      </li>
+      <li>
+        <a href="/debates" class="process-nav__link process-nav__link--debates
+          <% if current_page.data.activepage == "debates" %>is-active<% end %>">
+          <svg width="30" height="30">
+            <use xlink:href="#shape-icon-debates" />
+          </svg>
+          <span>Debats</span>
+        </a>
+      </li>
+      <li>
+        <a href="/meetings" class="process-nav__link process-nav__link--meetings
+          <% if current_page.data.activepage == "meetings" %>is-active<% end %>">
+          <svg width="30" height="30">
+            <use xlink:href="#shape-icon-meetings" />
+          </svg>
+          <span>Cites presencials</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
