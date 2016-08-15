@@ -1,5 +1,6 @@
 ---
 title: Proceso -- Decidim Barcelona
+activepage : proposals
 ---
 
 <%= partial 'partials/template_top' %>
@@ -16,42 +17,7 @@ title: Proceso -- Decidim Barcelona
 
   <div class="row collapse">
     <div class="main-container">
-      <div class="process-nav">
-        <div class="row">
-          <ul class="columns large-12">
-            <li>
-              <a href="" class="process-nav__link process-nav__link--info">
-                <svg width="30" height="30"><use xlink:href="#shape-icon-info" /></svg>
-                <span>Informació</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="process-nav__link process-nav__link--proposals is-active">
-                <svg width="30" height="30"><use xlink:href="#shape-icon-proposals" /></svg>
-                <span>Propostes</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="process-nav__link process-nav__link--actions">
-                <svg width="30" height="30"><use xlink:href="#shape-icon-actions" /></svg>
-                <span>Actuacions</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="process-nav__link process-nav__link--debates">
-                <svg width="30" height="30"><use xlink:href="#shape-icon-debates" /></svg>
-                <span>Debats</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="process-nav__link process-nav__link--meetings">
-                <svg width="30" height="30"><use xlink:href="#shape-icon-meetings" /></svg>
-                <span>Cites presencials</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <%= partial 'partials/process_nav' %>
       <div class="row collapse filters-wrapper">
         <div class="columns medium-4 large-3">
           <div class="filters">
