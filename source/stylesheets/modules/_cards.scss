@@ -20,7 +20,7 @@ $card-meeting: $meetings;
 $tags-border: $border;
 
 $card-author-badge-color: $white;
-$card-author-badge-bg: $primary;
+$card-author-badge-bg: $muted;
 
 $datetime-bg: $primary;
 $datetime-font-weight: 600;
@@ -180,6 +180,15 @@ $address-bg: $light-gray;
   display: inline-block;
   flex-grow: 1;
   align-self: center;
+}
+
+.card__author-avatar{
+  padding: 0 .5em 0 0;
+  display: flex;
+  align-self: center;
+  img{
+    border-radius: 50%;
+  }
 }
 
 .card__author-badge{
