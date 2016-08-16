@@ -21,7 +21,6 @@ $tags-border: $border;
 $card-author-badge-color: $white;
 $card-author-badge-bg: $primary;
 
-$datetime-color: $white;
 $datetime-bg: $primary;
 $datetime-font-weight: 600;
 
@@ -88,13 +87,12 @@ $datetime-font-weight: 600;
 .card__datetime{
   float: left;
   text-align: center;
-  background-color: $datetime-bg;
-  color: $datetime-color;
+  border: 2px solid $datetime-bg;
   padding: .3em .5em;
   margin: 0 .5em .5em 0;
   font-weight: $datetime-font-weight;
   .card--debate &{
-    background-color: $card-debate;
+    border-color: $card-debate;
   }
 }
 
