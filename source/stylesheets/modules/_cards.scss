@@ -47,7 +47,7 @@ $address-bg: $light-gray;
 
 .card__button{
   margin-bottom: 0;
-  .card--proposal &{
+  /*.card--proposal &{
     background-color: $card-proposal;
   }
   .card--action &{
@@ -58,7 +58,7 @@ $address-bg: $light-gray;
   }
   .card--meeting &{
     background-color: $card-meeting;
-  }
+  }*/
 }
 
 /* Tags */
