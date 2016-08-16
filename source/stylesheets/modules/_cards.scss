@@ -15,6 +15,7 @@ $card-footer-bg: $light-gray;
 $card-proposal: $proposals;
 $card-action: $actions;
 $card-debate: $debates;
+$card-meeting: $meetings;
 
 $tags-border: $border;
 
@@ -23,6 +24,8 @@ $card-author-badge-bg: $primary;
 
 $datetime-bg: $primary;
 $datetime-font-weight: 600;
+
+$address-bg: $light-gray;
 
 /* Cards */
 .card{
@@ -53,6 +56,9 @@ $datetime-font-weight: 600;
   .card--debate &{
     background-color: $card-debate;
   }
+  .card--meeting &{
+    background-color: $card-meeting;
+  }
 }
 
 /* Tags */
@@ -78,6 +84,9 @@ $datetime-font-weight: 600;
       .card--debate & {
         color: $card-debate;
       }
+      .card--meeting & {
+        color: $card-meeting;
+      }
     }
   }
 }
@@ -94,6 +103,9 @@ $datetime-font-weight: 600;
   .card--debate &{
     border-color: $card-debate;
   }
+  .card--meeting &{
+    border-color: $card-meeting;
+  }
 }
 
 .card__datetime__date{
@@ -109,6 +121,27 @@ $datetime-font-weight: 600;
 
 .card__datetime__time{
   font-size: .8rem;
+}
+
+/* Card address */
+.card__address{
+  background: $address-bg;
+  border: $border;
+  margin-bottom: 1rem;
+  padding: $card-padding;
+  @include clearfix;
+  display: flex;
+}
+
+.card__address__icon{
+  float: left;
+  display: flex;
+  align-self: center;
+}
+
+.card__address__details{
+  float: left;
+  padding-left: .5em;
 }
 
 
