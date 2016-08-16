@@ -157,6 +157,25 @@ $address-bg: $light-gray;
   }
 }
 
+.card__footer--data{
+  display: flex;
+  .card__content{
+    flex-grow: 1;
+  }
+  .card-data{
+    flex-direction: column;
+  }
+  .card-data__item{
+    flex-basis: auto;
+    border-right: none;
+    border-left: $border;
+    border-bottom: $border;
+    &:last-of-type{
+      border-bottom: none;
+    }
+  }
+}
+
 .card__author{
   display: inline-block;
   flex-grow: 1;
