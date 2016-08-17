@@ -1,7 +1,7 @@
 <div class="process-nav">
   <div class="row">
     <ul class="columns large-12">
-      <li>
+      <li class="<% if current_page.data.activepage == "info" %>is-active<% end %>">
         <a href="/info" class="process-nav__link process-nav__link--info
           <% if current_page.data.activepage == "info" %>is-active<% end %>">
           <svg width="30" height="30">
@@ -10,7 +10,7 @@
           <span>Informació</span>
         </a>
       </li>
-      <li>
+      <li class="<% if current_page.data.activepage == "proposals" %>is-active<% end %>">
         <a href="/proposals" class="process-nav__link process-nav__link--proposals
           <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
           <svg width="30" height="30">
@@ -19,7 +19,7 @@
           <span>Propostes</span>
         </a>
       </li>
-      <li>
+      <li class="<% if current_page.data.activepage == "actions" %>is-active<% end %>">
         <a href="/actions" class="process-nav__link process-nav__link--actions
           <% if current_page.data.activepage == "actions" %>is-active<% end %>">
           <svg width="30" height="30">
@@ -28,7 +28,7 @@
           <span>Actuacions</span>
         </a>
       </li>
-      <li>
+      <li class="<% if current_page.data.activepage == "debates" %>is-active<% end %>">
         <a href="/debates" class="process-nav__link process-nav__link--debates
           <% if current_page.data.activepage == "debates" %>is-active<% end %>">
           <svg width="30" height="30">
@@ -37,7 +37,7 @@
           <span>Debats</span>
         </a>
       </li>
-      <li>
+      <li class="<% if current_page.data.activepage == "meetings" %>is-active<% end %>">
         <a href="/meetings" class="process-nav__link process-nav__link--meetings
           <% if current_page.data.activepage == "meetings" %>is-active<% end %>">
           <svg width="30" height="30">
