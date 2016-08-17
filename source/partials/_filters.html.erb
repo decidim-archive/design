@@ -1,6 +1,49 @@
+<div class="filters-controls show-for-small-only">
+  <button data-open="filter-box" class="filters-controls__trigger">
+    Filtrar
+    <span class="fa fa-caret-right float-right" aria-hidden="true"></span>
+  </button>
+  <button data-open="info-box" class="filters-controls__trigger">
+    Más información
+    <span class="fa fa-caret-right float-right" aria-hidden="true"></span>
+  </button>
+</div>
+<div class="reveal" id="filter-box" data-reveal>
+  <div class="filters">
+    <h1>Filtrar</h1>
+    <form>
+        <input type="search" placeholder="Buscar">
+        <h6>Tu actividad</h6>
+        <fieldset>
+          <label><input id="" type="checkbox">Creadas</label>
+        </fieldset>
+        <fieldset>
+          <label><input id="" type="checkbox">Comentadas</label>
+        </fieldset>
+        <fieldset>
+          <label><input id="" type="checkbox">Votadas</label>
+        </fieldset>
+        <fieldset>
+          <label><input id="" type="checkbox">Seguidas</label>
+        </fieldset>
+      </form>
+    </div>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="reveal" id="info-box" data-reveal>
+  <h1>Info</h1>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 <div class="filters">
-  <button data-toggle="filter-box" class="filters__trigger show-for-small-only">Filtrar</button>
-  <div class="main-container__content filters__content" id="filter-box" data-toggler=".is-active">
+  <div class="main-container__content filters__content"
+       data-toggler=".is-active">
+    <div>
+      <h6>Más información</h6>
+    </div>
     <form>
       <input type="search" placeholder="Buscar">
       <h6>Tu actividad</h6>

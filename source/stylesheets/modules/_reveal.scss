@@ -1,0 +1,11 @@
+/* Reveal foundation overwrites*/
+
+@include breakpoint(small down){
+  .reveal{
+    width: 95%;
+    left: 2.5%;
+    top: 2rem;
+    height: auto;
+    min-height: auto;
+  }
+}
