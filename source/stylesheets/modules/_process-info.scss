@@ -10,7 +10,7 @@ $info-image-spacing-x: $container-padding-2x;
 
 .info-details{
   color: $info-details-color;
-  @include breakpoint(large){
+  @include breakpoint(medium){
     border-left: $border;
   }
 }
