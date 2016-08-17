@@ -10,8 +10,10 @@ $badge-warning-bg: $warning;
 .badge{
   display: inline-block;
   vertical-align: middle;
-  padding: 0 0.5em .05em;
-  font-size: .7rem;
+  line-height: 1;
+  padding: .1rem .5rem .3rem;
+  margin-top: -2px;
+  font-size: .8rem;
   text-align: center;
   border-radius: 2px;
   background-color: $badge-bg;
