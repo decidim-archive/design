@@ -1,0 +1,24 @@
+//Variables
+$info-details-color: $muted;
+$info-image-spacing-x: $container-padding-2x;
+
+//Styles
+
+.info-header{
+  margin: 2rem 0;
+}
+
+.info-details{
+  color: $info-details-color;
+  @include breakpoint(large){
+    border-left: $border;
+  }
+}
+
+  .info-image img{
+    display: block;
+    @include breakpoint(large){
+      margin-right: -($info-image-spacing-x);
+      max-width: calc(100% + #{$info-image-spacing-x});
+  }
+}
