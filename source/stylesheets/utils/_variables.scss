@@ -1,6 +1,8 @@
 // Variables
 
 $primary: map-get($foundation-palette, primary);
+$success: map-get($foundation-palette, success);
+$warning: map-get($foundation-palette, warning);
 
 $proposals: #238FF7;
 $actions: #57D685;

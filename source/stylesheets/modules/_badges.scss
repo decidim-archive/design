@@ -1,0 +1,29 @@
+//Variables
+$badge-color: $white;
+$badge-bg: $muted;
+$badge-success-color: $white;
+$badge-success-bg: $success;
+$badge-warning-color: $white;
+$badge-warning-bg: $warning;
+
+//Styles
+.badge{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.5em .05em;
+  font-size: .7rem;
+  text-align: center;
+  border-radius: 2px;
+  background-color: $badge-bg;
+  color: $badge-color;
+}
+
+.badge--success{
+  background-color: $badge-success-bg;
+  color: $badge-success-color;
+}
+
+.badge--warning{
+  background-color: $badge-warning-bg;
+  color: $badge-warning-color;
+}
