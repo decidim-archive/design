@@ -19,9 +19,6 @@ $card-meeting: $meetings;
 
 $tags-border: $border;
 
-$card-author-badge-color: $white;
-$card-author-badge-bg: $muted;
-
 $datetime-bg: $primary;
 $datetime-font-weight: 600;
 
@@ -189,16 +186,6 @@ $address-bg: $light-gray;
   img{
     border-radius: 50%;
   }
-}
-
-.card__author-badge{
-  display: inline-block;
-  padding: 0 0.5em .05em;
-  font-size: .7rem;
-  text-align: center;
-  border-radius: 2px;
-  background-color: $card-author-badge-bg;
-  color: $card-author-badge-color;
 }
 
 .card__date{
