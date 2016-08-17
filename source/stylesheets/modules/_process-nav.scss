@@ -21,10 +21,20 @@ $process-nav-meetings: $meetings;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
+    display: flex;
+    @include breakpoint(medium){
+      display: block;
+    }
+  }
+  ul::-webkit-scrollbar{
+    display: none;
   }
   li{
     display: inline-block;
     margin-right: 1.5rem;
+    &.is-active{
+      order: -1;
+    }
   }
 }
 
