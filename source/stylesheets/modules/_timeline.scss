@@ -1,0 +1,142 @@
+
+/* Variables */
+
+$timeline-color: $primary;
+$timeline-inactive-color: $medium-gray;
+
+
+
+/* Timeline */
+
+.timeline {
+	width: 100%;
+	transition: all .4s ease;
+}
+
+.timeline__item {
+  padding-bottom: 2em;
+  position: relative;
+  &:before {
+		content:"";
+		width: 3px;
+		height: 100%;
+		background: $timeline-color;
+		left: 50%;
+		top: 0;
+		position: absolute;
+	}
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+		width: 100%;
+	}
+}
+
+.timeline__phase{
+  width: 30px;
+  height: 30px;
+  margin-left: -13px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: $timeline-color;
+  border: 2px solid $white;
+  box-shadow: 0 0 0 1px $medium-gray;
+}
+
+.timeline__phase__number{
+  display: block;
+  text-align: center;
+  line-height: 1;
+  color: $white;
+  font-weight: 600;
+  font-size: 1.2em;
+  align-self: center;
+  margin-left: 2px;
+  margin-top: -1px;
+}
+
+.timeline__content {
+  width: 45%;
+  background: $white;
+  padding: 20px;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  transition: all .3s ease;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent; 
+    border-left:7px solid $timeline-color; 
+  }
+
+  &.right {
+    float: right;
+
+    &:before {
+      content: '';
+      right: 45%;
+      left: inherit;
+      border-left: 0;
+      border-right: 7px solid $timeline-color;
+    }
+  }
+}
+
+.timeline__title{
+    padding: 15px;
+    background: $timeline-color;
+    color: $white;
+    margin: -20px -20px 0 -20px;
+    border-radius: 3px 3px 0 0;
+}
+
+/* Inactive timeline */
+
+.timeline__item--inactive{
+  &:before {
+		background: $timeline-inactive-color;
+	}
+  .timeline__phase{
+    background: $timeline-inactive-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	#timeline {
+		margin: 30px;
+		padding: 0px;
+    width: 90%;
+		&:before {
+			left: 0;
+		}
+		
+		.timeline-item {
+			.timeline-content {
+				width: 90%;
+				float: right;
+				
+				&:before, &.right:before {
+					left: 10%;
+					margin-left: -6px;
+					border-left: 0;
+					border-right: 7px solid $timeline-color;
+				}
+			}
+
+			.timeline-icon {
+				left: 0;
+			}
+		}
+	}
+}
