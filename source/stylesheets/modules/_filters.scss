@@ -5,7 +5,11 @@ $filters-border: $border;
 $filters-padding: 1rem;
 $filters-margin-small-y: 1rem;
 $filters-margin-small-x: .5rem;
+$filters-padding-x: 2rem;
+$filters-padding-y: 1rem;
+
 $order-border: $border;
+
 
 
 //Styles
@@ -66,7 +70,29 @@ $order-border: $border;
   }
 }
 
+.filters__section{
+  border-bottom: $border;
+  padding: $filters-padding-x $filters-padding-y;
+  &:last-of-type{
+    border-bottom: none;
+  }
+  .button{
+    margin-bottom: 0;
+  }
+}
+
+.filters__info__title{
+  margin-bottom: 0;
+}
+
+.filters__info__icon{
+  margin-left: .25rem;
+}
+
 .filters__search{
+  .input-group{
+    margin-bottom: 0;
+  }
 }
 
 /*Order by styles*/
