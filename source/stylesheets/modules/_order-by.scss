@@ -1,0 +1,22 @@
+//Variables
+$order-border: $border;
+
+/*Order by styles*/
+.cards-view{
+  border-bottom: $order-border;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.cards-view__order{
+  margin-left: auto;
+  display: flex;
+  .menu{
+    margin-left: auto;
+    .is-dropdown-submenu-parent > a{
+      padding: 0;
+      margin-left: 1rem;
+      margin-top: .25rem;
+    }
+  }
+}

@@ -8,9 +8,6 @@ $filters-margin-small-x: .5rem;
 $filters-padding-x: 2rem;
 $filters-padding-y: 1rem;
 
-$order-border: $border;
-
-
 
 //Styles
 .filters-wrapper{
@@ -92,25 +89,5 @@ $order-border: $border;
 .filters__search{
   .input-group{
     margin-bottom: 0;
-  }
-}
-
-/*Order by styles*/
-.cards-view{
-  border-bottom: $order-border;
-  margin-bottom: 1rem;
-  display: flex;
-}
-
-.cards-view__order{
-  margin-left: auto;
-  display: flex;
-  .menu{
-    margin-left: auto;
-    .is-dropdown-submenu-parent > a{
-      padding: 0;
-      margin-left: 1rem;
-      margin-top: .25rem;
-    }
   }
 }
