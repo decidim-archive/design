@@ -31,7 +31,6 @@ $order-border: $border;
   &:last-of-type{
     float: right;
   }
-  
 }
 
 .filters{
@@ -52,6 +51,9 @@ $order-border: $border;
   }
   .reveal &{
     display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 }
 .js .filters__content{
