@@ -18,16 +18,53 @@ $process-nav-meetings: $meetings;
   ul{
     margin: 0;
     list-style: none;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
   }
-  ul::-webkit-scrollbar{
+
+  @include breakpoint(medium){
+    ul{
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+    }
+    ul::-webkit-scrollbar{
+      display: none;
+    }
+    li{
+      display: inline-block;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.process-nav__trigger{
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.process-nav__trigger__icon{
+  position: absolute;
+  right: .5rem;
+  top: .4rem;
+}
+
+.js .process-nav__content{
+  @include breakpoint(small down){
     display: none;
   }
-  li{
-    display: inline-block;
-    margin-right: 1.5rem;
+  &.is-active{
+    display: block;
+  }
+}
+
+.process-nav__content li{
+  @include breakpoint(small down){
+    margin-top: 1rem;
+  }
+  &.is-active{
+    @include breakpoint(small down){
+      display: none;
+    }
   }
 }
 
@@ -45,10 +82,12 @@ $process-nav-meetings: $meetings;
   }
 }
 
-.process-nav__link:hover span,
-.process-nav__link.is-active span{
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
+@include breakpoint(medium){
+  .process-nav__link:hover span,
+  .process-nav__link.is-active span{
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
 }
 
 .process-nav__link--info{

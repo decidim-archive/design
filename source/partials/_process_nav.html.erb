@@ -1,7 +1,53 @@
 <div class="process-nav">
-  <div class="row">
+  <button class="process-nav__trigger show-for-small-only"
+          data-toggle="process-nav-content">
+    <span class="fa fa-caret-down process-nav__trigger__icon"></span>
+    <% if current_page.data.activepage == "info" %>
+      <div class="process-nav__link process-nav__link--info">
+        <svg width="30" height="30">
+          <use xlink:href="#shape-icon-info" />
+        </svg>
+        <span>Informació</span>
+      </div>
+    <% end %>
+    <% if current_page.data.activepage == "proposals" %>
+      <div class="process-nav__link process-nav__link--proposals">
+        <svg width="30" height="30">
+          <use xlink:href="#shape-icon-proposals" />
+        </svg>
+        <span>Propostes</span>
+      </div>
+    <% end %>
+    <% if current_page.data.activepage == "actions" %>
+      <div class="process-nav__link process-nav__link--actions">
+        <svg width="30" height="30">
+          <use xlink:href="#shape-icon-actions" />
+        </svg>
+        <span>Actuacions</span>
+      </div>
+    <% end %>
+    <% if current_page.data.activepage == "debates" %>
+      <div class="process-nav__link process-nav__link--debates">
+        <svg width="30" height="30">
+          <use xlink:href="#shape-icon-debates" />
+        </svg>
+        <span>Debats</span>
+      </div>
+    <% end %>
+    <% if current_page.data.activepage == "meetings" %>
+      <div class="process-nav__link process-nav__link--meetings">
+        <svg width="30" height="30">
+          <use xlink:href="#shape-icon-meetings" />
+        </svg>
+        <span>Cites presencials</span>
+      </div>
+    <% end %>
+  </button>
+  <div class="row process-nav__content" id="process-nav-content"
+       data-toggler=".is-active">
     <ul class="columns large-12">
-      <li class="<% if current_page.data.activepage == "info" %>is-active<% end %>">
+      <li class="<% if current_page.data.activepage == "info" %>is-active
+                 <% end %>">
         <a href="/info" class="process-nav__link process-nav__link--info
           <% if current_page.data.activepage == "info" %>is-active<% end %>">
           <svg width="30" height="30">
@@ -10,7 +56,8 @@
           <span>Informació</span>
         </a>
       </li>
-      <li class="<% if current_page.data.activepage == "proposals" %>is-active<% end %>">
+      <li class="<% if current_page.data.activepage == "proposals" %>is-active
+                 <% end %>">
         <a href="/proposals" class="process-nav__link process-nav__link--proposals
           <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
           <svg width="30" height="30">
@@ -19,7 +66,8 @@
           <span>Propostes</span>
         </a>
       </li>
-      <li class="<% if current_page.data.activepage == "actions" %>is-active<% end %>">
+      <li class="<% if current_page.data.activepage == "actions" %>is-active
+                 <% end %>">
         <a href="/actions" class="process-nav__link process-nav__link--actions
           <% if current_page.data.activepage == "actions" %>is-active<% end %>">
           <svg width="30" height="30">
@@ -28,7 +76,8 @@
           <span>Actuacions</span>
         </a>
       </li>
-      <li class="<% if current_page.data.activepage == "debates" %>is-active<% end %>">
+      <li class="<% if current_page.data.activepage == "debates" %>is-active
+                 <% end %>">
         <a href="/debates" class="process-nav__link process-nav__link--debates
           <% if current_page.data.activepage == "debates" %>is-active<% end %>">
           <svg width="30" height="30">
@@ -37,7 +86,8 @@
           <span>Debats</span>
         </a>
       </li>
-      <li class="<% if current_page.data.activepage == "meetings" %>is-active<% end %>">
+      <li class="<% if current_page.data.activepage == "meetings" %>is-active
+                 <% end %>">
         <a href="/meetings" class="process-nav__link process-nav__link--meetings
           <% if current_page.data.activepage == "meetings" %>is-active<% end %>">
           <svg width="30" height="30">
