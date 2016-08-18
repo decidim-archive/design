@@ -55,12 +55,26 @@
 </div>
 
 <div class="filters">
-  <div class="filters__section">
-    <a href="" class="button expanded secondary">Nueva propuesta</a>
-  </div>
+  <% if current_page.data.activepage == "proposals" %>
+    <div class="filters__section">
+      <a href="" class="button expanded secondary">Nueva propuesta</a>
+    </div>
+  <% end %>
   <div class="filters__section">
     <a href="#" data-open="info-box">
-      <h6 class="filters__info__title">¿Qué son las propuestas?
+      <h6 class="filters__info__title">Què son
+        <% if current_page.data.activepage == "actions" %>
+           les actuacions?
+        <% end %>
+        <% if current_page.data.activepage == "proposals" %>
+           les propostes?
+        <% end %>
+        <% if current_page.data.activepage == "debates" %>
+           els debats?
+        <% end %>
+        <% if current_page.data.activepage == "meetings" %>
+           les cites?
+        <% end %>
         <span class="fa fa-caret-right filters__info__icon" aria-hidden="true"></span>
       </h6>
     </a>
