@@ -182,6 +182,7 @@ $address-bg: $light-gray;
 .card__author-avatar{
   padding: 0 .5em 0 0;
   display: flex;
+  flex-direction: column;
   align-self: center;
   img{
     border-radius: 50%;
