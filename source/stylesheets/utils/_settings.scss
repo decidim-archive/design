@@ -279,7 +279,7 @@ $closebutton-offset-vertical: 0.5rem;
 $closebutton-size: 2em;
 $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;
-$closebutton-color-hover: $black;
+$closebutton-color-hover: map-get($foundation-palette, primary);
 
 // 15. Drilldown
 // -------------
@@ -349,7 +349,7 @@ $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
+$input-border-focus: 1px solid map-get($foundation-palette, primary);
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
@@ -450,7 +450,7 @@ $progress-radius: $global-radius;
 // 28. Reveal
 // ----------
 
-$reveal-background: $white;
+$reveal-background: $light-gray;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;

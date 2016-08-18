@@ -1,19 +1,99 @@
-<div class="filters">
-  <button data-toggle="filter-box" class="filters__trigger show-for-small-only">Filtrar</button>
-  <div class="main-container__content filters__content" id="filter-box" data-toggler=".is-active">
+<div class="filters-controls show-for-small-only">
+  <button data-open="filter-box" class="filters-controls__trigger">
+    Filtrar
+    <span class="fa fa-caret-right float-right" aria-hidden="true"></span>
+  </button>
+  <button data-open="info-box" class="filters-controls__trigger">
+    Más información
+    <span class="fa fa-caret-right float-right" aria-hidden="true"></span>
+  </button>
+</div>
+<div class="reveal" id="filter-box" data-reveal>
+  <div class="reveal__header">
+    <h3 class="reveal__title">Filtrar por:</h3>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="filters">
+    <form class="filters__search">
+      <div class="input-group">
+        <input class="input-group-field" type="search" placeholder="Buscar">
+        <div class="input-group-button">
+          <button type="submit" class="button">
+            <span class="fa fa-search" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </form>
     <form>
-      <input type="search" placeholder="Buscar">
       <h6>Tu actividad</h6>
       <fieldset>
         <label><input id="" type="checkbox">Creadas</label>
-      </fieldset>
-      <fieldset>
         <label><input id="" type="checkbox">Comentadas</label>
-      </fieldset>
-      <fieldset>
         <label><input id="" type="checkbox">Votadas</label>
+        <label><input id="" type="checkbox">Seguidas</label>
       </fieldset>
+    </form>
+  </div>
+</div>
+<div class="reveal" id="info-box" data-reveal>
+  <div class="reveal__header">
+    <h3 class="reveal__title">¿Qué son las propuestas?</h3>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <p>Aquí pots navegar tant per les propostes que el Govern va elaborar per a la
+    proposta inicial pel Pla d'Actuació Municipal 2016-2019 com per a aquelles
+    que provenen de la ciutadania, de les cites presencials o de propostes
+    realitzades per entitats i organitzacions socials. També pots consultar els
+    suports rebuts i els comentaris de cada proposta. Aquestes propostes han
+    estat estudiades per a la seva incorporació al pla i totes elles han rebut
+    una resposta.
+  </p>
+</div>
+
+<div class="filters">
+  <div class="filters__section">
+    <a href="" class="button expanded secondary">Nueva propuesta</a>
+  </div>
+  <div class="filters__section">
+    <a href="#" data-open="info-box">
+      <h6 class="filters__info__title">¿Qué son las propuestas?
+        <span class="fa fa-caret-right filters__info__icon" aria-hidden="true"></span>
+      </h6>
+    </a>
+  </div>
+  <div class="filters__section">
+    <form class="filters__search">
+      <div class="input-group">
+        <input class="input-group-field" type="search" placeholder="Buscar">
+        <div class="input-group-button">
+          <button type="submit" class="button">
+            <span class="fa fa-search" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="filters__section">
+    <form>
       <fieldset>
+        <legend><h6>Resultat de la revisió</h6></legend>
+        <label><input id="" type="radio" name="revision" checked>Totes</label>
+        <label><input id="" type="radio" name="revision">Acceptades</label>
+        <label><input id="" type="radio" name="revision">Rebutjades</label>
+      </fieldset>
+    </form>
+  </div>
+  <div class="filters__section">
+    <form>
+      <fieldset>
+        <legend><h6>Tu actividad</h6></legend>
+        <label><input id="" type="checkbox">Creadas</label>
+        <label><input id="" type="checkbox">Comentadas</label>
+        <label><input id="" type="checkbox">Votadas</label>
         <label><input id="" type="checkbox">Seguidas</label>
       </fieldset>
     </form>

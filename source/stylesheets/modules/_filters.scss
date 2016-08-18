@@ -5,7 +5,11 @@ $filters-border: $border;
 $filters-padding: 1rem;
 $filters-margin-small-y: 1rem;
 $filters-margin-small-x: .5rem;
+$filters-padding-x: 2rem;
+$filters-padding-y: 1rem;
+
 $order-border: $border;
+
 
 
 //Styles
@@ -15,25 +19,45 @@ $order-border: $border;
   }
 }
 
-.filters__trigger{
-  display: block;
-  width: 100%;
+.filters-controls{
+  @include clearfix;
+  margin: $filters-margin-small-y $filters-margin-small-x;
+}
+
+.filters-controls__trigger{
+  float: left;
+  width: 48%;
   font-weight: 600;
+  text-align: left;
+  background: $light-gray;
+  padding: .5rem;
+  border: $border;
+  &:last-of-type{
+    float: right;
+  }
 }
 
 .filters{
+  display: none;
   min-height: 100%;
   background-color: $filters-bg;
   border: $filters-border;
   margin: $filters-margin-small-y $filters-margin-small-x 0;
   padding: $filters-padding;
   @include breakpoint(medium){
+    display: block;
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
     padding: 0;
     margin: 0;
     border-right: $filters-border;
+  }
+  .reveal &{
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 }
 .js .filters__content{
@@ -43,6 +67,31 @@ $order-border: $border;
   }
   @include breakpoint(medium){
     display: block;
+  }
+}
+
+.filters__section{
+  border-bottom: $border;
+  padding: $filters-padding-x $filters-padding-y;
+  &:last-of-type{
+    border-bottom: none;
+  }
+  .button{
+    margin-bottom: 0;
+  }
+}
+
+.filters__info__title{
+  margin-bottom: 0;
+}
+
+.filters__info__icon{
+  margin-left: .25rem;
+}
+
+.filters__search{
+  .input-group{
+    margin-bottom: 0;
   }
 }
 
