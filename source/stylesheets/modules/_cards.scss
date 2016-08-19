@@ -173,22 +173,6 @@ $address-bg: $light-gray;
   }
 }
 
-.card__author{
-  display: inline-block;
-  flex-grow: 1;
-  align-self: center;
-}
-
-.card__author-avatar{
-  padding: 0 .5em 0 0;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  img{
-    border-radius: 50%;
-  }
-}
-
 .card__date{
   display: block;
   color: $muted;
