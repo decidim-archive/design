@@ -1,0 +1,23 @@
+// Proposal, action, debate & meeting view
+
+
+//Variables
+$header-data-color: $muted;
+
+//Styles
+.view-header__data{
+  list-style: none;
+  margin-left: 0;
+  color: $header-data-color;
+  a{
+    color: $header-data-color;
+    &:hover{
+      color: $anchor-color;
+    }
+  }
+  
+  li{
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
