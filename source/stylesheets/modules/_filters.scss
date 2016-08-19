@@ -5,7 +5,7 @@ $filters-border: $border;
 $filters-padding: 1rem;
 $filters-margin-small-y: 1rem;
 $filters-margin-small-x: .5rem;
-$filters-padding-x: 2rem;
+$filters-padding-x: 1rem;
 $filters-padding-y: 1rem;
 
 
@@ -70,11 +70,20 @@ $filters-padding-y: 1rem;
 .filters__section{
   border-bottom: $border;
   padding: $filters-padding-x $filters-padding-y;
+  &:first-of-type{
+    padding-top: $filters-padding-x*2;
+  }
   &:last-of-type{
     border-bottom: none;
   }
   .button{
     margin-bottom: 0;
+  }
+  input[type="checkbox"],
+  input[type="radio"],
+  select{
+    margin-bottom: .5rem;
+    margin-left: .5rem;
   }
 }
 
