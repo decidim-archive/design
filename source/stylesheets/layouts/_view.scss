@@ -11,8 +11,7 @@ $header-data-color: $muted;
 }
 
 .view-header__data{
-  list-style: none;
-  margin-left: 0;
+  @include clearfix();
   color: $header-data-color;
   a{
     color: $header-data-color;
@@ -20,10 +19,17 @@ $header-data-color: $muted;
       color: $anchor-color;
     }
   }
+}
 
-  li{
-    display: inline-block;
+.view-header__data__main{
+  float: left;
+  padding-right: 2rem;
+  margin-right: 2rem;
+  border-right: $border;
+}
+
+.view-header__data__extra{
+  >a{
     margin-right: 1rem;
-    vertical-align: middle;
   }
 }
