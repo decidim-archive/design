@@ -1,5 +1,7 @@
 //Variables
 $author-color: $dark-gray;
+$date-color: $muted;
+$date-font-size: $small-font-size;
 
 //Styles
 .author{
@@ -35,4 +37,10 @@ a:hover .author__name{
   img{
     max-width: 25px;
   }
+}
+
+.author__date{
+  display: block;
+  color: $date-color;
+  font-size: $date-font-size;
 }
