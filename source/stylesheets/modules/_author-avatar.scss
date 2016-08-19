@@ -13,6 +13,10 @@ $author-color: $dark-gray;
   color: $author-color;
 }
 
+a:hover .author__name{
+  color: inherit;
+}
+
 
 .author__avatar{
   padding: 0 .5em 0 0;
@@ -22,5 +26,13 @@ $author-color: $dark-gray;
   align-self: center;
   img{
     border-radius: 50%;
+    width: 100%;
+    max-width: 40px;
+  }
+}
+
+.author__avatar--small{
+  img{
+    max-width: 25px;
   }
 }

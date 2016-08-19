@@ -15,9 +15,10 @@ $header-data-color: $muted;
       color: $anchor-color;
     }
   }
-  
+
   li{
     display: inline-block;
     margin-right: 1rem;
+    vertical-align: middle;
   }
 }
