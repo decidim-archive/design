@@ -3,33 +3,80 @@
 
 //Variables
 $header-data-color: $muted;
+$extra-proposal-bg: $light-gray;
 
 //Styles
 
 .view-header{
-  margin-bottom: 2rem;
+  position: relative;
+  margin-bottom: 1rem;
+  .share{
+    position: absolute; //requires fix
+    //margin-top: 2rem;
+  }
 }
 
 .view-header__data{
   @include clearfix();
   color: $header-data-color;
+  font-size: .9rem;
   a{
     color: $header-data-color;
     &:hover{
       color: $anchor-color;
     }
   }
+  .author__name{
+    color: $anchor-color;
+  }
 }
 
 .view-header__data__main{
-  float: left;
-  padding-right: 2rem;
-  margin-right: 2rem;
-  border-right: $border;
+  display: inline-block;
+  margin-right: .8rem;
+  @include breakpoint(large){
+    &:after{
+      content: "";
+      margin-left: .5rem;
+      display: inline-block;
+      border-left: $border;
+      height: .7rem;
+      vertical-align: middle;
+    }
+  }
 }
 
 .view-header__data__extra{
+  display: inline-block;
   >a{
     margin-right: 1rem;
   }
+}
+
+
+
+.view-header__extra--proposal{
+  background-color: $extra-proposal-bg;
+  padding: 1rem;
+  text-align: center;
+  border: $border;
+  margin-bottom: 1rem;
+  .button{
+    margin-bottom: 0;
+  }
+}
+
+.view-header__suport-number{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.view-header__suport-text{
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: .9rem;
+  margin-bottom: .5rem;
 }

@@ -8,6 +8,10 @@ $date-font-size: $small-font-size;
   display: flex;
 }
 
+.author--inline{
+  display: inline-block;
+}
+
 .author__name{
   display: inline-block;
   flex-grow: 1;
@@ -26,6 +30,9 @@ a:hover .author__name{
   display: flex;
   flex-direction: column;
   align-self: center;
+  .author--inline &{
+    display: inline-block;
+  }
   img{
     border-radius: 50%;
     width: 100%;
