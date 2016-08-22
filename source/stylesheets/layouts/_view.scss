@@ -8,12 +8,7 @@ $extra-proposal-bg: $light-gray;
 //Styles
 
 .view-header{
-  position: relative;
   margin-bottom: 1rem;
-  .share{
-    position: absolute; //requires fix
-    //margin-top: 2rem;
-  }
 }
 
 .view-header__data{
@@ -32,13 +27,12 @@ $extra-proposal-bg: $light-gray;
 }
 
 .view-header__data__main{
-  display: inline-block;
+  display: inline;
   margin-right: .8rem;
   @include breakpoint(large){
     &:after{
       content: "";
       margin-left: .5rem;
-      display: inline-block;
       border-left: $border;
       height: .7rem;
       vertical-align: middle;
@@ -53,7 +47,11 @@ $extra-proposal-bg: $light-gray;
   }
 }
 
-
+.support-wrapper-md{
+  @include breakpoint(medium down){
+    margin: 1rem 0;
+  }
+}
 
 .view-header__extra--proposal{
   background-color: $extra-proposal-bg;
