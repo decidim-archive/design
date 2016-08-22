@@ -1,0 +1,24 @@
+/* Variables */
+$comment-nested-bg: $light-gray;
+$comment-nested-alt-bg: $white;
+
+/* Comments */
+
+.comments{
+  margin-top: 4rem;
+}
+
+.comment{
+  margin-bottom: 1rem;
+  .comment-thread &:nth-of-type(n+2){
+    border-top: $border;
+  }
+}
+
+ .comment--nested{
+    background: $comment-nested-bg;
+    margin: 1rem;
+   &.comment--nested--alt{
+     background: $comment-nested-alt-bg;
+   }
+  }
