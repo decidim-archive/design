@@ -29,15 +29,14 @@ activepage : proposals
                   </div>
                 </div>
                 <div class="view-header__data__extra">
-                  <a href="#comments">
+                  <a href="#comments" title="Comentarios">
                     <span class="fa fa-comments-o"></span> 108
                   </a>
-                  <a href="#">
-                    <span class="fa fa-flag-o"></span>
-                  </a>
+                  <%= partial 'partials/flag' %>
                 </div>
               </div>
-              <div class="hide-for-medium support-wrapper-md" data-set="support-placement">
+              <div class="hide-for-medium support-wrapper-md"
+                   data-set="support-placement">
                 <div class="view-header__extra--proposal js-append">
                   <span class="view-header__suport-number">45</span>
                   <span class="view-header__suport-text">Apoyos</span>
