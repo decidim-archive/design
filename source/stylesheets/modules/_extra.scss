@@ -1,0 +1,16 @@
+//Variables
+$extra-proposal-bg: $light-gray;
+
+.extra{
+  background-color: $extra-proposal-bg;
+  text-align: center;
+  border: $border;
+  margin-bottom: 1rem;
+  .button{
+    margin-bottom: 0;
+  }
+}
+
+.extra__content{
+  padding: 1rem;
+}
