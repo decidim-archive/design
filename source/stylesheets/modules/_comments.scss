@@ -7,6 +7,8 @@ $comment-vote-down-color: $alert;
 $comment-nested-bg: $light-gray;
 $comment-nested-alt-bg: $white;
 
+$comment-highlight-bg: rgba($secondary,.15);
+
 $comment-form-bg: $light-gray;
 
 /* Comments */
@@ -37,6 +39,9 @@ $comment-form-bg: $light-gray;
 .comment{
   .comment-thread &:nth-of-type(n+2){
     border-top: $border;
+  }
+  &--highlight{
+    background: $comment-highlight-bg;
   }
 }
 
