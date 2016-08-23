@@ -1,8 +1,11 @@
 /* Callout foundation overwrites*/
 
 .callout{
+  &.secondary{
+    border-color: $medium-gray;
+    border-left: 8px solid $secondary;
+  }
   &.warning{
-    //background: $white;
     border-color: $medium-gray;
     border-left: 8px solid $warning;
   }
