@@ -23,7 +23,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: '<%= cfg.shapesPath %>/',
-            src: '*.svg',
+            src: ['*.svg', '*/*.svg'],
             dest: '<%= cfg.shapesPath %>/'
           }
         ]
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
             style: 'display:none'
           }
         },
-        src: '<%= cfg.shapesPath %>/*.svg',
+        src: ['<%= cfg.shapesPath %>/*.svg', '<%= cfg.shapesPath %>/*/*.svg'],
         dest: '<%= cfg.partialsPath %>/_shapes.html.erb'
       },
     },

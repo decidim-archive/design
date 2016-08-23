@@ -1,0 +1,11 @@
+.icon{
+}
+
+.icon--action{
+  fill: rgba(black, .2);
+}
+
+.icon--action:hover,
+a:hover .icon--action{
+  fill: currentColor;
+}

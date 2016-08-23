@@ -1,0 +1,53 @@
+//Variables
+$author-color: $dark-gray;
+$date-color: $muted;
+$date-font-size: $small-font-size;
+
+//Styles
+.author{
+  display: flex;
+}
+
+.author--inline{
+  display: inline-block;
+}
+
+.author__name{
+  display: inline-block;
+  flex-grow: 1;
+  align-self: center;
+  color: $author-color;
+}
+
+a:hover .author__name{
+  color: inherit;
+}
+
+
+.author__avatar{
+  padding: 0 .5em 0 0;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  .author--inline &{
+    display: inline-block;
+  }
+  img{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 40px;
+  }
+}
+
+.author__avatar--small{
+  img{
+    max-width: 25px;
+  }
+}
+
+.author__date{
+  display: block;
+  color: $date-color;
+  font-size: $date-font-size;
+}
