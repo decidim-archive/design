@@ -1,5 +1,5 @@
-<div class="row collapse cards-view">
-  <span class="cards-view__total">1467
+<div class="row collapse order-by">
+  <span class="order-by__text">1467
     <% if current_page.data.activepage == "actions" %>
        actuacions
     <% end %>
@@ -13,8 +13,8 @@
      cites
     <% end %>
   </span>
-  <div class="cards-view__order">
-    <span>Ordenar per:</span>
+  <div class="order-by__dropdown">
+    <span class="order-by__text">Ordenar per:</span>
     <ul class="dropdown menu" data-dropdown-menu>
       <li>
         <a href="#">Pesos</a>

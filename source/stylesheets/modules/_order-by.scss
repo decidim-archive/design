@@ -2,17 +2,22 @@
 $order-border: $border;
 
 /*Order by styles*/
-.cards-view{
+.order-by{
   border-bottom: $order-border;
   margin-bottom: 1rem;
   display: flex;
 }
 
-.cards-view__order{
+.order-by__text{
+  display: inline-block;
+}
+
+.order-by__dropdown{
   margin-left: auto;
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   .menu{
-    margin-left: auto;
     .is-dropdown-submenu-parent > a{
       padding: 0;
       margin-left: 1rem;
