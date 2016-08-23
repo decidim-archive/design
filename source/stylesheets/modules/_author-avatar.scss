@@ -2,8 +2,53 @@
 $author-color: $dark-gray;
 $date-color: $muted;
 $date-font-size: $small-font-size;
+$author-data-color: $muted;
 
 //Styles
+
+.author-data{
+  @include clearfix();
+  color: $author-data-color;
+  font-size: .9rem;
+  padding-left: 30px;
+  position: relative;
+  a,
+  button{
+    color: $author-data-color;
+    &:hover{
+      color: $anchor-color;
+    }
+  }
+  .author__name{
+    color: $anchor-color;
+  }
+  .author__avatar--small{
+    position: absolute;
+    margin-left: -30px;
+  }
+}
+
+.author-data__main{
+  display: inline;
+  margin-right: .8rem;
+  @include breakpoint(large){
+    &:after{
+      content: "";
+      margin-left: .5rem;
+      border-left: $border;
+      height: .7rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+.author-data__extra{
+  display: inline-block;
+  >a{
+    margin-right: 1rem;
+  }
+}
+
 .author{
   display: flex;
 }
