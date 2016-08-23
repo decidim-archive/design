@@ -28,6 +28,10 @@ $author-data-color: $muted;
   }
 }
 
+.author-data--noavatar{
+  padding-left: 0;
+}
+
 .author-data__main{
   display: inline;
   margin-right: .8rem;
