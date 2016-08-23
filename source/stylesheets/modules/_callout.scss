@@ -1,0 +1,9 @@
+/* Callout foundation overwrites*/
+
+.callout{
+  &.warning{
+    //background: $white;
+    border-color: $medium-gray;
+    border-left: 8px solid $warning;
+  }
+}
