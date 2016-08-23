@@ -254,14 +254,29 @@ $address-bg: $light-gray;
 
 .card--list__item{
   display: flex;
-  padding: .5em;
+  align-items: center;
+  padding: .5em 0;
+  &:first-of-type{
+    margin-top: -.5rem;
+  }
+  &:last-of-type{
+    margin-bottom: -.5rem;
+  }
   .card__link{
     display: block;
   }
 }
+
+.card--list__icon{
+  margin-right: .5rem;
+}
+
 .card--list__text{
   flex-grow: 1;
-  align-self: center;
+}
+
+.card--list__heading{
+  margin-bottom: 0;
 }
 
 .card--list__data{
