@@ -2,56 +2,12 @@
 
 
 //Variables
-$header-data-color: $muted;
 $extra-proposal-bg: $light-gray;
 
 //Styles
 
 .view-header{
   margin-bottom: 1rem;
-}
-
-.view-header__data{
-  @include clearfix();
-  color: $header-data-color;
-  font-size: .9rem;
-  padding-left: 30px;
-  position: relative;
-  a,
-  button{
-    color: $header-data-color;
-    &:hover{
-      color: $anchor-color;
-    }
-  }
-  .author__name{
-    color: $anchor-color;
-  }
-  .author__avatar--small{
-    position: absolute;
-    margin-left: -30px;
-  }
-}
-
-.view-header__data__main{
-  display: inline;
-  margin-right: .8rem;
-  @include breakpoint(large){
-    &:after{
-      content: "";
-      margin-left: .5rem;
-      border-left: $border;
-      height: .7rem;
-      vertical-align: middle;
-    }
-  }
-}
-
-.view-header__data__extra{
-  display: inline-block;
-  >a{
-    margin-right: 1rem;
-  }
 }
 
 .support-wrapper-md{
