@@ -235,3 +235,44 @@ $address-bg: $light-gray;
     width: 60%;
   }
 }
+
+
+/* Card Link */
+.card__link{
+  color: inherit;
+  &:hover{
+    color: $anchor-color;
+  }
+}
+
+/* Card list */
+.card--list{
+  .card--list__item:not(:last-of-type){
+    border-bottom: $border;
+  }
+}
+
+.card--list__item{
+  display: flex;
+  padding: .5em;
+  .card__link{
+    display: block;
+  }
+}
+.card--list__text{
+  flex-grow: 1;
+  align-self: center;
+}
+
+.card--list__data{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 85%;
+  line-height: 1;
+  color: $muted;
+  padding-left: .5rem;
+}
+
+.card--list__data__number{
+  @extend .card-data__item__number;
+}
