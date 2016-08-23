@@ -26,7 +26,8 @@
           finestres i terrasses tencades de manera permanent.</p>
       </div>
       <div class="comment__footer">
-        <a href="#" class="comment__reply">Responder</a>
+        <button class="comment__reply" data-toggle="comment1-reply">
+          Responder</button>
         <div class="comment__votes">
           <a href="" class="comment__votes--up">
             <span class="fa fa-chevron-up"></span>
@@ -38,10 +39,20 @@
           </a>
         </div>
       </div>
+      <div class="add-comment add-comment--reply" id="comment1-reply"
+           data-toggler=".is-active">
+        <form>
+          <label class="show-for-sr" for="add-comment-1">Resposta</label>
+          <textarea id="add-comment-1"
+            placeholder="Respon a aquest comentari"></textarea>
+          <input type="submit" class="button small hollow" value="Enviar">
+        </form>
+      </div>
     </article>
   </div>
 
-  <h6 class="comment-thread__title">Conversación con <a href="">Ajuntament de Barcelona</a></h6>
+  <h6 class="comment-thread__title">
+    Conversación con <a href="">Ajuntament de Barcelona</a></h6>
   <div class="comment-thread">
     <article class="comment">
       <div class="comment__header">
@@ -174,25 +185,25 @@
         </div>
         <div class="comment__content">
           <p>Quan sento parlar de contaminació acústica, penso que no hi ha veïns
-            en tota la ciutat més perjudicats que nosaltres, els que vivim al Pg
-            de la Vall d'Hebron des del 198 al 208. Per no parlar de la
-            contaminació atmosfèrica, els tubs d'escapament dels vehicles gairabé
-            s'evacuarien directament al nostre menjador si no fos que mantenim les
-            finestres i terrasses tencades de manera permanent.</p>
+          en tota la ciutat més perjudicats que nosaltres, els que vivim al Pg
+          de la Vall d'Hebron des del 198 al 208. Per no parlar de la
+          contaminació atmosfèrica, els tubs d'escapament dels vehicles gairabé
+          s'evacuarien directament al nostre menjador si no fos que mantenim les
+          finestres i terrasses tencades de manera permanent.</p>
         </div>
         <div class="comment__footer">
-        <a href="#" class="comment__reply">Responder</a>
-        <div class="comment__votes">
-          <a href="" class="comment__votes--up">
-            <span class="fa fa-chevron-up"></span>
-            257
-          </a>
-          <a href="" class="comment__votes--down">
-            <span class="fa fa-chevron-down"></span>
-            257
-          </a>
+          <a href="#" class="comment__reply">Responder</a>
+          <div class="comment__votes">
+            <a href="" class="comment__votes--up">
+              <span class="fa fa-chevron-up"></span>
+              257
+            </a>
+            <a href="" class="comment__votes--down">
+              <span class="fa fa-chevron-down"></span>
+              257
+            </a>
+          </div>
         </div>
-      </div>
       </article>
       <article class="comment comment--nested">
         <div class="comment__header">
@@ -212,11 +223,11 @@
         </div>
         <div class="comment__content">
           <p>Quan sento parlar de contaminació acústica, penso que no hi ha veïns
-            en tota la ciutat més perjudicats que nosaltres, els que vivim al Pg
-            de la Vall d'Hebron des del 198 al 208. Per no parlar de la
-            contaminació atmosfèrica, els tubs d'escapament dels vehicles gairabé
-            s'evacuarien directament al nostre menjador si no fos que mantenim les
-            finestres i terrasses tencades de manera permanent.</p>
+          en tota la ciutat més perjudicats que nosaltres, els que vivim al Pg
+          de la Vall d'Hebron des del 198 al 208. Per no parlar de la
+          contaminació atmosfèrica, els tubs d'escapament dels vehicles gairabé
+          s'evacuarien directament al nostre menjador si no fos que mantenim les
+          finestres i terrasses tencades de manera permanent.</p>
         </div>
         <div class="comment__footer">
         <a href="#" class="comment__reply">Responder</a>
@@ -249,11 +260,11 @@
           </div>
           <div class="comment__content">
             <p>Quan sento parlar de contaminació acústica, penso que no hi ha veïns
-              en tota la ciutat més perjudicats que nosaltres, els que vivim al Pg
-              de la Vall d'Hebron des del 198 al 208. Per no parlar de la
-              contaminació atmosfèrica, els tubs d'escapament dels vehicles gairabé
-              s'evacuarien directament al nostre menjador si no fos que mantenim les
-              finestres i terrasses tencades de manera permanent.</p>
+          en tota la ciutat més perjudicats que nosaltres, els que vivim al Pg
+          de la Vall d'Hebron des del 198 al 208. Per no parlar de la
+          contaminació atmosfèrica, els tubs d'escapament dels vehicles gairabé
+          s'evacuarien directament al nostre menjador si no fos que mantenim les
+          finestres i terrasses tencades de manera permanent.</p>
           </div>
           <div class="comment__footer">
             <a href="#" class="comment__reply">Responder</a>
@@ -271,5 +282,14 @@
         </article>
       </article>
     </article>
+  </div>
+  <div class="add-comment">
+    <h5>Deixa el teu comentari</h5>
+    <form>
+      <label class="show-for-sr" for="add-comment">Comentari</label>
+      <textarea id="add-comment" rows="4" 
+        placeholder="Què opines d'aquesta proposta?"></textarea>
+      <input type="submit" class="button hollow" value="Enviar">
+    </form>
   </div>
 </section>
