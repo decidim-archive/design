@@ -1,6 +1,6 @@
 //Variables
 $share-border: $border;
-$share-color: $dark-gray;
+$share-color: $muted;
 
 //Styles
 .share{
@@ -15,7 +15,6 @@ $share-color: $dark-gray;
 }
 
 .share__icon{
-  font-size: .8rem;
   color: $share-color;
   border: $share-border;
   border-radius: 50%;
