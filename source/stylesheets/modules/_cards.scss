@@ -245,6 +245,10 @@ $address-bg: $light-gray;
   }
 }
 
+.card__link--block{
+  display: block;
+}
+
 /* Card list */
 .card--list{
   .card--list__item:not(:last-of-type){
@@ -262,9 +266,6 @@ $address-bg: $light-gray;
   &:last-of-type{
     margin-bottom: -.5rem;
   }
-  .card__link{
-    display: block;
-  }
 }
 
 .card--list__icon{
@@ -273,10 +274,15 @@ $address-bg: $light-gray;
 
 .card--list__text{
   flex-grow: 1;
+  .author{
+    margin-top: .3rem;
+  }
 }
 
 .card--list__heading{
   margin-bottom: 0;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .card--list__data{
