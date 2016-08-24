@@ -20,7 +20,6 @@ $card-meeting: $meetings;
 $datetime-bg: $primary;
 $datetime-font-weight: 600;
 
-$address-bg: $light-gray;
 
 /* Cards */
 .card{
@@ -75,27 +74,6 @@ $address-bg: $light-gray;
 
 .card__datetime__time{
   font-size: .8rem;
-}
-
-/* Card address */
-.card__address{
-  background: $address-bg;
-  border: $border;
-  margin-bottom: 1rem;
-  padding: $card-padding;
-  @include clearfix;
-  display: flex;
-}
-
-.card__address__icon{
-  float: left;
-  display: flex;
-  align-self: center;
-}
-
-.card__address__details{
-  float: left;
-  padding-left: .5em;
 }
 
 
