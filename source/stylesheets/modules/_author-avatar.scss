@@ -1,5 +1,6 @@
 //Variables
-$author-color: $dark-gray;
+$footer-author-color: $dark-gray;
+$author-color: $muted;
 $date-color: $muted;
 $date-font-size: $small-font-size;
 $author-data-color: $muted;
@@ -55,7 +56,9 @@ $author-data-color: $muted;
 
 .author{
   display: flex;
+  font-size: .9rem;
 }
+
 
 .author--inline{
   display: inline-block;
@@ -66,6 +69,9 @@ $author-data-color: $muted;
   flex-grow: 1;
   align-self: center;
   color: $author-color;
+  .card__footer &{
+    color: $footer-author-color;
+  }
 }
 
 a:hover .author__name{

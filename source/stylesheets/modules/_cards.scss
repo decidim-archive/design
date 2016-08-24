@@ -215,7 +215,9 @@ $address-bg: $light-gray;
 
 .card--list__item{
   display: flex;
-  align-items: center;
+  @include breakpoint(medium){
+    align-items: center;
+  }
   padding: .5em 0;
   &:first-of-type{
     margin-top: -.5rem;
@@ -227,6 +229,11 @@ $address-bg: $light-gray;
 
 .card--list__icon{
   margin-right: .5rem;
+  flex-shrink: 0;
+  flex-basis: 15px;
+  @include breakpoint(medium){
+    flex-basis: auto;
+  }
 }
 
 .card--list__text{
@@ -243,7 +250,14 @@ $address-bg: $light-gray;
   margin-right: 1rem;
 }
 
+.card--list .tags{
+  @include breakpoint(medium down){
+    display: none;
+  }
+}
+
 .card--list__data{
+  flex-shrink: 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 85%;
