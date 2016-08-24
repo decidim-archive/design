@@ -12,6 +12,11 @@ $address-padding: 1rem;
   display: flex;
 }
 
+.address__info{
+  display: flex;
+  flex-grow: 1;
+}
+
 .address__icon{
   float: left;
   display: flex;
@@ -21,4 +26,5 @@ $address-padding: 1rem;
 .address__details{
   float: left;
   padding-left: .5em;
+  align-self: center;
 }

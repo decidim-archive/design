@@ -1,4 +1,9 @@
-<h3>Propuestas relacionadas</h3>
+<% if current_page.data.activepage == "meetings" %>
+   <h3>Propuestas tratadas</h3>
+<% elsif %>
+   <h3>Propuestas relacionadas</h3>
+<% end %>
+
 
 <div class="card card--action card--list">
   <div class="card__content">
