@@ -11,8 +11,8 @@ activepage : proposals
     <div class="main-container">
       <%= partial 'partials/process_nav' %>
       <div class="main-container__content">
-        <div class="row view-header">
-          <div class="columns medium-8 large-8">
+        <div class="row">
+          <div class="columns medium-8">
             <div class="view-header">
               <h2 class="view-title">Cobriment de la Ronda de Dalt al seu pas per
                 la Vall d'Hebrón</h2>
@@ -82,39 +82,24 @@ activepage : proposals
                 <li><a href="">barri de Sarrià</a></li>
               </ul>
             </div>
-            <div class="callout warning">
-              <h5>Aquesta proposta ha estat rebutjada pels següents motius:</h5>
-              <p>No podem comprometre’ns a desenvolupar aquesta proposta al
-                nivell de concreció que es proposa, però serà tinguda en compte
-                en el moment de la planificació corresponent.</p>
+            <div class="section">
+              <div class="callout warning">
+                <h5>Aquesta proposta ha estat rebutjada pels següents motius:</h5>
+                <p>No podem comprometre’ns a desenvolupar aquesta proposta al
+                  nivell de concreció que es proposa, però serà tinguda en compte
+                  en el moment de la planificació corresponent.</p>
             </div>
-            <div class="section" id="comments">
-              <%= partial 'partials/comments' %>
             </div>
           </div>
-          <div class="columns medium-4 large-3">
+          <div class="columns medium-4 large-3 section">
             <div class="show-for-medium" data-set="support-placement">
             </div>
-            <div class="share">
-              Compartir:
-              <ul>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-google" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <%= partial 'partials/share' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="section columns medium-8" id="comments">
+              <%= partial 'partials/comments' %>
           </div>
         </div>
       </div>

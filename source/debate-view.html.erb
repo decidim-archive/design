@@ -11,8 +11,8 @@ activepage : debates
     <div class="main-container">
       <%= partial 'partials/process_nav' %>
       <div class="main-container__content">
-        <div class="row view-header">
-          <div class="columns medium-8 large-8">
+        <div class="row">
+          <div class="columns medium-8">
             <div class="view-header">
               <h2 class="view-title">
                 La proposta inicial del Pla Municipal elaborat per l'Ajuntament
@@ -81,31 +81,14 @@ activepage : debates
                 <li><a href="">Pla Municipal</a></li>
               </ul>
             </div>
-            <div class="section" id="comments">
-              <%= partial 'partials/comments' %>
-            </div>
           </div>
-          <div class="columns medium-4 large-3">
-            <div class="share">
-              Compartir:
-              <ul>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-google" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div class="columns medium-4 large-3 section">
+            <%= partial 'partials/share' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="section columns medium-8" id="comments">
+              <%= partial 'partials/comments' %>
           </div>
         </div>
       </div>
