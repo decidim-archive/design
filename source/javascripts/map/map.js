@@ -10,7 +10,8 @@ $(function () {
         _inst.map = new google.maps.Map($('#map')[0], {
          //barcelona coordinates
           center: { lat: 41.3851, lng: 2.1734 },
-          zoom: 12
+          zoom: 12,
+          scrollwheel: false
         });
       },
       latLng: function(lat, lng) {
