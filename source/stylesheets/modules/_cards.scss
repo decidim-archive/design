@@ -17,8 +17,6 @@ $card-action: $actions;
 $card-debate: $debates;
 $card-meeting: $meetings;
 
-$tags-border: $border;
-
 $datetime-bg: $primary;
 $datetime-font-weight: 600;
 
@@ -44,49 +42,8 @@ $address-bg: $light-gray;
 
 .card__button{
   margin-bottom: 0;
-  /*.card--proposal &{
-    background-color: $card-proposal;
-  }
-  .card--action &{
-    background-color: $card-action;
-  }
-  .card--debate &{
-    background-color: $card-debate;
-  }
-  .card--meeting &{
-    background-color: $card-meeting;
-  }*/
 }
 
-/* Tags */
-
-.tags{
-  list-style: none;
-  margin: 0;
-  font-size: 90%;
-  >li{
-    display: inline-block;
-    margin-right: .3rem;
-    margin-bottom: .5rem;
-    >a{
-      display: block;
-      border: $tags-border;
-      padding: 0 .5rem;
-      .card--proposal & {
-        color: $card-proposal;
-      }
-      .card--action & {
-        color: $card-action;
-      }
-      .card--debate & {
-        color: $card-debate;
-      }
-      .card--meeting & {
-        color: $card-meeting;
-      }
-    }
-  }
-}
 
 /* Card datetime */
 
@@ -276,6 +233,7 @@ $address-bg: $light-gray;
   flex-grow: 1;
   .author{
     margin-top: .3rem;
+    margin-right: 1rem;
   }
 }
 
