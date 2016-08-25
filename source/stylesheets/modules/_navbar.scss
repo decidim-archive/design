@@ -76,6 +76,7 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   }
   .is-dropdown-submenu{
     text-align: left;
+    padding-left: .3rem;
     background-color: rgba($white, .8);
     border-radius: $global-radius;
     min-width: 150px;
