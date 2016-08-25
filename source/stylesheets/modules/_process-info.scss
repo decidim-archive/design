@@ -1,24 +1,44 @@
 //Variables
 $info-details-color: $muted;
 $info-image-spacing-x: $container-padding-2x;
+$gutter-medium: map-get($grid-column-gutter, medium);
 
 //Styles
 
 .info-header{
   margin: 2rem 0;
+  @include breakpoint(medium){
+    display: flex;
+    align-items: center;
+  }
 }
 
 .info-details{
   color: $info-details-color;
+  margin-left: auto;
+  .share{
+    text-align: left;
+    margin-top: .2rem;
+    ul{
+      margin-left: 0;
+    }
+  }
   @include breakpoint(medium){
     border-left: $border;
   }
 }
-
-  .info-image img{
+.info-image{
+  margin-bottom: 1rem;
+  img{
     display: block;
-    @include breakpoint(large){
-      margin-right: -($info-image-spacing-x);
-      max-width: calc(100% + #{$info-image-spacing-x});
+  }
+  @include breakpoint(medium){
+    float: right;
+    margin-left: $gutter-medium;
+    width: 50%;
+  }
+  @include breakpoint(large){
+    margin-right: calc(-50% - #{$container-padding-2x} - #{$gutter-medium}/2);
+    width: 80%;
   }
 }
