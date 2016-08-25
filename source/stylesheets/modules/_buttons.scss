@@ -2,6 +2,9 @@
   color: $anchor-color;
 }
 
-.muted-link:hover{
-  color: $anchor-color;
+.muted-link{
+  color: $muted;
+  &:hover{
+    color: $anchor-color;
+  }
 }

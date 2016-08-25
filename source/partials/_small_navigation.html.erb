@@ -1,11 +1,43 @@
 <nav class="navbar">
   <div class="row">
     <ul class="main-nav">
-      <li><a class="main-nav__link" href="">Inici</a></li>
-      <li><a class="main-nav__link main-nav__link--active" href="">Processos</a></li>
-      <li><a class="main-nav__link" href="">Visualitzacions</a></li>
-      <li><a class="main-nav__link" href="">Més informació</a></li>
-      <li><a class="main-nav__link" href="">Noticies</a></li>
+      <li><a class="main-nav__link
+        <% if current_page.data.activesection == "home" %>
+         main-nav__link--active
+        <% end %>
+        " href="/">Inici</a></li>
+      <li>
+        <a class="main-nav__link
+        <% if current_page.data.activesection == "processes" %>
+         main-nav__link--active
+        <% end %>
+        " href="/info">Processos</a>
+      </li>
+      <li>
+        <a class="main-nav__link
+        <% if current_page.data.activesection == "spaces" %>
+         main-nav__link--active
+        <% end %>
+        " href="">Espais</a></li>
+      <!--<li><a class="main-nav__link
+        <% if current_page.data.activesection == "data" %>
+         main-nav__link--active
+        <% end %>
+        " href="">Datos</a></li>-->
+      <li><a class="main-nav__link
+        <% if current_page.data.activesection == "more-info" %>
+           main-nav__link--active
+        <% end %>
+        " href="">Més informació</a>
+      </li>
+      <li><a class="main-nav__link
+        <% if current_page.data.activesection == "news" %>
+         main-nav__link--active
+        <% end %>
+        " href="http://eldigital.barcelona.cat/pambcn" target="_blank">
+          Noticies
+        </a>
+      </li>
     </ul>
-  </div>  
+  </div>
 </nav>

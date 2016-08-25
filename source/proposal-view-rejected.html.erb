@@ -42,7 +42,6 @@ activepage : proposals
                   <div class="extra__content">
                     <span class="view-header__suport-number">45</span>
                     <span class="view-header__suport-text">Apoyos</span>
-                    <a href="" class="button expanded">Apoyar</a>
                     <div class="view-header__follow">
                       <a href="#">
                         <svg width="14" height="14" class="icon icon--action">
@@ -56,7 +55,7 @@ activepage : proposals
               </div>
             </div>
             <div class="section">
-              <span class="success label proposal-status">Acceptada</span>
+              <span class="warning label proposal-status">Rebutjada</span>
               <p>
                 Millores en un conjunt de carrers dels barris del districte que
                 incorporin la renovació integral de les seves infraestructures
@@ -85,13 +84,15 @@ activepage : proposals
               </ul>
             </div>
             <div class="section">
-              <%= partial 'partials/related_actions' %>
+              <div class="callout warning">
+                <h5>Aquesta proposta ha estat rebutjada pels següents motius:</h5>
+                <p>No podem comprometre’ns a desenvolupar aquesta proposta al
+                  nivell de concreció que es proposa, però serà tinguda en compte
+                  en el moment de la planificació corresponent.</p>
             </div>
-            <div class="section">
-              <%= partial 'partials/related_meetings' %>
             </div>
           </div>
-          <div class="section columns medium-4 large-3">
+          <div class="columns medium-4 large-3 section">
             <div class="show-for-medium" data-set="support-placement">
             </div>
             <%= partial 'partials/share' %>
