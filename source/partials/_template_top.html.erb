@@ -1,5 +1,21 @@
-<div class="footer-separator">
-  <!--separates the footer from the rest of the page,
-  creates a sticky footer-->
-<%= partial 'partials/topbar' %>
-<%= partial 'partials/small_navigation' %>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-right" data-position="right"
+           id="offCanvas" data-off-canvas>
+        <!-- Close button -->
+        <button class="close-button"
+                aria-label="Close menu" type="button"
+                data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <!-- Menu -->
+        <ul>
+          <li><a href="#">Foundation</a></li>
+        </ul>
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="footer-separator">
+            <!--separates the footer from the rest of the page,
+            creates a sticky footer-->
+          <%= partial 'partials/topbar' %>
+          <%= partial 'partials/small_navigation' %>

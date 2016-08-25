@@ -1,0 +1,32 @@
+//Variables
+$extra-proposal-bg: $light-gray;
+
+.extra{
+  background-color: $extra-proposal-bg;
+  text-align: center;
+  border: $border;
+  margin-bottom: 1rem;
+  .button{
+    margin-bottom: 0;
+  }
+}
+
+.extra__content{
+  padding: 1rem;
+}
+
+.extra__date{
+  font-size: 3rem;
+  line-height: 1;
+}
+.extra__month{
+  display: block;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.extra__time{
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}

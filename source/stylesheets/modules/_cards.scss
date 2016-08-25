@@ -17,12 +17,9 @@ $card-action: $actions;
 $card-debate: $debates;
 $card-meeting: $meetings;
 
-$tags-border: $border;
-
 $datetime-bg: $primary;
 $datetime-font-weight: 600;
 
-$address-bg: $light-gray;
 
 /* Cards */
 .card{
@@ -44,49 +41,8 @@ $address-bg: $light-gray;
 
 .card__button{
   margin-bottom: 0;
-  /*.card--proposal &{
-    background-color: $card-proposal;
-  }
-  .card--action &{
-    background-color: $card-action;
-  }
-  .card--debate &{
-    background-color: $card-debate;
-  }
-  .card--meeting &{
-    background-color: $card-meeting;
-  }*/
 }
 
-/* Tags */
-
-.tags{
-  list-style: none;
-  margin: 0;
-  font-size: 90%;
-  >li{
-    display: inline-block;
-    margin-right: .3rem;
-    margin-bottom: .5rem;
-    >a{
-      display: block;
-      border: $tags-border;
-      padding: 0 .5rem;
-      .card--proposal & {
-        color: $card-proposal;
-      }
-      .card--action & {
-        color: $card-action;
-      }
-      .card--debate & {
-        color: $card-debate;
-      }
-      .card--meeting & {
-        color: $card-meeting;
-      }
-    }
-  }
-}
 
 /* Card datetime */
 
@@ -118,27 +74,6 @@ $address-bg: $light-gray;
 
 .card__datetime__time{
   font-size: .8rem;
-}
-
-/* Card address */
-.card__address{
-  background: $address-bg;
-  border: $border;
-  margin-bottom: 1rem;
-  padding: $card-padding;
-  @include clearfix;
-  display: flex;
-}
-
-.card__address__icon{
-  float: left;
-  display: flex;
-  align-self: center;
-}
-
-.card__address__details{
-  float: left;
-  padding-left: .5em;
 }
 
 
@@ -245,6 +180,10 @@ $address-bg: $light-gray;
   }
 }
 
+.card__link--block{
+  display: block;
+}
+
 /* Card list */
 .card--list{
   .card--list__item:not(:last-of-type){
@@ -254,7 +193,9 @@ $address-bg: $light-gray;
 
 .card--list__item{
   display: flex;
-  align-items: center;
+  @include breakpoint(medium){
+    align-items: center;
+  }
   padding: .5em 0;
   &:first-of-type{
     margin-top: -.5rem;
@@ -262,24 +203,39 @@ $address-bg: $light-gray;
   &:last-of-type{
     margin-bottom: -.5rem;
   }
-  .card__link{
-    display: block;
-  }
 }
 
 .card--list__icon{
   margin-right: .5rem;
+  flex-shrink: 0;
+  flex-basis: 15px;
+  @include breakpoint(medium){
+    flex-basis: auto;
+  }
 }
 
 .card--list__text{
   flex-grow: 1;
+  .author{
+    margin-top: .3rem;
+    margin-right: 1rem;
+  }
 }
 
 .card--list__heading{
   margin-bottom: 0;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.card--list .tags{
+  @include breakpoint(medium down){
+    display: none;
+  }
 }
 
 .card--list__data{
+  flex-shrink: 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 85%;
