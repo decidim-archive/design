@@ -18,60 +18,94 @@ activepage : info
           </div>
           <div class="info-details columns medium-4 large-3">
             <div class="info-details__date">
-              Finalización: 28 septiembre 2016
+              <strong>Ámbito:</strong> Districte de Gràcia
             </div>
-            <div class="share">
-              Compartir:
-              <ul>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-google" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="share__icon">
-                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                  </a>
-                </li>
-              </ul>
+            <div class="info-details__date">
+              <strong>Finalización:</strong> 28 septiembre 2016
             </div>
+            <%= partial 'partials/share' %>
           </div>
         </div>
         <div class="row">
-          <div class="columns large-6">
-            <p>
-              Millores en un conjunt de carrers dels barris del districte que
-              incorporin la renovació integral de les seves infraestructures
-              (voreres, accessibilitat, asfaltat, enllumenat, clavegueram,
-              arbrat, mobiliari urbà...), Interiors de Canyelles, Guineueta
-              i Aiguablava-Portlligat i Amilcar-Cartellà-Av. de Borbó-Maragall,
-              connexió del carrer Pedraforca amb Agudes, accessibilitat i
-              enllumenat a Renfe Meridiana, urbanització de Nou Pins, Mina de la
-              ciutat, Canfranc, Oristà i Almansa, pèrgola del Campillo de la
-              virgen i del parc de Serra Martí, redacció del projecte del
-              passeig de la Peira, reforma de les escales de Matagalls, millores
-              a l'Av. de Borbó i projecte d'intervenció a la Font Pla de
-              Fornells. Millores en el Parc de la Guineueta incloent un espai
-              d'aparells per a la gent gran. Estudi de la viabilitat tècnica
-              d'instal·lar escales mecàniques entre Ciutat Meridiana i Torre
-              Baró per millorar la connectivitat entre els dos barris o millora
-              de l'escala actual. Millores d'accessibilitat, arranjaments i
-              enllumenat en l'àmbit de Renfe Meridiana. Millores en la
-              urbanització per a l'accessibilitat d'acord amb les
-              particularitats orogràfiques al barri de Roquetes.
-            </p>
-          </div>
-          <div class="columns large-6 info-image">
-            <img src="/images/demo-info-page.jpg" alt="">
+          <div class="columns large-8">
+            <div class="section">
+              <div class="info-image">
+                <img src="/images/demo-info-page.jpg" alt="">
+              </div>
+              <p class="lead">
+                Millores en un conjunt de carrers dels barris del districte que
+                incorporin la renovació integral de les seves infraestructures
+                (voreres, accessibilitat, asfaltat, enllumenat, clavegueram,
+                arbrat, mobiliari urbà...)</p>
+              <p>Interiors de Canyelles, Guineueta
+                i Aiguablava-Portlligat i Amilcar-Cartellà-Av. de Borbó-Maragall,
+                connexió del carrer Pedraforca amb Agudes, accessibilitat i
+                enllumenat a Renfe Meridiana, urbanització de Nou Pins, Mina de
+                la ciutat, Canfranc, Oristà i Almansa, pèrgola del Campillo de la
+                virgen i del parc de Serra Martí, redacció del projecte del
+                passeig de la Peira, reforma de les escales de Matagalls, millores
+                a l'Av. de Borbó i projecte d'intervenció a la Font Pla de
+                Fornells. Millores en el Parc de la Guineueta incloent un espai
+                d'aparells per a la gent gran. Estudi de la viabilitat tècnica
+                d'instal·lar escales mecàniques entre Ciutat Meridiana i Torre
+                Baró per millorar la connectivitat entre els dos barris o millora
+                de l'escala actual. Millores d'accessibilitat, arranjaments i
+                enllumenat en l'àmbit de Renfe Meridiana. Millores en la
+                urbanització per a l'accessibilitat d'acord amb les
+                particularitats orogràfiques al barri de Roquetes.
+              </p>
+              <p>Interiors de Canyelles, Guineueta
+                i Aiguablava-Portlligat i Amilcar-Cartellà-Av. de Borbó-Maragall,
+                connexió del carrer Pedraforca amb Agudes, accessibilitat i
+                enllumenat a Renfe Meridiana, urbanització de Nou Pins, Mina de la
+                ciutat, Canfranc, Oristà i Almansa, pèrgola del Campillo de la
+                virgen i del parc de Serra Martí, redacció del projecte del
+                passeig de la Peira, reforma de les escales de Matagalls, millores
+                a l'Av. de Borbó i projecte...
+              </p>
+              <div class="show-more">
+                <button class="muted-link">Leer más
+                  <span class="fa fa-plus-circle"></span>
+                </button>
+              </div>
+            </div>
+            <div class="section">
+              <h5>Documentos relacionados</h5>
+              <div class="extra extra--text">
+                <div class="extra__content">
+                  <ul class="list-docs">
+                    <li>
+                      <a href="">
+                        <span class="fa fa-file-pdf-o list-docs__icon"></span>
+                        Acta Paral·lel 18-02-2015.pdf</a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <span class="fa fa-file-pdf-o list-docs__icon"></span>
+                        Acta Paral·lel 18-02-2015.pdf</a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <span class="fa fa-file-pdf-o list-docs__icon"></span>
+                        Acta Paral·lel 18-02-2015.pdf</a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <span class="fa fa-file-text-o list-docs__icon"></span>
+                        Informe de les conclusions.doc</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <%= partial 'partials/gallery' %>
+            </div>
           </div>
         </div>
-        <hr>
-        <%= partial 'partials/timeline' %>
+        <div class="row column section">
+          <%= partial 'partials/timeline' %>
+        </div>
       </div>
   </div>
 </div>
