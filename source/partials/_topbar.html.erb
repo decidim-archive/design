@@ -1,8 +1,34 @@
 <!-- Topbar -->
 <div class="topbar title-bar">
   <div class="row">
-    <a href="">lang</a>
-    <a href="">logo</a>
-    <a href="">user</a>
-  </div>  
+    <div class="columns small-12 medium-4 topbar__lang">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li>
+          <a href="#">Català</a>
+          <ul class="menu">
+            <li><a href="#">Castellano</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="columns small-6 medium-4 logo-wrapper">
+      <a href="">
+        <span>
+          Decidim<br>
+          Barcelona
+        </span>
+      </a>
+    </div>
+    <div class="columns small-6 medium-4">
+      <button type="button" class="hide-for-medium" data-toggle="offCanvas">
+        Menú <span class="fa fa-bars"></span>
+      </button>
+      <div class="topbar__user hide-for-small-only">
+        <div class="topbar__user__login">
+          <a href="#">Regístrate</a>
+          <a href="#">Entra</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
