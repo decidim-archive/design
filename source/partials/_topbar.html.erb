@@ -1,11 +1,16 @@
 <!-- Topbar -->
+<a target="_blank" href="http://ajuntament.barcelona.cat/"
+   class="logo-cityhall">
+  <img src="http://www.barcelona.cat/assets/images/brand/banner/2015/llima-vermella.svg" 
+       alt="Ajuntament de Barcelona">
+</a>
 <div class="topbar title-bar">
   <div class="row">
     <div class="columns small-12 medium-4 topbar__lang">
       <ul class="dropdown menu" data-dropdown-menu>
-        <li>
+        <li class="is-dropdown-submenu-parent">
           <a href="#">Català</a>
-          <ul class="menu">
+          <ul class="menu is-dropdown-submenu">
             <li><a href="#">Castellano</a></li>
           </ul>
         </li>
@@ -20,11 +25,13 @@
       </a>
     </div>
     <div class="columns small-6 medium-4">
-      <button type="button" class="hide-for-medium" data-toggle="offCanvas">
-        Menú <span class="fa fa-bars"></span>
-      </button>
-      <div class="topbar__user hide-for-small-only">
-        <div class="topbar__user__login">
+      <div class="hide-for-medium topbar__menu">
+        <button type="button" data-toggle="offCanvas">
+          <span class="fa fa-bars"></span>
+        </button>
+      </div>
+      <div class="topbar__user hide-for-small-only" data-set="nav-login-holder">
+        <div class="topbar__user__login js-append">
           <a href="#">Regístrate</a>
           <a href="#">Entra</a>
         </div>

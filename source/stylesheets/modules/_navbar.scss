@@ -6,7 +6,8 @@ $navbar-color: rgba(white,.5);
 $navbar-color-hover: $white;
 $navbar-active-color: $white;
 $navbar-active-bg: $navbar-bg-hover;
-$navbar-active-border: 4px solid $primary;
+$navbar-active-shadow-small: inset 4px 0 0 0 $primary;
+$navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
 
 /* Navigation */
 
@@ -15,11 +16,19 @@ $navbar-active-border: 4px solid $primary;
 }
 
 /* Top bar */
+
+.topbar{
+  @include breakpoint(small down){
+    border-top: 34px solid $dark-gray;
+  }
+}
+
 .logo-wrapper{
+  padding: 0 1rem;
   @include breakpoint(medium){
     text-align: center;
+    padding: .5rem 1rem;
   }
-  padding: 1rem;
   a{
     display: inline-block;
   }
@@ -45,14 +54,34 @@ $navbar-active-border: 4px solid $primary;
 
 .topbar__lang{
   @include breakpoint(small down){
-    text-align: center;
+    font-size: .8rem;
+    position: absolute;
+    top: 0;
+    .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+      border-width: 3px;
+      right: 10px;
+      margin-top: 0;
+    }
   }
+  
   @include breakpoint(medium){
-    padding-top: .9rem;
+    padding-top: .4rem;
+  }
+  .menu > li > a{
+    padding-left: 0;
   }
   .dropdown{
     display: inline-block;
     vertical-align: middle;
+  }
+  .is-dropdown-submenu{
+    text-align: left;
+    background-color: rgba($white, .8);
+    border-radius: $global-radius;
+    min-width: 150px;
+    a{
+      padding: 0.3rem 1rem;
+    }
   }
 }
 
@@ -64,7 +93,11 @@ $navbar-active-border: 4px solid $primary;
 }
 
 .topbar__user{
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  @media (min-width: 1270px){
+    padding-right: 0;
+  }
 }
 
 .topbar__user__avatar{
@@ -73,6 +106,12 @@ $navbar-active-border: 4px solid $primary;
   max-width: 30px;
   border-radius: 50%;
   margin-left: 1rem;
+}
+
+
+.topbar__menu{
+  text-align: right;
+  font-size: 20px;
 }
 
 .topbar__user__login{
@@ -95,6 +134,26 @@ $navbar-active-border: 4px solid $primary;
     border-left: $border;
     vertical-align: middle;
   }
+  .off-canvas &{
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+}
+
+.logo-cityhall{
+  position: absolute;
+  z-index: 1;
+  top: 3px;
+  right: 0;
+  width: 24px;
+  @include breakpoint(medium){
+    top: 1rem;
+    width: 40px;
+  }
 }
 
 /* Main nav */
@@ -103,17 +162,16 @@ $navbar-active-border: 4px solid $primary;
   margin: 0;
   list-style: none;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  white-space: nowrap;
 
   @include breakpoint(medium) {
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
     display: flex;
-  }
-
-  >li{
-    display: inline-block;
-    flex: 1;
-    text-align: center;
+    >li{
+      display: inline-block;
+      flex: 1;
+      text-align: center;
+    }
   }
 }
 
@@ -128,7 +186,10 @@ $navbar-active-border: 4px solid $primary;
 }
 
 .main-nav__link--active{
+  box-shadow: $navbar-active-shadow-small;
   color: $navbar-active-color;
   background: $navbar-active-bg;
-  border-top: $navbar-active-border;
+   @include breakpoint(medium) {
+    box-shadow: $navbar-active-shadow-medium;
+  }
 }
