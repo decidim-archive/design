@@ -251,6 +251,7 @@ $datetime-font-weight: 600;
 /* Card full width variant */
 
 .card--full{
+  margin-bottom: $card-margin-bottom*2;
   .card__content{
     padding: $card-padding*2;
   }
@@ -274,7 +275,7 @@ $datetime-font-weight: 600;
     height: 100%;
     position: absolute;
     top: 0;
-    background: linear-gradient(to right, rgba($white,1),rgba($white,0) 100%);
+    background: linear-gradient(to right, rgba($white,1),rgba($white,0) 80%);
   }
 }
 
