@@ -257,17 +257,15 @@ $datetime-font-weight: 600;
   }
 }
 
-.card--full__image-wrapper{
+.card--full__image{
   position: relative;
+  background-size: cover;
   > .card__content{
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 1;
   }
-}
-
-.card--full__image{
-  position: relative;
   &:after{
     content: "";
     display: block;
@@ -276,10 +274,32 @@ $datetime-font-weight: 600;
     position: absolute;
     top: 0;
     background: linear-gradient(to right, rgba($white,1),rgba($white,0) 80%);
+    z-index: 0;
   }
 }
 
 /* Card full width process variant */
+
+
+
+.card--process__row{
+ display: flex;
+}
+
+.card--process__column{
+  .card--full__image-wrapper{
+    height: 100%;
+    overflow: hidden;
+  }
+  .card--full__image{
+    height: 100%;
+    > img{
+      min-height: 100%;
+      max-width: initial;
+      position: absolute;
+    }
+  }
+}
 
 .card--process__footer{
   display: flex;
