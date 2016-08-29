@@ -7,7 +7,7 @@ activepage : processes
 <%= partial 'partials/template_top' %>
 
 <main class="wrapper">
-  <div class="row collapse">
+  <div class="row section">
     <h1>Processos destacats</h1>
 
     <div class="card card--full card--process">
@@ -28,6 +28,8 @@ activepage : processes
               lorem leo, vehicula at nibh quis, facilisis accumsan turpis. Fusce
               rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem
               leo, vehicula at nibh quis...</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
           </div>
         </div>
         <div class="column medium-6 card--process__column">
@@ -103,6 +105,8 @@ activepage : processes
               lorem leo, vehicula at nibh quis, facilisis accumsan turpis. Fusce
               rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem
               leo, vehicula at nibh quis...</p>
+            <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
           </div>
         </div>
         <div class="column medium-6 card--process__column">
@@ -162,9 +166,528 @@ activepage : processes
 
   </div>
 
-  <div class="row">
+  <section class="section row collapse">
     <%= partial 'partials/order_by_processes' %>
-  </div>
+    <div class="row">
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan urbanístico de Gracia</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan de fomento del tursimo de la Barceloneta</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan urbanístico de Gracia</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan urbanístico de Gracia</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan de fomento del tursimo de la Barceloneta</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan urbanístico de Gracia</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan urbanístico de Gracia</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan de fomento del tursimo de la Barceloneta</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="columns large-4 medium-6">
+        <div class="card card--process">
+          <div class="card__content">
+            <a href="/action-view" class="card__link">
+              <h4>Plan urbanístico de Gracia</h4>
+            </a>
+            <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
+              de càrrega i descàrrega per garantir uns fluxos de mobilitat
+              sostenibles i respectuosos. Sed ullamcorper tellus erat, non
+              ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
+             <p class="card--process__date">Fecha de finalización:
+              <strong>23/10/2016</strong></p>
+          </div>
+          <div class="card--process__footer">
+            <a href="proposals" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-proposals"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                propuestas
+                <span class="card--process__footer__number">348</span>
+              </span>
+            </a>
+            <a href="actions" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-actions"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                actuacions
+                <span class="card--process__footer__number">5</span>
+              </span>
+            </a>
+            <a href="debates" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-debates"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                debates
+                <span class="card--process__footer__number">12</span>
+              </span>
+            </a>
+            <a href="meetings" class="card--process__footer__item card__link">
+              <svg width="30" height="30" class="card--process__footer__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#shape-icon-meetings"></use>
+              </svg>
+              <span class="card--process__footer__desc">
+                citas
+                <span class="card--process__footer__number">6</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <%= partial 'partials/template_bottom' %>

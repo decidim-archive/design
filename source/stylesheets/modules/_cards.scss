@@ -301,6 +301,10 @@ $datetime-font-weight: 600;
   }
 }
 
+.card--process__date{
+  font-size: $small-font-size;
+}
+
 .card--process__footer{
   display: flex;
   flex-wrap: wrap;
@@ -309,13 +313,25 @@ $datetime-font-weight: 600;
 .card--process__footer__item{
   border-top: $border;
   border-right: $border;
-  padding: $card-padding $card-padding*2;
+  padding: $card-padding/2 $card-padding;
   flex-grow: 1;
-  flex-basis: 25%;
+  flex-basis: 50%;
+  width: 50%;
   display: flex;
   align-items: center;
-  &:last-of-type{
+  &:nth-of-type(2n){
     border-right: 0;
+  }
+  .card--full &{
+    width: 25%;
+    flex-basis: 25%;
+    padding: $card-padding $card-padding*2;
+    &:nth-of-type(n){
+      border-right: $border;
+    }
+    &:last-of-type{
+      border-right: 0;
+    }
   }
 }
 
@@ -323,8 +339,11 @@ $datetime-font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 600;
-  font-size: 1.1rem;
-  margin-left: .5rem;
+  margin-left: .25rem;
+  .card--full & {
+    font-size: 1.1rem;
+    margin-left: .5rem;
+  }
 }
 
 .card--process__footer__number{
