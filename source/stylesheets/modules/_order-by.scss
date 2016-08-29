@@ -6,6 +6,7 @@ $order-border: $border;
   border-bottom: $order-border;
   margin-bottom: 1rem;
   display: flex;
+  align-items: baseline;
 }
 
 .order-by__text{
@@ -25,3 +26,26 @@ $order-border: $border;
     }
   }
 }
+
+.order-by__tab{
+  color: $muted;
+  font-weight: normal;
+  &:after{
+    content: "";
+    display: inline-block;
+    height: .75em;
+    border-left: $border;
+    margin: 0 .75rem;
+    vertical-align: middle;
+  }
+  &.is-active{
+    color: $anchor-color;
+  }
+  &:first-of-type{
+    padding-left: 0;
+  }
+  &:last-of-type:after{
+    border-left: none;
+  }
+}
+

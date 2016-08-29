@@ -247,3 +247,119 @@ $datetime-font-weight: 600;
 .card--list__data__number{
   @extend .card-data__item__number;
 }
+
+/* Card full width variant */
+
+.card--full{
+  margin-bottom: $card-margin-bottom*2;
+  .card__content{
+    padding: $card-padding*2;
+  }
+}
+
+.card--full__image{
+  background-size: cover;
+  position: relative;
+  &:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to bottom, rgba($white,1),rgba($white,0) 80%);
+    z-index: 0;
+    @include breakpoint(medium){
+      background: linear-gradient(to right, rgba($white,1),rgba($white,0) 80%);
+    }
+  }
+  > .card__content{
+    position: relative;
+    z-index: 1;
+    @include breakpoint(medium){
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+/* Card full width process variant */
+
+
+ @include breakpoint(medium){
+  .card--process__row{
+      display: flex;
+  }
+
+  .card--process__column{
+    .card--full__image-wrapper{
+      height: 100%;
+      overflow: hidden;
+    }
+    .card--full__image{
+      height: 100%;
+      > img{
+        min-height: 100%;
+        max-width: initial;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.card--process__date{
+  font-size: $small-font-size;
+}
+
+.card--process__footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card--process__footer__item{
+  border-top: $border;
+  border-right: $border;
+  padding: $card-padding/2 $card-padding;
+  flex-grow: 1;
+  flex-basis: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  &:nth-of-type(2n){
+    border-right: 0;
+  }
+  .card--full &{
+    padding: $card-padding;
+    @include breakpoint(large){
+      width: 25%;
+      flex-basis: 25%;
+      padding: $card-padding $card-padding*2;
+      &:nth-of-type(n){
+        border-right: $border;
+      }
+      &:last-of-type{
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.card--process__footer__desc{
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 600;
+  margin-left: .25rem;
+  .card--full & {
+    font-size: 1.1rem;
+    margin-left: .5rem;
+  }
+}
+
+.card--process__footer__number{
+  display: block;
+  color: $muted;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
