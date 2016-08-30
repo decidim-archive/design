@@ -6,7 +6,7 @@ $gutter-medium: map-get($grid-column-gutter, medium);
 //Styles
 
 .info-header{
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   @include breakpoint(medium){
     display: flex;
     align-items: center;
