@@ -7,12 +7,16 @@ title: Registro -- Decidim Barcelona
 <main class="wrapper">
   <div class="row collapse">
     <div class="row collapse process-header">
-      <div class="columns">
-        <h1>Registra't</h1>
+      <div class="columns large-8">
+        <h1>Registra't com particular | com col·lectiu</h1>
+        <p>
+          Ja tens compte?
+          <a href="#">Entra</a>
+        </p>
       </div>
     </div>
     <div class="row">
-      <div class="main-container columns medium-4">
+      <div class="main-container columns medium-4 medium-centered">
         <div class="main-container__content">
           <form>
             <div>
@@ -40,21 +44,22 @@ title: Registro -- Decidim Barcelona
             </fieldset>
             <button type="submit" class="button expanded">Registra't</button>
           </form>
+          <div class="social-register">
+            <h5 class="social-register__heading">O registra't amb:</h5>
+            <a class="social-register__button social-register__button--twitter" href="/users/auth/twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a class="social-register__button social-register__button--facebook" href="/users/auth/facebook">
+              <span class="fa fa-facebook"></span>
+            </a>
+            <a class="social-register__button social-register__button--google" href="/users/auth/google_oauth2">
+              <span class="fa fa-google"></span>
+            </a>
+          </div>
         </div>
-    </div>
-    <div class="columns medium-4">
-      <!--<a class="button expanded" href="/users/auth/twitter">
-        Registra't amb Twitter
-      </a>
-      <a class="button expanded" href="/users/auth/facebook">
-        Registra't amb Facebook
-      </a>
-      <a class="button expanded" href="/users/auth/google_oauth2">
-        Registra't amb Google
-      </a>-->
+      </div>
     </div>
   </div>
-</div>
 </main>
 
 <%= partial 'partials/template_bottom' %>
