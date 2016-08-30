@@ -33,11 +33,8 @@ $comment-form-bg: $light-gray;
 }
 
 .comment{
-  .comment-thread &:nth-of-type(n+2){
-    border-top: $border;
-  }
   &--highlight{
-    background: $comment-highlight-bg;
+    background: $comment-highlight-bg !important;
   }
 }
 
@@ -59,7 +56,7 @@ $comment-form-bg: $light-gray;
 
 .comment--nested{
   background: $comment-nested-bg;
-  margin: -$comment-padding $comment-padding $comment-padding;
+  margin: $comment-padding;
   padding-bottom: 1px;
   &.comment--nested--alt{
    background: $comment-nested-alt-bg;
