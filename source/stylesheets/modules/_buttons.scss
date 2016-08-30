@@ -1,3 +1,19 @@
+/* Foundation button overrides*/
+
+.button{
+  &.small{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  &.tiny{
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+}
+
+
+/*Extra buttons styles*/
+
 .link{
   color: $anchor-color;
 }
