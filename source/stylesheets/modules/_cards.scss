@@ -91,6 +91,7 @@ $datetime-font-weight: 600;
 
 .card__footer--data{
   display: flex;
+  align-items: center;
   .card__content{
     flex-grow: 1;
   }
@@ -158,10 +159,6 @@ $datetime-font-weight: 600;
 
 .card__support{
   padding: $card-padding;
-  .button{
-    display: block;
-    margin-bottom: 0;
-  }
 }
 
 .card__support__data{
