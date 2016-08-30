@@ -1,0 +1,39 @@
+//Vars
+$main-footer-bg: $black;
+$mini-footer-bg: $dark-gray;
+
+//Common
+
+.main-footer,
+.mini-footer{
+  color: $medium-gray;
+  a{
+    color: darken($medium-gray, 40%);
+    &:hover{
+      color: darken($medium-gray, 20%);
+    }
+  }
+}
+
+//Main footer
+.main-footer{
+  background-color: $main-footer-bg;
+  position: relative;
+  padding: 1rem 0;
+  min-height: 76px;
+}
+
+.main-footer__badge{
+  position: absolute;
+  width: 140px;
+}
+
+//Mini footer
+.mini-footer{
+  padding: 1rem 0;
+  background-color: $mini-footer-bg;
+}
+
+.mini-footer__text{
+  text-align: right;
+}
