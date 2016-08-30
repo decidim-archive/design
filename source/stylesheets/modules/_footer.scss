@@ -28,6 +28,30 @@ $mini-footer-bg: $dark-gray;
   width: 140px;
 }
 
+.footer-nav{
+  list-style: none;
+  padding-top: .5rem;
+  margin: 0;
+  li{
+    display: inline-block;
+    padding: 0 1rem;
+  }
+}
+
+.footer-social{
+  list-style: none;
+  padding-top: .5rem;
+  margin: 0;
+  li{
+    display: inline-block;
+    padding-left: 1rem;
+  }
+}
+
+.footer-social__icon{
+  font-size: 120%;
+}
+
 //Mini footer
 .mini-footer{
   padding: 1rem 0;
