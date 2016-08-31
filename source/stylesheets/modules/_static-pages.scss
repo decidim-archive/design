@@ -42,3 +42,15 @@
     }
   }
 }
+
+.static__message{
+  text-align: center;
+  padding: 2rem 1rem;
+  @include breakpoint(medium){
+    padding: 4rem 1.5rem;
+  }
+}
+
+.static__message__cta{
+  margin-top: 2rem;
+}
