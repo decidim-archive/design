@@ -1,13 +1,68 @@
 .social-register{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button--social{
+  padding: 0 1.5rem 0 1rem;
+  margin: 0 .5rem;
+  &--twitter{
+    background-color: $twitter;
+    &:hover{
+      background-color: lighten($twitter,5);
+    }
+  }
+  &--facebook{
+    background-color: $facebook;
+    &:hover{
+      background-color: lighten($facebook,5);
+    }
+  }
+  &--google{
+    background-color: $google;
+    &:hover{
+      background-color: lighten($google,5);
+    }
+  }
+}
+
+.button--social__icon{
+  font-size: 1.2rem;
+  vertical-align: middle;
+  padding: 0.85em 1rem 0.85em 0;
+  border-right: 1px solid rgba(black,.075);
+  margin-right: .5rem;
+}
+
+.register__separator{
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+  margin-bottom: 2rem;
+  &:before,
+  &:after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 45%;
+    background-color: $medium-gray;
+    position: absolute;
+    top: 50%;
+    //left: 0;
+    z-index: -1;
+  }
+  &:after{
+    left: inherit;
+    right: 0;
+  }
+}
+
+.register-form{
   margin-top: 2rem;
-}
-
-.social-register__heading{
-  display: inline-block;
-}
-
-.social-register__button{
-  background-color: red;
-  color: $white;
-  border-radius: 50%;
+  .button{
+    margin-top: 2rem;
+  }
 }
