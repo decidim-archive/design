@@ -1,0 +1,77 @@
+---
+title: Registro -- Decidim Barcelona
+---
+
+<%= partial 'partials/template_top' %>
+
+<main class="wrapper">
+  <div class="row collapse">
+    <div class="row collapse process-header">
+      <div class="columns large-8 large-centered text-center">
+        <h1>Entra a Decidim</h1>
+        <p>
+          Ets nou a la plataforma?
+          <a href="user-register">Crea't un compte</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="main-container columns medium-9 medium-centered">
+        <div class="main-container__content">
+          <div class="social-register">
+            <a class="button button--social button--social--twitter"
+               href="/users/auth/twitter">
+              <span class="button--social__icon fa fa-twitter"></span>
+              Entra amb Twitter
+            </a>
+            <a class="button button--social button--social--facebook"
+               href="/users/auth/facebook">
+              <span class="button--social__icon fa fa-facebook"></span>
+              Entra amb Facebook
+            </a>
+            <a class="button button--social button--social--google"
+               href="/users/auth/google_oauth2">
+              <span class="button--social__icon fa fa-google"></span>
+              Entra amb Google
+            </a>
+          </div>
+          <div class="row">
+            <div class="columns large-6 medium-centered">
+              <span class="register__separator">o bé</span>
+              <form class="register-form">
+                <div>
+                  <div>
+                    <label>Adreça electrònica
+                      <input type="email" placeholder="exemple@domini.com">
+                    </label>
+                  </div>
+                  <div>
+                    <label>Contrasenya
+                      <input type="email" placeholder="Contrasenya">
+                    </label>
+                  </div>
+                </div>
+                <fieldset>
+                  <label>
+                    <input type="checkbox">
+                    Recorda'm
+                  </label>
+                </fieldset>
+                <button type="submit" class="button expanded">Registra't</button>
+              </form>
+              <p class="text-center">
+                <a href="#">Has oblidat la contrasenya?</a>
+              </p>
+              <p class="text-center">
+                <a href="#">No has rebut instruccions per confirmar el compte?</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%= partial 'partials/template_bottom' %>
+
