@@ -2,11 +2,14 @@
   margin: 2rem 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button--social{
-  padding: 0 1.5rem 0 1rem;
-  margin: 0 .5rem;
+  padding: 0 1.5rem 0 0;
+  margin: 0 .5rem 1rem;
+  text-align: left;
+  flex-basis: 250px;
   &--twitter{
     background-color: $twitter;
     &:hover{
@@ -30,9 +33,11 @@
 .button--social__icon{
   font-size: 1.2rem;
   vertical-align: middle;
-  padding: 0.85em 1rem 0.85em 0;
+  padding: 0.85em 1rem;
   border-right: 1px solid rgba(black,.075);
   margin-right: .5rem;
+  min-width: 3rem;
+  text-align: center;
 }
 
 .register__separator{
@@ -42,22 +47,22 @@
   z-index: 1;
   font-style: italic;
   margin-bottom: 2rem;
-  &:before,
-  &:after{
+  &:before{
     content: "";
     display: block;
     height: 1px;
-    width: 45%;
+    width: 100%;
     background-color: $medium-gray;
     position: absolute;
     top: 50%;
-    //left: 0;
     z-index: -1;
   }
-  &:after{
-    left: inherit;
-    right: 0;
-  }
+}
+
+.register__separator__text{
+  display: inline-block;
+  background: $white;
+  padding: 0 1rem;
 }
 
 .register-form{
