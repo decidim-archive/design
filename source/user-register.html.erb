@@ -52,7 +52,7 @@ title: Registro -- Decidim Barcelona
                     id="organitzacio">
                   <label for="organitzacio">Organització/Col·lectiu</label>
                 </div>
-                <div>
+                <div class="user-person">
                   <div>
                     <label>Nom d'usuari
                       <input type="text" placeholder="Usuari"
@@ -62,6 +62,33 @@ title: Registro -- Decidim Barcelona
                       en les teves publicacions. Amb l'objectiu de garantitzar
                       l'anonimat pot ser qualsevol nom.</p>
                   </div>
+                </div>
+                <div class="user-org" style="display:none">
+                  <div>
+                    <label>Nom de l'organització/col·lectiu
+                      <input type="text" placeholder="Organització">
+                    </label>
+                  </div>
+                  <div>
+                    <label>NIF
+                      <input type="text" placeholder="12345678-X">
+                    </label>
+                  </div>
+                  <div>
+                    <label>Persona responsable de l'organització
+                      <input type="text" placeholder="Nom i cognoms"
+                      aria-describedby="userOrg">
+                    </label>
+                    <p class="help-text" id="userOrg">Nom de la persona que
+                      representa l'associació o col·lectiu, en nom de la qual es
+                      presentaran les propostes</p>
+                  </div>
+                  <div>
+                    <label>Telèfon
+                      <input type="tel" placeholder="Telèfon de contacte">
+                    </label>
+                  </div>
+                </div>
                   <div>
                     <label>Adreça electrònica
                       <input type="email" placeholder="exemple@domini.com">
@@ -69,10 +96,9 @@ title: Registro -- Decidim Barcelona
                   </div>
                   <div>
                     <label>Contrasenya
-                      <input type="email" placeholder="Contrasenya">
+                      <input type="password" placeholder="Contrasenya">
                     </label>
                   </div>
-                </div>
                 <fieldset>
                   <label>
                     <input type="checkbox">
