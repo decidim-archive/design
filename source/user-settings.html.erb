@@ -15,7 +15,8 @@ title: Decidim Barcelona
         <div class="row collapse main-container--side-panel">
           <div class="columns medium-4 large-3">
             <div class="side-panel">
-              <ul class="tabs vertical side-panel__tabs" id="example-vert-tabs" data-tabs>
+              <ul class="tabs vertical side-panel__tabs" id="example-vert-tabs" 
+                data-tabs>
                 <li class="tabs-title is-active">
                   <a href="#userData" aria-selected="true">Datos personales</a>
                 </li>
@@ -33,22 +34,38 @@ title: Decidim Barcelona
           </div>
           <div class="columns medium-8 large-9">
             <div class="main-container__content">
-              <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+              <div class="tabs-content vertical"
+                data-tabs-content="example-vert-tabs">
                 <div class="tabs-panel is-active" id="userData">
-                  <form>
-                    <div>
-                      <label>Nom d'usuari
-                        <input type="text" placeholder="Usuari"
-                          value="Maria Martínez">
-                      </label>
+                  <div class="row">
+                    <div class="columns large-3">
+                      <a href="#">
+                        <img class="thumbnail" src="/images/demo-avatar-big.jpg">
+                      </a>
                     </div>
-                    <div>
-                      <label>Adreça electrònica
-                        <input type="email" placeholder="nom@domini.com"
-                          value="maria@gmail.com">
-                      </label>
-                    </div>
-                  </form>
+                    <form class="columns large-8 end user-form">
+                      <div>
+                        <label><span class="user-form__label">Nom d'usuari</span>
+                          <input type="text" placeholder="Usuari"
+                            value="Maria Martínez">
+                        </label>
+                      </div>
+                      <div>
+                        <label><span class="user-form__label">Adreça electrònica</span>
+                          <input type="email" placeholder="nom@domini.com"
+                            value="maria@gmail.com">
+                        </label>
+                      </div>
+                      <div>
+                        <label><span class="user-form__label">
+                          <a href="">Cambiar contrasenya</a></span>
+                          <input type="password" placeholder="*******"
+                            disabled>
+                        </label>
+                      </div>
+                      <button type="submit" class="button disabled">Guarda els canvis</button>
+                    </form>
+                  </div>
                 </div>
 
                 <div class="tabs-panel" id="panel2v">
