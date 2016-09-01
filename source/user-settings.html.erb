@@ -1,5 +1,6 @@
 ---
 title: Decidim Barcelona
+activeuser: logged
 ---
 
 <%= partial 'partials/template_top' %>
@@ -38,7 +39,7 @@ title: Decidim Barcelona
                 data-tabs-content="example-vert-tabs">
                 <div class="tabs-panel is-active" id="userData">
                   <div class="row">
-                    <div class="columns large-4">
+                    <div class="columns large-4 text-center">
                       <a href="#" data-open="avatarChange">
                         <img class="thumbnail" src="/images/demo-avatar-big.jpg">
                       </a>
@@ -66,7 +67,9 @@ title: Decidim Barcelona
                             value="maria@gmail.com">
                         </label>
                       </div>
-                      <a data-toggle="passwordChange">Cambiar contrasenya</a>
+                      <p>
+                        <a data-toggle="passwordChange">Cambiar contrasenya</a>
+                      </p>
                       <div id="passwordChange" class="toggle-show"
                         data-toggler=".is-expanded">
                         <label>
