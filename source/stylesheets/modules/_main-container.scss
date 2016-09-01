@@ -52,7 +52,9 @@ $container-padding-2y: 2rem;
   .tabs-title{
     border-bottom: $border;
     &:last-of-type{
-      margin-bottom: 4rem;
+      @include breakpoint(medium){
+        margin-bottom: 4rem;
+      }
     }
     >[role=tab],
     >a{
