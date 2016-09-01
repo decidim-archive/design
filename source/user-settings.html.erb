@@ -15,19 +15,19 @@ title: Decidim Barcelona
         <div class="row collapse main-container--side-panel">
           <div class="columns medium-4 large-3">
             <div class="side-panel">
-              <ul class="tabs vertical side-panel__tabs" id="example-vert-tabs" 
+              <ul class="tabs vertical side-panel__tabs" id="example-vert-tabs"
                 data-tabs>
                 <li class="tabs-title is-active">
                   <a href="#userData" aria-selected="true">Datos personales</a>
                 </li>
                 <li class="tabs-title">
-                  <a href="#panel2v">Estado de la cuenta</a>
+                  <a href="#accountStatus">Estado de la cuenta</a>
                 </li>
                 <li class="tabs-title">
-                  <a href="#panel3v">Notificaciones</a>
+                  <a href="#userNotifications">Notificaciones</a>
                 </li>
                 <li class="tabs-title">
-                  <a href="#panel2v">Darse de baja</a>
+                  <a href="#deleteAccount">Darse de baja</a>
                 </li>
               </ul>
             </div>
@@ -38,42 +38,158 @@ title: Decidim Barcelona
                 data-tabs-content="example-vert-tabs">
                 <div class="tabs-panel is-active" id="userData">
                   <div class="row">
-                    <div class="columns large-3">
-                      <a href="#">
+                    <div class="columns large-4">
+                      <a href="#" data-open="avatarChange">
                         <img class="thumbnail" src="/images/demo-avatar-big.jpg">
                       </a>
+                      <div class="reveal" id="avatarChange" data-reveal>
+                        <button class="close-button" data-close
+                          aria-label="Cerrar ventana" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h3>Selecciona una imagen de perfil</h3>
+                        <input type="file">
+                      </div>
                     </div>
                     <form class="columns large-8 end user-form">
                       <div>
-                        <label><span class="user-form__label">Nom d'usuari</span>
+                        <label>
+                          <span class="user-form__label">Nom d'usuari</span>
                           <input type="text" placeholder="Usuari"
                             value="Maria Martínez">
                         </label>
                       </div>
                       <div>
-                        <label><span class="user-form__label">Adreça electrònica</span>
+                        <label>
+                          <span class="user-form__label">Adreça electrònica</span>
                           <input type="email" placeholder="nom@domini.com"
                             value="maria@gmail.com">
                         </label>
                       </div>
-                      <div>
-                        <label><span class="user-form__label">
-                          <a href="">Cambiar contrasenya</a></span>
-                          <input type="password" placeholder="*******"
-                            disabled>
+                      <a data-toggle="passwordChange">Cambiar contrasenya</a>
+                      <div id="passwordChange" class="toggle-show"
+                        data-toggler=".is-expanded">
+                        <label>
+                          <span class="user-form__label">Contrasenya actual</span>
+                          <input type="password" placeholder="*******">
+                        </label>
+                        <label>
+                          <span class="user-form__label">Nova contrasenya</span>
+                          <input type="password">
                         </label>
                       </div>
-                      <button type="submit" class="button disabled">Guarda els canvis</button>
+                      <button type="submit" class="button disabled">
+                        Guarda els canvis</button>
                     </form>
                   </div>
                 </div>
 
-                <div class="tabs-panel" id="panel2v">
-                  <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                <div class="tabs-panel" id="accountStatus">
+                  <div class="row">
+                    <div class="columns large-4">
+                      <ul class="list-check">
+                        <li class="list-check__ok">
+                          <span class="fa fa-check list-check__icon"></span>
+                          Participar en debates</li>
+                        <li class="list-check__ok">
+                          <span class="fa fa-check list-check__icon"></span>
+                          Crear nuevas propuestas</li>
+                        <li class="list-check__ko">
+                          <span class="fa fa-ban list-check__icon"></span>
+                          Apoyar propuestas</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                    <div class="columns large-8 end">
+                      <div class="callout warning">
+                        <p>Tu cuenta no está verificada.</p>
+                      </div>
+                      <p>Solo las personas empadronadas en Barcelona pueden apoyar
+                        propuestas. Si estás inscrito en el padrón, por favor
+                        verifica tu cuenta para sacarle el máximo partido a
+                        Decidim.</p>
+                      <button class="button">Verifica tu cuenta ahora</button>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="tabs-panel" id="panel3v">
-                  <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+                <div class="tabs-panel" id="userNotifications">
+                  <h3>Quiero recibir notificaciones:</h3>
+                  <form>
+                    <div class="switch tiny switch-with-label">
+                      <label>
+                        <input class="switch-input" type="checkbox">
+                        <span class="switch-paddle"></span>
+                        <span class="switch-label">
+                          Cuando alguien comenta en mis propuestas o debates
+                        </span>
+                      </label>
+                    </div>
+                    <div class="switch tiny switch-with-label">
+                      <label>
+                        <input class="switch-input" type="checkbox">
+                        <span class="switch-paddle"></span>
+                        <span class="switch-label">
+                          Cuando alguien contesta a mis comentarios
+                        </span>
+                      </label>
+                    </div>
+                    <div class="switch tiny switch-with-label">
+                      <label>
+                        <input class="switch-input" type="checkbox" checked>
+                        <span class="switch-paddle"></span>
+                        <span class="switch-label">
+                          Resumen semanal de actividad
+                        </span>
+                      </label>
+                    </div>
+                    <div class="switch tiny switch-with-label">
+                      <label>
+                        <input class="switch-input" type="checkbox" checked>
+                        <span class="switch-paddle"></span>
+                        <span class="switch-label">
+                          Información sobre futuros procesos de participación
+                        </span>
+                      </label>
+                    </div>
+                    <button type="submit" class="button disabled">
+                        Guarda els canvis</button>
+                  </form>
+                </div>
+
+                <div class="tabs-panel" id="deleteAccount">
+                  <div class="row">
+                    <div class="columns large-8 end">
+                      <div class="callout alert">
+                        <p>Aquesta acció no es pot desfer. Una vegada donis de
+                          baixa teu compte, no podràs tornar a entrar-hi com a
+                          usuari.</p>
+                      </div>
+                      <p>Si lo deseas, puedes indicarnos el motivo por el que te
+                        quieres dar de baja (opcional)</p>
+                      <form class="user-form">
+                        <div>
+                          <label>
+                            <span class="user-form__label">Motivo de la baja</span>
+                            <textarea type="text" rows="2"
+                              placeholder="Escribe aquí tu motivo"></textarea>
+                          </label>
+                        </div>
+                        <button class="button" data-open="deleteConfirm">
+                          Borrar mi cuenta</button>
+                        <div class="tiny reveal" id="deleteConfirm"
+                          data-reveal>
+                          <p>Estás seguro de que quieres borrar tu cuenta?</p>
+                          <button class="button expanded">
+                          Sí, quiero borrar mi cuenta</button>
+                          <button class="close-button" data-close
+                            aria-label="Cerrar ventana" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                    </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

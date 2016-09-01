@@ -8,3 +8,16 @@
 .help-text{
   line-height: 1.2;
 }
+
+/* Switch additional styles */
+
+.switch-with-label{
+  > label{
+    display: flex;
+    align-items: center;
+  }
+  .switch-paddle{
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
