@@ -6,7 +6,7 @@
 </a>
 <div class="topbar title-bar">
   <div class="row">
-    <div class="columns small-12 medium-4 topbar__lang">
+    <div class="columns small-12 medium-4 topbar__dropmenu">
       <ul class="dropdown menu" data-dropdown-menu>
         <li class="is-dropdown-submenu-parent">
           <a href="#">Català</a>
@@ -30,12 +30,46 @@
           <span class="fa fa-bars"></span>
         </button>
       </div>
-      <div class="topbar__user hide-for-small-only" data-set="nav-login-holder">
-        <div class="topbar__user__login js-append">
-          <a href="/user-register">Regístrate</a>
-          <a href="/user-login">Entra</a>
+      <% if current_page.data.activeuser == "logged" %>
+        <div class="topbar__dropmenu topbar__user__logged">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="is-dropdown-submenu-parent hide-for-small-only">
+                <a href="#" class="hide-for-mobile">
+                  <span class="author author--inline">
+                    <span class="author__name">
+                      <span class="author__avatar author__avatar--small">
+                        <img src="/images/demo-avatar.jpg" alt="">
+                      </span>
+                      María Martínez
+                    </span>
+                  </span>
+                </a>
+              <ul class="menu is-dropdown-submenu js-append usermenu-off-canvas">
+                <li><a href="#">Notificaciones (35)</a></li>
+                <li><a href="#">Siguiendo (12)</a></li>
+                <li><a href="#">Tu cuenta</a></li>
+                <li><a href="#">Salir</a></li>
+              </ul>
+              <span data-set="nav-login-holder" class="hide-for-small-only">
+                <!-- Repeated due to dropdown limitations -->
+                <ul class="menu is-dropdown-submenu js-append usermenu-off-canvas">
+                  <li><a href="#">Notificaciones (35)</a></li>
+                  <li><a href="#">Siguiendo (12)</a></li>
+                  <li><a href="#">Tu cuenta</a></li>
+                  <li><a href="#">Salir</a></li>
+                </ul>
+              </span>
+            </li>
+          </ul>
         </div>
-      </div>
+      <% else %>
+        <div class="topbar__user hide-for-small-only" data-set="nav-login-holder">
+            <div class="topbar__user__login js-append">
+              <a href="/user-register">Regístrate</a>
+              <a href="/user-login">Entra</a>
+            </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

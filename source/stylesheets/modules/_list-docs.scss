@@ -8,3 +8,22 @@
   color: $muted;
   margin-right: 3px;
 }
+
+.list-check{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > li{
+    margin-bottom: 1rem;
+  }
+}
+
+.list-check__icon{
+  font-size: 1.4rem;
+  .list-check__ok &{
+    color: $success;
+  }
+  .list-check__ko &{
+    color: $alert;
+  }
+}
