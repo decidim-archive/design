@@ -1,0 +1,70 @@
+---
+title: Decidim Barcelona
+---
+
+<%= partial 'partials/template_top' %>
+
+<main class="wrapper">
+  <div class="row collapse">
+    <div class="columns">
+      <h1>Mi cuenta</h1>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="main-container">
+        <div class="row collapse main-container--side-panel">
+          <div class="columns medium-4 large-3">
+            <div class="side-panel">
+              <ul class="tabs vertical side-panel__tabs" id="example-vert-tabs" data-tabs>
+                <li class="tabs-title is-active">
+                  <a href="#userData" aria-selected="true">Datos personales</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#panel2v">Estado de la cuenta</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#panel3v">Notificaciones</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#panel2v">Darse de baja</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="columns medium-8 large-9">
+            <div class="main-container__content">
+              <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+                <div class="tabs-panel is-active" id="userData">
+                  <form>
+                    <div>
+                      <label>Nom d'usuari
+                        <input type="text" placeholder="Usuari"
+                          value="Maria Martínez">
+                      </label>
+                    </div>
+                    <div>
+                      <label>Adreça electrònica
+                        <input type="email" placeholder="nom@domini.com"
+                          value="maria@gmail.com">
+                      </label>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="tabs-panel" id="panel2v">
+                  <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                </div>
+
+                <div class="tabs-panel" id="panel3v">
+                  <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%= partial 'partials/template_bottom' %>
+
