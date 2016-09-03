@@ -27,19 +27,34 @@
 }
 
 .map__date-adress{
-  display: flex;
+  @include breakpoint(medium){
+    display: flex;
+  }
   margin-bottom: 1rem;
   .card__datetime{
+    float: none;
     border-color: $meetings;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
     padding: .5em 1em;
+    @include breakpoint(medium){
+      margin-right: .5rem;
+      margin-bottom: 0;
+    }
   }
   .address{
     flex: 1;
     margin-bottom: 0;
+  }
+  
+  .address__icon{
+    display: none;
+    @include breakpoint(medium){
+      display: block;
+    }
   }
 }
 
