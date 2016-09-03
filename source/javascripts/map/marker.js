@@ -13,6 +13,7 @@ $(function () {
         });
         marker.addListener('click', function() {
           infoWindow.open(map, marker);
+          $(".gm-style-iw").parent().addClass("map-info");
         });
       }
     };

@@ -1,4 +1,51 @@
 #map {
   height: 100%;
   width: 100%;
+  background-color: $medium-gray;
+}
+
+.map-info{
+  background: $meetings;
+  border-radius: $global-radius;
+  > div:first-child{ //Map styles container
+    > div:first-child{ //Triangle
+      border-top-color: $meetings !important;
+    }
+    > div:nth-child(2){
+      background-color: transparent !important;
+      border-radius: $global-radius !important;
+    }
+  }
+  *{
+    box-shadow: none !important;
+  }
+}
+
+.map-info__content{
+  padding-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.map__date-adress{
+  display: flex;
+  margin-bottom: 1rem;
+  .card__datetime{
+    border-color: $meetings;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: .5em 1em;
+  }
+  .address{
+    flex: 1;
+    margin-bottom: 0;
+  }
+}
+
+.map-info__button{
+  text-align: center;
+  .button{
+    min-width: 12em;
+  }
 }
