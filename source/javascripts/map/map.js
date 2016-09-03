@@ -20,6 +20,7 @@ $(function () {
       addMarker: function(lat, lng, infoWindowContent) {
         var marker = new google.maps.Marker({
           position: _inst.latLng(lat, lng),
+          icon: decidimMarker,
           map: _inst.map
         });
         if(infoWindowContent) {
@@ -62,7 +63,15 @@ $(function () {
       '</div>'+
       '</div>'+
       '</div>';
-
+    
+    var decidimMarker = {
+    path: 'M12.47,6.31a5.79,5.79,0,1,1-5.81,5.8,5.8,5.8,0,0,1,5.81-5.8m0-6.18A12.1,12.1,0,0,1,24.46,11a11.89,11.89,0,0,1-1.57,7.23Q18.34,26.14,13.78,34a1.38,1.38,0,0,1-2.54,0Q6.65,26.09,2.07,18.15A12,12,0,0,1,10.18.41C10.94,0.26,11.72.22,12.49,0.13Z',
+    fillColor: '#DC0030',
+    fillOpacity: 1,
+    strokeColor: 'rgba(255,255,255,.8)',
+    scale: 1
+    };
+    
     var _inst = new mapsController();
     _inst.init();
     _inst.addMarker(41.3851, 2.1734, example1);
