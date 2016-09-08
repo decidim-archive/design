@@ -17,10 +17,10 @@ $(".js-append").appendAround();
 
 //Owl carousel for phase nav
 $(document).ready(function() {
-  $(".owl-carousel").owlCarousel({
+  $("[data-carousel]").owlCarousel({
     pagination: false
   });
-  var owl = $(".owl-carousel");
+  var owl = $("[data-carousel]");
   $(".next").click(function(){
     owl.trigger('owl.next');
   });

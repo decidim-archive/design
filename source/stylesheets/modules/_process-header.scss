@@ -1,9 +1,10 @@
 .process-header{
-  min-height: 300px;
   background-size: cover;
   margin-bottom: 1rem;
   position: relative;
   z-index: 0;
+  display: flex;
+  flex-direction: column;
   &:after{
     content: "";
     display: block;
@@ -27,4 +28,9 @@
   :last-child{
     margin-bottom: 0;
   }
+}
+
+.process-header__nav{
+  margin-top: auto;
+  z-index: 1;
 }
