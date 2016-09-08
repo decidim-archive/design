@@ -1,0 +1,25 @@
+.owl-carousel-wrapper{
+  position: relative;
+}
+
+.owl-wrapper{
+  display: flex !important;
+}
+
+.owl-item{
+  background: $light-gray;
+  border: 1px solid;
+}
+
+.next,
+.prev{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 500;
+}
+
+.next{
+  left: auto;
+  right: 0;
+}
