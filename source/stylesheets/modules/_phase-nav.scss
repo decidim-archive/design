@@ -1,7 +1,14 @@
+/* Variables */
+
+$arrow-width: 20px;
+$info-width: 35px;
+
+
 .phase-nav{
   position: relative;
-  margin-top: 2rem;
-  padding-right: 35px !important;
+  margin-top: 1rem;
+  padding-right: $info-width + $arrow-width !important;
+  padding-left: $arrow-width !important;
 }
 
 .phase-nav__wrapper{
@@ -59,17 +66,17 @@
 
 .phase-nav__item--info{
   position: absolute;
-  width: 35px;
-  right: 0;
+  width: $info-width;
+  right: $arrow-width;
+  top: 0;
   padding: 0;
+  background-color: rgba($white, .65);
   justify-content: center;
   .phase-nav__number{
-    background-color: $muted;
-    color: $white;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     .icon{
-      fill: $black;
+      fill: $primary;
     }
   }
 }
@@ -78,10 +85,16 @@
 .prev{
   display: none;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
   z-index: 500;
-  color: burlywood;
+  background: rgba($primary, .9);
+  height: 100%;
+  width: $arrow-width;
+  border-radius: 0;
+  .icon{
+    fill: $white;
+  }
 }
 
 .next{
@@ -94,6 +107,9 @@
 .js .next,
 .js .prev{
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .owl-wrapper{
