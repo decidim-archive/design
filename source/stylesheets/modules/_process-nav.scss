@@ -1,7 +1,8 @@
 /* Variables */
 
+$process-bg: $white;
 $process-nav-color: $body-font-color;
-$process-nav-padding-x: 1rem;
+$process-nav-padding-x: .5rem;
 $process-nav-padding-y: $container-padding-y;
 
 $process-nav-info: $primary;
@@ -13,7 +14,9 @@ $process-nav-meetings: $meetings;
 /* Navigation */
 
 .process-nav{
-  border-bottom: $border;
+  background-color: $process-bg;
+  border: $border;
+  border-top: 0;
   padding: $process-nav-padding-x $process-nav-padding-y;
   ul{
     margin: 0;
