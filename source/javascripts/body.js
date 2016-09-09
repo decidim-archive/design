@@ -18,7 +18,8 @@ $(".js-append").appendAround();
 //Owl carousel for phase nav
 $(document).ready(function() {
   $("[data-carousel]").owlCarousel({
-    pagination: false
+    pagination: false,
+    items: 4
   });
   var owl = $("[data-carousel]");
   $(".next").click(function(){
