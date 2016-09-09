@@ -17,14 +17,21 @@ $(".js-append").appendAround();
 
 //Owl carousel for phase nav
 $(document).ready(function() {
+
+  //checks the active phase number before loading the carousel
+  var activeSlide = $(".phase-nav__item.is-active").index();
+
   $("[data-carousel]").owlCarousel({
     pagination: false
   });
   var owl = $("[data-carousel]");
   $(".next").click(function(){
-    owl.trigger('owl.next');
+    owl.trigger("owl.next");
   });
   $(".prev").click(function(){
-    owl.trigger('owl.prev');
+    owl.trigger("owl.prev");
   });
+
+  //focus on active phase
+  owl.trigger('owl.jumpTo', activeSlide);
 });
