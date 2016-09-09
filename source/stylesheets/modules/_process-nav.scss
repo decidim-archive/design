@@ -81,7 +81,8 @@ $process-nav-meetings: $meetings;
 
   svg{
     margin-right: .2em;
-    vertical-align: -9px;
+    vertical-align: -5px;
+    fill: $muted;
   }
 }
 
@@ -93,7 +94,7 @@ $process-nav-meetings: $meetings;
   }
 }
 
-.process-nav__link--info{
+/*.process-nav__link--info{
   i{
     color: $process-nav-info;
   }
@@ -136,4 +137,4 @@ $process-nav-meetings: $meetings;
   span{
     border-bottom-color: $process-nav-meetings;
   }
-}
+}*/
