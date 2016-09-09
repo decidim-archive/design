@@ -62,7 +62,6 @@ $active-triangle-height: 12px;
 .phase-nav__number{
   background-color: rgba($white, .9);
   color: $dark-gray;
-  //box-shadow: 0 0 0 2px $primary;
   border-radius: 50%;
   line-height: 1;
   width: 2rem;
@@ -76,6 +75,10 @@ $active-triangle-height: 12px;
   justify-content: center;
   .is-inactive & {
     background-color: darken($muted, 20);
+  }
+  .is-active &{
+    background-color: $primary;
+    color: $white;
   }
 }
 
