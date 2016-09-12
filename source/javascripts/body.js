@@ -34,5 +34,5 @@ $(document).ready(function() {
   });
 
   //focus on active phase
-  owl.trigger('owl.jumpTo', activeSlide);
+  //owl.trigger('owl.jumpTo', activeSlide);
 });
