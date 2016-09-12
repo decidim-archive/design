@@ -1,7 +1,8 @@
 /* Variables */
 
+$process-bg: $white;
 $process-nav-color: $body-font-color;
-$process-nav-padding-x: 1rem;
+$process-nav-padding-x: .5rem;
 $process-nav-padding-y: $container-padding-y;
 
 $process-nav-info: $primary;
@@ -13,8 +14,10 @@ $process-nav-meetings: $meetings;
 /* Navigation */
 
 .process-nav{
-  border-bottom: $border;
+  background-color: $process-bg;
+  border: $border;
   padding: $process-nav-padding-x $process-nav-padding-y;
+  margin-top: .5rem;
   ul{
     margin: 0;
     list-style: none;
@@ -32,6 +35,11 @@ $process-nav-meetings: $meetings;
     li{
       display: inline-block;
       margin-right: 1.5rem;
+    }
+    .about-link{
+      font-size: 80%;
+      float: right;
+      margin-right: 0;
     }
   }
 }
@@ -78,7 +86,8 @@ $process-nav-meetings: $meetings;
 
   svg{
     margin-right: .2em;
-    vertical-align: -9px;
+    vertical-align: -5px;
+    fill: $muted;
   }
 }
 
@@ -90,7 +99,7 @@ $process-nav-meetings: $meetings;
   }
 }
 
-.process-nav__link--info{
+/*.process-nav__link--info{
   i{
     color: $process-nav-info;
   }
@@ -133,4 +142,4 @@ $process-nav-meetings: $meetings;
   span{
     border-bottom-color: $process-nav-meetings;
   }
-}
+}*/

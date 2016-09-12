@@ -1,10 +1,8 @@
 //Variables
 
-$filters-bg: $light-gray;
+$filters-bg: darken($light-gray, 2.5);
 $filters-border: $border;
 $filters-padding: 1rem;
-$filters-margin-small-y: 1rem;
-$filters-margin-small-x: .5rem;
 $filters-padding-x: 1rem;
 $filters-padding-y: 1rem;
 
@@ -18,37 +16,29 @@ $filters-padding-y: 1rem;
 
 .filters-controls{
   @include clearfix;
-  margin: $filters-margin-small-y $filters-margin-small-x;
+  margin: 1rem 0 2rem;
 }
 
 .filters-controls__trigger{
-  float: left;
-  width: 48%;
+  width: 100%;
   font-weight: 600;
   text-align: left;
   background: $light-gray;
   padding: .5rem;
   border: $border;
-  &:last-of-type{
-    float: right;
-  }
 }
 
 .filters{
   display: none;
   min-height: 100%;
-  background-color: $filters-bg;
-  border: $filters-border;
-  margin: $filters-margin-small-y $filters-margin-small-x 0;
+  //background-color: $filters-bg;
+  //border: $filters-border;
+  //margin: $filters-margin-small-y $filters-margin-small-x 0;
   padding: $filters-padding;
   @include breakpoint(medium){
     display: block;
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 0;
     padding: 0;
     margin: 0;
-    border-right: $filters-border;
   }
   .reveal &{
     display: block;
@@ -71,9 +61,10 @@ $filters-padding-y: 1rem;
   border-bottom: $border;
   padding: $filters-padding-x $filters-padding-y;
   &:first-of-type{
-    padding-top: $filters-padding-x*2;
+    padding-top: $filters-padding-x*1.5;
   }
   &:last-of-type{
+    padding-bottom: $filters-padding-x*1.5;
     border-bottom: none;
   }
   .button{

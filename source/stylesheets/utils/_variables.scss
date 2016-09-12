@@ -6,6 +6,8 @@ $success: map-get($foundation-palette, success);
 $warning: map-get($foundation-palette, warning);
 $alert: map-get($foundation-palette, alert);
 
+$light-gray-dark: darken($light-gray, 2.5);
+
 $proposals: #238FF7;
 $actions: #57D685;
 $debates: #FA6C96;

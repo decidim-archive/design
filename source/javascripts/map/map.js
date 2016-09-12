@@ -1,13 +1,13 @@
 $(function () {
   'use strict';
 
-  if($('#map').length) {
+  if($('#google-map').length) {
     var markersController = window.markersController;
 
     var mapsController = function() {};
     mapsController.prototype = {
       init: function() {
-        _inst.map = new google.maps.Map($('#map')[0], {
+        _inst.map = new google.maps.Map($('#google-map')[0], {
          //barcelona coordinates
           center: { lat: 41.3851, lng: 2.1734 },
           zoom: 12,

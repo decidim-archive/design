@@ -1,7 +1,7 @@
 $(function () {
   'use strict';
 
-  if($('#map').length) {
+  if($('#google-map').length) {
 
     var markersController = function() {};
 

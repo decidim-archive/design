@@ -3,6 +3,7 @@
 
 /* Typography - Foundation overrides */
 
+
 h2{
   line-height: 1.2;
 }
@@ -23,6 +24,34 @@ h6{
 
 hr{
   width: 50%;
+}
+
+/* New typographic styles */
+
+.text-highlight{
+  display: inline-block;
+  //background-color: rgba($white, .6);
+  color: $white;
+  //padding: 0 8px;
+  margin-bottom: 4px;
+  margin-right: 20px;
+  font-weight: 800;
+  &--large{
+    background-color: rgba($primary, .9);
+    color: $white;
+    line-height: 1.35;
+    padding: 0 8px;
+  }
+  > a{
+    color: inherit;
+    &:hover{
+      opacity: .85;
+    }
+  }
+}
+
+.text-large{
+  font-size: 130%;
 }
 
 .word-wrapper{
