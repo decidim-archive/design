@@ -6,7 +6,8 @@
       </svg>
     </button>
     <div class="phase-nav__wrapper" data-carousel>
-      <a href="" class="phase-nav__item">
+      <a href="/phase1_info" class="phase-nav__item
+      <% if current_page.data.activephase == "phase1" %> is-active<% end %>">
         <div class="phase-nav__number">
           <span>1</span>
         </div>
@@ -16,7 +17,8 @@
         </div>
       </a>
 
-      <a href="" class="phase-nav__item is-active">
+      <a href="/phase2_debates" class="phase-nav__item
+      <% if current_page.data.activephase == "phase2" %> is-active<% end %>">
         <div class="phase-nav__number">
           <span>2</span>
         </div>
