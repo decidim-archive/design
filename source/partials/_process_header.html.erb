@@ -48,7 +48,10 @@
     </div>
     <%= partial 'partials/phase_nav' %>
   </div>
-  <div class="row column">
-    <%= partial 'partials/process_nav' %>
-  </div>
+  <% if current_page.data.activephase == "processhome" %>
+  <% else %>
+    <div class="row column">
+      <%= partial 'partials/process_nav' %>
+    </div>
+  <% end %>
 </div>
