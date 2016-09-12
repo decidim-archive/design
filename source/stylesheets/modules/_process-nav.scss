@@ -16,8 +16,8 @@ $process-nav-meetings: $meetings;
 .process-nav{
   background-color: $process-bg;
   border: $border;
-  border-top: 0;
   padding: $process-nav-padding-x $process-nav-padding-y;
+  margin-top: .5rem;
   ul{
     margin: 0;
     list-style: none;

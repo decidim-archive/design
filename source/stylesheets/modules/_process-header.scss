@@ -1,5 +1,5 @@
 .process-header{
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .process-header__main{
@@ -22,7 +22,7 @@
 .process-header__container{
   position: relative;
   z-index: 1;
-  padding-top: 2rem;
+  padding: 2rem $arrow-width 1rem;
   @include breakpoint(medium){
     display: flex;
     align-items: center;
