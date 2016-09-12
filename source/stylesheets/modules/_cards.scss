@@ -1,7 +1,7 @@
 /* Variables */
 
 $card-bg: $white;
-$card-secondary-bg: $medium-gray;
+$card-secondary-bg: $light-gray-dark;
 $card-border: $border;
 $card-border-radius: $global-radius;
 $card-shadow: 0 2px 7px rgba(black,.1);
@@ -11,7 +11,7 @@ $card-margin-bottom: map-get($grid-column-gutter, medium);
 
 $card-desc-color: $muted;
 
-$card-footer-bg: $light-gray;
+$card-footer-bg: $light-gray-dark;
 
 $card-proposal: $proposals;
 $card-action: $actions;
@@ -28,7 +28,7 @@ $datetime-font-weight: 600;
   background: $card-bg;
   border: $card-border;
   border-radius: $card-border-radius;
-  //box-shadow: $card-shadow;
+  box-shadow: $card-shadow;
 }
 
 .card--secondary{
