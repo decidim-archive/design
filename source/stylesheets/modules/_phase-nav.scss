@@ -121,13 +121,18 @@ $active-triangle-height: 12px;
     width: 14px;
     height: 14px;
   }
+  &:hover{
+    .icon{
+      fill: $primary;
+    }
+  }
 }
 
 .next{
   left: auto;
   right: 0;
   border-right: 0;
-  border-left: 1px solid rgba($dark-gray, .1);
+  border-left: 1px solid rgba($white, .1);
 }
 
 /* Carousel styles*/
