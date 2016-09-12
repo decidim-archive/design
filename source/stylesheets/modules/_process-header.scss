@@ -22,7 +22,7 @@
 .process-header__container{
   position: relative;
   z-index: 1;
-  padding: 2rem $arrow-width 1rem;
+  padding: 2rem 1.5rem 1rem;
   @include breakpoint(medium){
     display: flex;
     align-items: center;
@@ -42,12 +42,13 @@
 
 .process-header__action{
   display: inline-block;
-  background: rgba($white, .6);
-  margin-bottom: 4px;
+  //background: rgba($white, .6);
+  margin-bottom: 8px;
   line-height: 1;
-  color: inherit;
+  color: white;
   font-weight: bold;
   display: inline-flex;
+  border: 1px solid rgba($white,.8);
   .action-title{
     padding: .25rem 0 .25rem .5rem;
   }
@@ -60,13 +61,17 @@
     padding: 0 .25rem;
   }
   .icon{
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
   &:hover{
-    color: inherit;
+    color: white;
+    border-color: $primary;
+    .action-icon{
+      background-color: $primary;
+    }
     .icon{
-      fill: $primary;
+      fill: $white;
     }
   }
 }

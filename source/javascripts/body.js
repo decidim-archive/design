@@ -22,7 +22,8 @@ $(document).ready(function() {
   var activeSlide = $(".phase-nav__item.is-active").index();
 
   $("[data-carousel]").owlCarousel({
-    pagination: false
+    pagination: false,
+    items: 4
   });
   var owl = $("[data-carousel]");
   $(".next").click(function(){
