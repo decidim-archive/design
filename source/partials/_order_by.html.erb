@@ -1,6 +1,8 @@
 <div class="row collapse order-by">
-  <span class="order-by__text">1467
-    <% if current_page.data.activepage == "actions" %>
+  <div class="order-by__dropdown">
+    <span class="order-by__text">Ordenar 
+      <strong>168
+      <% if current_page.data.activepage == "actions" %>
        actuacions
     <% end %>
     <% if current_page.data.activepage == "proposals" %>
@@ -12,9 +14,8 @@
     <% if current_page.data.activepage == "meetings" %>
      cites
     <% end %>
-  </span>
-  <div class="order-by__dropdown">
-    <span class="order-by__text">Ordenar per:</span>
+      </strong>
+      per:</span>
     <ul class="dropdown menu" data-dropdown-menu>
       <li>
         <a href="#">Pesos</a>
@@ -26,5 +27,8 @@
         </ul>
       </li>
     </ul>
+  </div>
+  <div class="order-by__action">
+    <button class="button small button--sc">Nova proposta</button>
   </div>
 </div>

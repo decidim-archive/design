@@ -3,27 +3,28 @@ $order-border: $border;
 
 /*Order by styles*/
 .order-by{
-  border-bottom: $order-border;
   margin-bottom: 1rem;
   display: flex;
-  align-items: baseline;
-}
-
-.order-by__text{
-  display: inline-block;
+  align-items: flex-end;
 }
 
 .order-by__dropdown{
-  margin-left: auto;
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
   .menu{
     .is-dropdown-submenu-parent > a{
       padding: 0;
-      margin-left: 1rem;
+      margin-left: .5rem;
       margin-top: .25rem;
     }
+  }
+}
+
+.order-by__action{
+  margin-left: auto;
+  justify-content: flex-end;
+  .button{
+    margin-bottom: 0;
   }
 }
 
