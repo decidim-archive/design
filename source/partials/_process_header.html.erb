@@ -25,7 +25,7 @@
             </a>
           </div>
           <div>
-            <a href="" class="process-header__action">
+            <a class="process-header__action" data-toggle="phasesInfo">
               <span class="action-title">Las fases</span>
               <span class="action-icon">
                 <svg class="icon">
@@ -35,7 +35,7 @@
             </a>
           </div>
           <div>
-            <a href="" class="process-header__action">
+            <a class="process-header__action" data-toggle="processShare">
               <span class="action-title">Compartir</span>
               <span class="action-icon">
                 <svg class="icon">
@@ -54,4 +54,29 @@
       <%= partial 'partials/process_nav' %>
     </div>
   <% end %>
+</div>
+
+<div class="reveal large" id="phasesInfo" data-reveal>
+  <div class="reveal__header">
+    <h3 class="reveal__title">Fases del projecte:</h3>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="callout warning">
+    <h3>Pendiente revisar diseño.</h3>
+  </div>
+  <%= partial 'partials/timeline' %>
+</div>
+
+<div class="reveal" id="processShare" data-reveal>
+  <div class="reveal__header">
+    <h3 class="reveal__title">Compartir:</h3>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="callout warning">
+    <h3>Pendiente revisar contenido.</h3>
+  </div>
 </div>
