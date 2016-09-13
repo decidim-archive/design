@@ -7,100 +7,104 @@ activepage : proposals
 
 <%= partial 'partials/template_top' %>
 
-<main class="wrapper">
-  <%= partial 'partials/process_header' %>
-  <div class="row">
-    <div class="columns large-9">
-      <div class="card">
-        <div class="card__content">
-          <h2 class="view-title">Cobriment de la Ronda de Dalt al seu pas per
-                la Vall d'Hebrón</h2>
-          <div class="author-data">
-            <div class="author-data__main">
-              <div class="author author--inline">
-                <a href="#" class="author__avatar author__avatar--small">
-                  <img src="/images/demo-avatar.jpg" alt="">
-                </a>
-                1 de agosto de 2016 por
-                <a href="#" class="author__name">
-                  Ajuntament de Barcelona
-                </a>
-              </div>
-            </div>
-            <div class="author-data__extra">
-              <a href="#comments" title="Comentarios">
-                <span class="fa fa-comments-o"></span> 108
-              </a>
-              <%= partial 'partials/flag' %>
-            </div>
-          </div>
-          <div class="section">
-              <span class="success label proposal-status">Acceptada</span>
-              <p>
-                Millores en un conjunt de carrers dels barris del districte que
-                incorporin la renovació integral de les seves infraestructures
-                (voreres, accessibilitat, asfaltat, enllumenat, clavegueram,
-                arbrat, mobiliari urbà...), Interiors de Canyelles, Guineueta
-                i Aiguablava-Portlligat i Amilcar-Cartellà-Av. de Borbó-Maragall,
-                connexió del carrer Pedraforca amb Agudes, accessibilitat i
-                enllumenat a Renfe Meridiana, urbanització de Nou Pins, Mina de la
-                ciutat, Canfranc, Oristà i Almansa, pèrgola del Campillo de la
-                virgen i del parc de Serra Martí, redacció del projecte del
-                passeig de la Peira, reforma de les escales de Matagalls, millores
-                a l'Av. de Borbó i projecte d'intervenció a la Font Pla de
-                Fornells. Millores en el Parc de la Guineueta incloent un espai
-                d'aparells per a la gent gran. Estudi de la viabilitat tècnica
-                d'instal·lar escales mecàniques entre Ciutat Meridiana i Torre
-                Baró per millorar la connectivitat entre els dos barris o millora
-                de l'escala actual. Millores d'accessibilitat, arranjaments i
-                enllumenat en l'àmbit de Renfe Meridiana. Millores en la
-                urbanització per a l'accessibilitat d'acord amb les
-                particularitats orogràfiques al barri de Roquetes.
-              </p>
-              <ul class="tags tags--proposal">
-                <li><a href="">transició ecológica</a></li>
-                <li><a href="">mobilitat sostenible</a></li>
-                <li><a href="">barri de Sarrià</a></li>
-              </ul>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="columns large-3">
-      <div class="extra">
-        <div class="extra__content">
-          <span class="view-header__suport-number">45</span>
-          <span class="view-header__suport-text">Apoyos</span>
-          <a href="" class="button expanded">Apoyar</a>
-          <div class="view-header__follow">
-            <a href="#">
-              <svg width="14" height="14" class="icon icon--action">
-                <use xlink:href="#icon-star" />
-              </svg>
-              Seguir propuesta
+<main>
+  <div class="wrapper">
+    <%= partial 'partials/process_header' %>
+    <div class="row column view-header">
+      <h2 class="view-title">Cobriment de la Ronda de Dalt al seu pas per
+            la Vall d'Hebrón</h2>
+      <div class="author-data">
+        <div class="author-data__main">
+          <div class="author author--inline">
+            <a href="#" class="author__avatar author__avatar--small">
+              <img src="/images/demo-avatar.jpg" alt="">
+            </a>
+            1 de agosto de 2016 por
+            <a href="#" class="author__name">
+              Ajuntament de Barcelona
             </a>
           </div>
         </div>
+        <div class="author-data__extra">
+          <a href="#comments" title="Comentarios">
+            <span class="fa fa-comments-o"></span> 108
+          </a>
+          <%= partial 'partials/flag' %>
+        </div>
       </div>
-      <div class="reference">
-        Referencia: BCN-2016-01-173
+    </div>
+    <div class="row">
+      <div class="columns large-3 large-push-9">
+        <div class="card extra">
+          <div class="card__content">
+            <span class="extra__suport-number">45</span>
+            <span class="extra__suport-text">Apoyos</span>
+            <button class="button expanded button--sc">Apoyar</button>
+            <button class="button secondary hollow small expanded button--icon">
+              <svg class="icon">
+                <use xlink:href="#icon-bell" />
+              </svg>
+              <span>Seguir propuesta</span>
+            </button>
+          </div>
+        </div>
+        <div class="reference">
+          Referencia: BCN-2016-01-173
+        </div>
+        <div class="text-center">
+          <button class="link text-center">
+            Compartir propuesta
+          </button>
+        </div>
+        <!--<%= partial 'partials/share' %>-->
       </div>
-      <%= partial 'partials/share' %>
+      <div class="columns large-9 large-pull-3">
+        <div class="section">
+          <span class="success label proposal-status">Acceptada</span>
+          <p>
+            Millores en un conjunt de carrers dels barris del districte que
+            incorporin la renovació integral de les seves infraestructures
+            (voreres, accessibilitat, asfaltat, enllumenat, clavegueram,
+            arbrat, mobiliari urbà...), Interiors de Canyelles, Guineueta
+            i Aiguablava-Portlligat i Amilcar-Cartellà-Av. de Borbó-Maragall,
+            connexió del carrer Pedraforca amb Agudes, accessibilitat i
+            enllumenat a Renfe Meridiana, urbanització de Nou Pins, Mina de la
+            ciutat, Canfranc, Oristà i Almansa, pèrgola del Campillo de la
+            virgen i del parc de Serra Martí, redacció del projecte del
+            passeig de la Peira, reforma de les escales de Matagalls, millores
+            a l'Av. de Borbó i projecte d'intervenció a la Font Pla de
+            Fornells. Millores en el Parc de la Guineueta incloent un espai
+            d'aparells per a la gent gran. Estudi de la viabilitat tècnica
+            d'instal·lar escales mecàniques entre Ciutat Meridiana i Torre
+            Baró per millorar la connectivitat entre els dos barris o millora
+            de l'escala actual. Millores d'accessibilitat, arranjaments i
+            enllumenat en l'àmbit de Renfe Meridiana. Millores en la
+            urbanització per a l'accessibilitat d'acord amb les
+            particularitats orogràfiques al barri de Roquetes.
+          </p>
+          <ul class="tags tags--proposal">
+            <li><a href="">transició ecológica</a></li>
+            <li><a href="">mobilitat sostenible</a></li>
+            <li><a href="">barri de Sarrià</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <%= partial 'partials/related_actions' %>
+        </div>
+        <div class="section">
+          <%= partial 'partials/related_meetings' %>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="columns large-9">
-      <%= partial 'partials/related_actions' %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="columns large-9">
-      <%= partial 'partials/related_meetings' %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="columns large-9" id="comments">
-      <%= partial 'partials/comments' %>
+
+  <div class="expanded">
+    <div class="wrapper wrapper--inner">
+      <div class="row">
+        <div class="columns large-9" id="comments">
+          <%= partial 'partials/comments' %>
+        </div>
+      </div>
     </div>
   </div>
 </main>

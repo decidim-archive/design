@@ -11,6 +11,11 @@
   }
 }
 
+.wrapper--inner{
+  background: $light-gray-dark;
+  padding-top: 1rem;
+}
+
 //Flexbox sticky footer
 body{
   display: flex;
