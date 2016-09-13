@@ -9,13 +9,19 @@ activepage : debates
 
 <main class="wrapper">
   <%= partial 'partials/process_header' %>
+  <div class="row columns">
+    <div class="title-action">
+      <h2 class="title-action__title">Debates abiertos</h2>
+      <a href="#" class="title-action__action button small hollow button--sc">
+        Añadir debate 
+        <svg class="icon">
+          <use xlink:href="#icon-plus" />
+        </svg>
+      </a>
+    </div>
+  </div>
   <div class="row">
     <div class="columns large-8">
-      <div class="clearfix">
-        <a href="" class="float-right button small button--sc">
-          Nuevo debate
-        </a>
-      </div>
       <div class="card card--debate">
         <div class="card__content">
           <div class="card__datetime">
