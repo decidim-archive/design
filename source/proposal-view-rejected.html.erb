@@ -1,6 +1,7 @@
 ---
 title: Propuesta -- Decidim Barcelona
 activesection: processes
+activephase: phase2
 activepage : proposals
 ---
 
@@ -8,57 +9,32 @@ activepage : proposals
 
 <main class="wrapper">
   <%= partial 'partials/process_header' %>
-  <div class="row collapse">
-    <div class="main-container">
-      <div class="main-container__content">
-        <div class="row">
-          <div class="columns medium-8">
-            <div class="view-header">
-              <h2 class="view-title">Cobriment de la Ronda de Dalt al seu pas per
-                la Vall d'Hebrón</h2>
-              <div class="author-data">
-                <div class="author-data__main">
-                  <div class="author author--inline">
-                    <a href="#" class="author__avatar author__avatar--small">
-                      <img src="/images/demo-avatar.jpg" alt="">
-                    </a>
-                    1 de agosto de 2016 por
-                    <a href="#" class="author__name">
-                      Ajuntament de Barcelona
-                    </a>
-                  </div>
-                </div>
-                <div class="author-data__extra">
-                  <a href="#comments" title="Comentarios">
-                    <span class="fa fa-comments-o"></span> 108
-                  </a>
-                  <%= partial 'partials/flag' %>
-                </div>
-              </div>
-              <div class="hide-for-medium support-wrapper-md"
-                   data-set="support-placement">
-                <div class="js-append">
-                  <div class="extra">
-                    <div class="extra__content">
-                      <span class="view-header__suport-number">45</span>
-                      <span class="view-header__suport-text">Apoyos</span>
-                      <div class="view-header__follow">
-                        <a href="#">
-                          <svg width="14" height="14" class="icon icon--action">
-                            <use xlink:href="#icon-star" />
-                          </svg>
-                          Seguir propuesta
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="reference">
-                    Referencia: BCN-2016-01-173
-                  </div>
-                </div>
+  <div class="row">
+    <div class="columns large-9">
+      <div class="card">
+        <div class="card__content">
+          <h2 class="view-title">Cobriment de la Ronda de Dalt al seu pas per
+            la Vall d'Hebrón</h2>
+          <div class="author-data">
+            <div class="author-data__main">
+              <div class="author author--inline">
+                <a href="#" class="author__avatar author__avatar--small">
+                  <img src="/images/demo-avatar.jpg" alt="">
+                </a>
+                1 de agosto de 2016 por
+                <a href="#" class="author__name">
+                  Ajuntament de Barcelona
+                </a>
               </div>
             </div>
-            <div class="section">
+            <div class="author-data__extra">
+              <a href="#comments" title="Comentarios">
+                <span class="fa fa-comments-o"></span> 108
+              </a>
+              <%= partial 'partials/flag' %>
+            </div>
+          </div>
+          <div class="section">
               <span class="warning label proposal-status">Rebutjada</span>
               <p>
                 Millores en un conjunt de carrers dels barris del districte que
@@ -95,21 +71,35 @@ activepage : proposals
                   en el moment de la planificació corresponent.</p>
             </div>
             </div>
-          </div>
-          <div class="columns medium-4 large-3 section">
-            <div class="show-for-medium" data-set="support-placement">
-            </div>
-            <%= partial 'partials/share' %>
-          </div>
         </div>
-        <div class="row">
-          <div class="section columns medium-8" id="comments">
-              <%= partial 'partials/comments' %>
+      </div>
+    </div>
+    <div class="columns large-3">
+      <div class="extra">
+        <div class="extra__content">
+          <span class="view-header__suport-number">45</span>
+          <span class="view-header__suport-text">Apoyos</span>
+          <div class="view-header__follow">
+            <a href="#">
+              <svg width="14" height="14" class="icon icon--action">
+                <use xlink:href="#icon-star" />
+              </svg>
+              Seguir propuesta
+            </a>
           </div>
         </div>
       </div>
+      <div class="reference">
+        Referencia: BCN-2016-01-173
+      </div>
+      <%= partial 'partials/share' %>
+    </div>
   </div>
-</div>
+  <div class="row">
+    <div class="columns large-9" id="comments">
+      <%= partial 'partials/comments' %>
+    </div>
+  </div>
 </main>
 
 <%= partial 'partials/template_bottom' %>
