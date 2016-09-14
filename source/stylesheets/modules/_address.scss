@@ -4,10 +4,10 @@ $address-padding: 1rem;
 
 /* Card address */
 .address{
-  background: $address-bg;
-  border: $border;
-  margin-bottom: 1rem;
-  padding: $address-padding;
+  //background: $address-bg;
+  //border: $border;
+  //margin-bottom: 1rem;
+  //padding: $address-padding;
   @include clearfix;
   display: flex;
 }
