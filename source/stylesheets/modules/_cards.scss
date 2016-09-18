@@ -6,7 +6,7 @@ $card-border: $border;
 $card-border-radius: $global-radius;
 $card-shadow: 0 2px 7px rgba(black,.1);
 
-$card-padding: 1rem;
+$card-padding: 1.5rem;
 $card-margin-bottom: map-get($grid-column-gutter, medium);
 
 $card-desc-color: $muted;
@@ -116,6 +116,7 @@ $datetime-font-weight: 600;
 }
 
 .card__author{
+  margin-top: -.3rem;
   margin-bottom: .5rem;
 }
 
