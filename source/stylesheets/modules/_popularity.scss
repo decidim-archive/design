@@ -1,0 +1,52 @@
+.popularity{
+  min-width: 100px;
+  margin-top: 5px;
+  @include clearfix;
+}
+
+.popularity__item{
+  float: left;
+  width: 18.4%;
+  height: 4px;
+  background-color: lightgrey;
+  margin-right: 2%;
+  &:last-of-type{
+    margin-right: 0;
+  }
+}
+
+.popularity__item:first-of-type{
+  .popularity--level1 &,
+  .popularity--level2 &,
+  .popularity--level3 &,
+  .popularity--level4 &,
+  .popularity--level5 &{
+    background: linear-gradient(to right, #00637F 25%, #328C8D);
+  }
+}
+.popularity__item:nth-of-type(2){
+  .popularity--level2 &,
+  .popularity--level3 &,
+  .popularity--level4 &,
+  .popularity--level5 &{
+    background: linear-gradient(to right, #328C8D, #BAAA53 50%);
+  }
+}
+.popularity__item:nth-of-type(3){
+  .popularity--level3 &,
+  .popularity--level4 &,
+  .popularity--level5 &{
+    background: #BAAA53;
+  }
+}
+.popularity__item:nth-of-type(4){
+  .popularity--level4 &,
+  .popularity--level5 &{
+    background: linear-gradient(to right, #BAAA53 50%, #BC7933);
+  }
+}
+.popularity__item:nth-of-type(5){
+  .popularity--level5 &{
+    background: linear-gradient(to right, #BC7933 25%, #B64120);
+  }
+}

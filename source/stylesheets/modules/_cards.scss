@@ -9,8 +9,6 @@ $card-shadow: 0 2px 7px rgba(black,.1);
 $card-padding: 1.5rem;
 $card-margin-bottom: map-get($grid-column-gutter, medium);
 
-$card-desc-color: $muted;
-
 $card-footer-bg: $light-gray-dark;
 
 $card-proposal: $proposals;
@@ -38,11 +36,6 @@ $datetime-font-weight: 600;
 
 .card__content{
    padding: $card-padding;
-}
-
-.card__desc{
-  color: $card-desc-color;
-  clear: both;
 }
 
 .card__button{
@@ -191,6 +184,8 @@ $datetime-font-weight: 600;
 .card__support{
   padding: $card-padding;
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .card__support__data{
@@ -200,6 +195,7 @@ $datetime-font-weight: 600;
   line-height: 1;
   margin-bottom: .2rem;
   color: $muted;
+  margin-right: auto;
 }
 
 .card__support__number{
