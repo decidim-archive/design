@@ -161,10 +161,32 @@ $datetime-font-weight: 600;
   margin-bottom: .2rem;
 }
 
+/* Card popularity */
+
+.card__popularity{
+  padding: $card-padding;
+  text-align: center;
+  .icon{
+    fill: $medium-gray;
+  }
+}
+
+.card__popularity__data{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 85%;
+  line-height: 1;
+  margin-bottom: .2rem;
+  color: $muted;
+}
+
+
+
 /* Card support */
 
 .card__support{
   padding: $card-padding;
+  margin-left: auto;
 }
 
 .card__support__data{
