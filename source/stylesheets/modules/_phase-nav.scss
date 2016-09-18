@@ -133,6 +133,7 @@ $active-triangle-height: 12px;
   right: 0;
   border-right: 0;
   border-left: 1px solid rgba($white, .1);
+  width: $arrow-width + 1;
 }
 
 /* Carousel styles*/
