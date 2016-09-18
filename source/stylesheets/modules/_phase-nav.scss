@@ -1,6 +1,6 @@
 /* Variables */
 
-$arrow-width: 35px;
+$arrow-width: 36px;
 
 $active-border-height: 4px;
 $active-triangle-height: 12px;
@@ -130,10 +130,10 @@ $active-triangle-height: 12px;
 
 .next{
   left: auto;
-  right: 0;
+  right: 1px;
   border-right: 0;
   border-left: 1px solid rgba($white, .1);
-  width: $arrow-width + 1;
+  width: $arrow-width;
 }
 
 /* Carousel styles*/
