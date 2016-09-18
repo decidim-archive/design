@@ -70,16 +70,6 @@
     </ul>
     <% elsif current_page.data.activephase == "phase2" %>
     <ul class="columns large-12">
-      <li class="<% if current_page.data.activepage == "proposals" %>is-active
-                 <% end %>">
-        <a href="/phase2_proposals" class="process-nav__link process-nav__link--proposals
-          <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
-          <svg width="20" height="20">
-            <use xlink:href="#shape-icon-proposals" />
-          </svg>
-          <span>Propostes</span>
-        </a>
-      </li>
       <li class="<% if current_page.data.activepage == "debates" %>is-active
                  <% end %>">
         <a href="/phase2_debates" class="process-nav__link process-nav__link--debates
@@ -112,7 +102,7 @@
     <ul class="columns large-12">
       <li class="<% if current_page.data.activepage == "proposals" %>is-active
                  <% end %>">
-        <a href="/phase2_proposals" class="process-nav__link process-nav__link--proposals
+        <a href="/phase3_proposals" class="process-nav__link process-nav__link--proposals
           <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
           <svg width="20" height="20">
             <use xlink:href="#shape-icon-proposals" />
@@ -122,7 +112,7 @@
       </li>
       <li class="<% if current_page.data.activepage == "debates" %>is-active
                  <% end %>">
-        <a href="/phase2_debates" class="process-nav__link process-nav__link--debates
+        <a href="/phase3_debates" class="process-nav__link process-nav__link--debates
           <% if current_page.data.activepage == "debates" %>is-active<% end %>">
           <svg width="20" height="20">
             <use xlink:href="#shape-icon-debates" />
@@ -132,7 +122,7 @@
       </li>
       <li class="<% if current_page.data.activepage == "meetings" %>is-active
                  <% end %>">
-        <a href="/phase2_meetings" class="process-nav__link process-nav__link--meetings
+        <a href="/phase3_meetings" class="process-nav__link process-nav__link--meetings
           <% if current_page.data.activepage == "meetings" %>is-active<% end %>">
           <svg width="20" height="20">
             <use xlink:href="#shape-icon-meetings" />
@@ -142,14 +132,64 @@
       </li>
       <li class="about-link <% if current_page.data.activepage == "about" %>is-active
                  <% end %>">
-        <a href="/phase2_about" class="process-nav__link process-nav__link--info
+        <a href="/phase3_about" class="process-nav__link process-nav__link--info
+          <% if current_page.data.activepage == "about" %>is-active<% end %>">
+          <span>Sobre esta fase</span>
+        </a>
+      </li>
+    </ul>
+    <% elsif current_page.data.activephase == "phase4" %>
+    <ul class="columns large-12">
+      <li class="<% if current_page.data.activepage == "proposals" %>is-active
+                 <% end %>">
+        <a href="/phase4_proposals" class="process-nav__link process-nav__link--proposals
+          <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
+          <svg width="20" height="20">
+            <use xlink:href="#shape-icon-proposals" />
+          </svg>
+          <span>Propostes</span>
+        </a>
+      </li>
+      <li class="<% if current_page.data.activepage == "proposals2" %>is-active
+                 <% end %>">
+        <a href="/phase4_proposals_2" class="process-nav__link process-nav__link--proposals
+          <% if current_page.data.activepage == "proposals2" %>is-active<% end %>">
+          <svg width="20" height="20">
+            <use xlink:href="#shape-icon-proposals" />
+          </svg>
+          <span>Propostes 2</span>
+        </a>
+      </li>
+      <li class="about-link <% if current_page.data.activepage == "about" %>is-active
+                 <% end %>">
+        <a href="/phase3_about" class="process-nav__link process-nav__link--info
+          <% if current_page.data.activepage == "about" %>is-active<% end %>">
+          <span>Sobre esta fase</span>
+        </a>
+      </li>
+    </ul>
+    <% elsif current_page.data.activephase == "phase5" %>
+    <ul class="columns large-12">
+      <li class="<% if current_page.data.activepage == "proposals" %>is-active
+                 <% end %>">
+        <a href="/phase5_results" class="process-nav__link process-nav__link--actions
+          <% if current_page.data.activepage == "results" %>is-active<% end %>">
+          <svg width="20" height="20">
+            <use xlink:href="#shape-icon-actions" />
+          </svg>
+          <span>Resultados</span>
+        </a>
+      </li>
+      <li class="about-link <% if current_page.data.activepage == "about" %>is-active
+                 <% end %>">
+        <a href="/phase5_about" class="process-nav__link process-nav__link--info
           <% if current_page.data.activepage == "about" %>is-active<% end %>">
           <span>Sobre esta fase</span>
         </a>
       </li>
     </ul>
     <% else %>
-    <ul class="columns large-12">
+    <!--<ul class="columns large-12">
       <li class="<% if current_page.data.activepage == "info" %>is-active
                  <% end %>">
         <a href="/info" class="process-nav__link process-nav__link--info
@@ -200,7 +240,7 @@
           <span>Cites presencials</span>
         </a>
       </li>
-    </ul>
+    </ul>-->
     <% end %>
   </div>
 </div>

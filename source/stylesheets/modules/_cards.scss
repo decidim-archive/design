@@ -26,6 +26,7 @@ $datetime-font-weight: 600;
   background: $card-bg;
   border: $card-border;
   border-radius: $card-border-radius;
+  overflow: hidden;
   //box-shadow: $card-shadow;
 }
 
@@ -186,6 +187,9 @@ $datetime-font-weight: 600;
   margin-left: auto;
   display: flex;
   align-items: center;
+  .card__button{
+    margin-left: auto;
+  }
 }
 
 .card__support__data{
