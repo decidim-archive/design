@@ -365,6 +365,9 @@ $datetime-font-weight: 600;
 
 .card--process__date{
   font-size: $small-font-size;
+	&:last-child{
+		margin-bottom: 0;
+	}
 }
 
 .card--process__footer{

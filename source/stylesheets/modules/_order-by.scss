@@ -4,13 +4,16 @@ $order-border: $border;
 /*Order by styles*/
 .order-by{
   margin-bottom: 1rem;
-  display: flex;
-  align-items: flex-end;
+  @include breakpoint(medium){
+		display: flex;
+  	align-items: baseline;
+	}
 }
 
 .order-by__dropdown{
   display: flex;
   flex-wrap: wrap;
+	margin-left: auto;
   .menu{
     .is-dropdown-submenu-parent > a{
       padding: 0;
@@ -28,6 +31,12 @@ $order-border: $border;
   }
 }
 
+.order-by__text{
+	@include breakpoint(medium down){
+		font-size: 18px;
+	}
+}
+
 .order-by__tab{
   color: $muted;
   font-weight: normal;
@@ -36,7 +45,7 @@ $order-border: $border;
     display: inline-block;
     height: .75em;
     border-left: $border;
-    margin: 0 .75rem;
+    margin: 0 .2em 0 .5em;
     vertical-align: middle;
   }
   &.is-active{
