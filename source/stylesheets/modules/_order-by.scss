@@ -13,7 +13,6 @@ $order-border: $border;
 .order-by__dropdown{
   display: flex;
   flex-wrap: wrap;
-	margin-left: auto;
   .menu{
     .is-dropdown-submenu-parent > a{
       padding: 0;
@@ -21,6 +20,10 @@ $order-border: $border;
       margin-top: .25rem;
     }
   }
+}
+
+.order-by__dropdown--right{
+	margin-left: auto;
 }
 
 .order-by__action{
