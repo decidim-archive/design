@@ -273,6 +273,9 @@ $datetime-bg: $primary;
   display: flex;
   align-items: center;
   padding-left: $card-padding-small;
+  .card--list--mini &{
+    padding-left: $card-padding-small;
+  }
   @include breakpoint(medium){
     padding-left: $card-padding;
   }
@@ -294,6 +297,9 @@ $datetime-bg: $primary;
   display: inline-flex;
   align-items: center;
   padding: 1rem 0;
+  .card--list--mini &{
+    padding: .5rem 0;
+  }
   .author{
     margin-top: .3rem;
     margin-right: 1rem;
@@ -328,6 +334,9 @@ $datetime-bg: $primary;
   background: $card-secondary-bg;
   @include breakpoint(medium){
     padding: 1rem $card-padding;
+  }
+  .card--list--mini &{
+    padding: .5rem $card-padding-small;
   }
 }
 
