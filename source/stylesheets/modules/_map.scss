@@ -6,11 +6,11 @@
 }
 
 .map-info{
-  background: $meetings;
+  background: $primary;
   border-radius: $global-radius;
   > div:first-child{ //Map styles container
     > div:first-child{ //Triangle
-      border-top-color: $meetings !important;
+      border-top-color: $primary !important;
     }
     > div:nth-child(2){
       background-color: transparent !important;
@@ -34,7 +34,7 @@
   margin-bottom: 1rem;
   .card__datetime{
     float: none;
-    border-color: $meetings;
+    border-color: $primary;
     display: flex;
     flex-direction: column;
     justify-content: center;
