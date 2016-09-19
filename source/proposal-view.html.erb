@@ -39,13 +39,24 @@ activepage : proposals
           <div class="card__content">
             <span class="extra__suport-number">45</span>
             <span class="extra__suport-text">Apoyos</span>
+            <div class="extra__popularity popularity popularity--level5">
+              <span class="popularity__item"></span>
+              <span class="popularity__item"></span>
+              <span class="popularity__item"></span>
+              <span class="popularity__item"></span>
+              <span class="popularity__item"></span>
+              <span class="popularity__desc">
+                Proposta molt popular
+                <%= partial 'partials/help' %>
+              </span>
+            </div>
             <button class="button expanded button--sc">Apoyar</button>
-            <button class="button secondary hollow small expanded button--icon">
-              <svg class="icon">
-                <use xlink:href="#icon-bell" />
-              </svg>
-              <span>Seguir propuesta</span>
-            </button>
+            <button class="button secondary hollow expanded small button--icon">
+          <svg class="icon">
+            <use xlink:href="#icon-bell" />
+          </svg>
+          <span>Seguir propuesta</span>
+        </button>
           </div>
         </div>
         <div class="reference">
@@ -58,7 +69,7 @@ activepage : proposals
         </div>
         <!--<%= partial 'partials/share' %>-->
       </div>
-      <div class="columns large-9 large-pull-3">
+      <div class="columns large-8 large-pull-4">
         <div class="section">
           <span class="success label proposal-status">Acceptada</span>
           <p>

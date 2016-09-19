@@ -6,6 +6,18 @@ $popularity3: #f85a39;
   min-width: 100px;
   margin-top: 5px;
   @include clearfix;
+  &.extra__popularity{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.popularity__desc{
+  color: $muted;
+  text-transform: uppercase;
+  font-size: 90%;
+  display: block;
+  clear: both;
 }
 
 .popularity__item{
@@ -13,9 +25,9 @@ $popularity3: #f85a39;
   width: 18.4%;
   height: 4px;
   background-color: lightgrey;
-  margin-right: 2%;
-  &:last-of-type{
-    margin-right: 0;
+  margin-left: 2%;
+  &:first-of-type{
+    margin-left: 0;
   }
 }
 
