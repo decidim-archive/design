@@ -39,6 +39,12 @@ $datetime-font-weight: 600;
    padding: $card-padding;
 }
 
+.card__header{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
 .card__button{
   margin-bottom: 0;
 }
@@ -48,17 +54,12 @@ $datetime-font-weight: 600;
 
 .card__datetime{
   float: left;
+  flex-shrink: 0;
   text-align: center;
   border: 2px solid $datetime-bg;
   padding: .3em .5em;
   margin: 0 .5em .5em 0;
   font-weight: $datetime-font-weight;
-  .card--debate &{
-    border-color: $card-debate;
-  }
-  .card--meeting &{
-    border-color: $card-meeting;
-  }
 }
 
 .card__datetime__date{
@@ -249,21 +250,16 @@ $datetime-font-weight: 600;
 .card--list__item{
   display: flex;
   @include breakpoint(medium){
-    align-items: center;
+    //align-items: center;
   }
-  padding: .5em 0;
-  &:first-of-type{
-    margin-top: -.5rem;
-  }
-  &:last-of-type{
-    margin-bottom: -.5rem;
-  }
+  padding-left: $card-padding;
 }
 
 .card--list__icon{
   margin-right: .5rem;
   flex-shrink: 0;
   flex-basis: 15px;
+  fill: $anchor-color;
   @include breakpoint(medium){
     flex-basis: auto;
   }
@@ -271,6 +267,9 @@ $datetime-font-weight: 600;
 
 .card--list__text{
   flex-grow: 1;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 0;
   .author{
     margin-top: .3rem;
     margin-right: 1rem;
@@ -291,16 +290,22 @@ $datetime-font-weight: 600;
 
 .card--list__data{
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
   font-size: 85%;
   line-height: 1;
   color: $muted;
-  padding-left: .5rem;
+  padding: 1rem $card-padding;
+  background: $card-secondary-bg;
 }
 
 .card--list__data__number{
   @extend .card-data__item__number;
+  font-size: 1.5rem;
 }
 
 /* Card full width variant */
