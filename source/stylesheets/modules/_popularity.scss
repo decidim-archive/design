@@ -1,3 +1,7 @@
+$popularity1: #53c9c8;
+$popularity2: #f9bc48;
+$popularity3: #f85a39;
+
 .popularity{
   min-width: 100px;
   margin-top: 5px;
@@ -20,33 +24,38 @@
   .popularity--level2 &,
   .popularity--level3 &,
   .popularity--level4 &,
-  .popularity--level5 &{
-    background: linear-gradient(to right, #00637F 25%, #328C8D);
+  .popularity--level5 &,
+  .popularity--level6 &{
+    background: $popularity1;
   }
 }
 .popularity__item:nth-of-type(2){
   .popularity--level2 &,
   .popularity--level3 &,
   .popularity--level4 &,
-  .popularity--level5 &{
-    background: linear-gradient(to right, #328C8D, #BAAA53 50%);
+  .popularity--level5 &,
+  .popularity--level6 &{
+    background: linear-gradient(to right, $popularity1, $popularity2);
   }
 }
 .popularity__item:nth-of-type(3){
   .popularity--level3 &,
   .popularity--level4 &,
-  .popularity--level5 &{
-    background: #BAAA53;
+  .popularity--level5 &,
+  .popularity--level6 &{
+    background: $popularity2;
   }
 }
 .popularity__item:nth-of-type(4){
   .popularity--level4 &,
-  .popularity--level5 &{
-    background: linear-gradient(to right, #BAAA53 50%, #BC7933);
+  .popularity--level5 &,
+  .popularity--level6 &{
+    background: linear-gradient(to right, $popularity2 50%, $popularity3);
   }
 }
 .popularity__item:nth-of-type(5){
-  .popularity--level5 &{
-    background: linear-gradient(to right, #BC7933 25%, #B64120);
+  .popularity--level5 &,
+  .popularity--level6 &{
+    background: $popularity3;
   }
 }
