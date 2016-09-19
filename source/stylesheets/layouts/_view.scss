@@ -19,7 +19,6 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
 }
 .action-data__item{
   display: inline-block;
@@ -29,7 +28,7 @@
   font-size: 85%;
   line-height: 1;
   color: $muted;
-  padding: .5em;
+  padding: .75rem .5rem;
   border-left: $border;
   border-top: $border;
   &:first-of-type,
