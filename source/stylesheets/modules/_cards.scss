@@ -6,6 +6,7 @@ $card-border: $border;
 $card-border-radius: $global-radius;
 $card-shadow: 0 2px 7px rgba(black,.1);
 
+$card-padding-small: 1rem;
 $card-padding: 1.5rem;
 $card-margin-bottom: map-get($grid-column-gutter, medium);
 
@@ -36,7 +37,10 @@ $datetime-font-weight: 600;
 }
 
 .card__content{
+   padding: $card-padding-small;
+  @include breakpoint(medium){
    padding: $card-padding;
+  }
 }
 
 .card__header{
@@ -262,19 +266,21 @@ $datetime-font-weight: 600;
 
 .card--list__item{
   display: flex;
+  align-items: center;
+  padding-left: $card-padding-small;
   @include breakpoint(medium){
-    //align-items: center;
+    padding-left: $card-padding;
   }
-  padding-left: $card-padding;
 }
 
 .card--list__icon{
-  margin-right: .5rem;
-  flex-shrink: 0;
-  flex-basis: 15px;
+  display: none;
   fill: $anchor-color;
   @include breakpoint(medium){
-    flex-basis: auto;
+    margin-right: 1rem;
+    display: block;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -303,6 +309,7 @@ $datetime-font-weight: 600;
 
 .card--list__data{
   flex-shrink: 0;
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,8 +319,11 @@ $datetime-font-weight: 600;
   font-size: 85%;
   line-height: 1;
   color: $muted;
-  padding: 1rem $card-padding;
+  padding: $card-padding-small;
   background: $card-secondary-bg;
+  @include breakpoint(medium){
+    padding: 1rem $card-padding;
+  }
 }
 
 .card--list__data__number{
