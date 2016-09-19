@@ -93,8 +93,14 @@
 
 .process-header--home{
 	
+	@include breakpoint(medium){
+		margin-bottom: 4.5rem;
+	}
+	
 	.process-header__container{
-		padding: 2rem 3rem;
+		@include breakpoint(medium){
+			padding: 0 3rem;
+		}
 	}
 	
 	.process-header__main{
@@ -119,6 +125,9 @@
 	position: relative;
 	z-index: 1;
 	text-align: center;
-	margin-top: 2rem;
+	margin-top: 3rem;
+	.button{
+		margin-bottom: 0;
+	}
 	
 }

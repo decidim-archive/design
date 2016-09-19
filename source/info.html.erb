@@ -52,30 +52,63 @@ activepage : info
 				</div>
 				<div class="section">
 					<h5>Documentos relacionados</h5>
-					<div class="extra extra--text">
-						<div class="extra__content">
-							<ul class="list-docs">
-								<li>
-									<a href="">
-										<span class="fa fa-file-pdf-o list-docs__icon"></span>
-										Acta Paral·lel 18-02-2015.pdf</a>
-								</li>
-								<li>
-									<a href="">
-										<span class="fa fa-file-pdf-o list-docs__icon"></span>
-										Acta Paral·lel 18-02-2015.pdf</a>
-								</li>
-								<li>
-									<a href="">
-										<span class="fa fa-file-pdf-o list-docs__icon"></span>
-										Acta Paral·lel 18-02-2015.pdf</a>
-								</li>
-								<li>
-									<a href="">
-										<span class="fa fa-file-text-o list-docs__icon"></span>
-										Informe de les conclusions.doc</a>
-								</li>
-							</ul>
+					<div class="card card--list card--list--mini">
+						<div class="card--list__item">
+							<div class="card--list__text">
+								<div>
+									<a href="#" class="card__link">
+										<h6 class="card--list__heading">
+											Acta Paral·lel
+										</h6>
+										<div class="text-small">
+											PDF 57Kb
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="card--list__data">
+								<svg class="icon">
+									<use xlink:href="#icon-cloud-download" />
+								</svg>
+							</div>
+						</div>
+						<div class="card--list__item">
+							<div class="card--list__text">
+								<div>
+									<a href="#" class="card__link">
+										<h6 class="card--list__heading">
+											Informe reunió 18-04-2016
+										</h6>
+										<div class="text-small">
+											PDF 57Kb
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="card--list__data">
+								<svg class="icon">
+									<use xlink:href="#icon-cloud-download" />
+								</svg>
+							</div>
+						</div>
+						<div class="card--list__item">
+							<div class="card--list__text">
+								<div>
+									<a href="#" class="card__link">
+										<h6 class="card--list__heading">
+											Informe reunió 18-04-2016
+										</h6>
+										<div class="text-small">
+											PDF 57Kb
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="card--list__data">
+								<svg class="icon">
+									<use xlink:href="#icon-cloud-download" />
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -86,14 +119,35 @@ activepage : info
 					<%= partial 'partials/timeline' %>
 				</div>
 			</div>
-			<div class="info-details columns medium-4 large-3">
-				<div class="info-details__date">
-					<strong>Ámbito:</strong> Districte de Gràcia
-				</div>
-				<div class="info-details__date">
-					<strong>Finalización:</strong> 28 septiembre 2016
-				</div>
-				<%= partial 'partials/share' %>
+			<div class="columns medium-4 large-3">
+				<div class="card extra definition-data">
+          <div class="definition-data__item">
+						<span class="definition-data__title">Ámbito</span>
+							Districte de Gràcia
+						</span>
+          </div>
+					<div class="definition-data__item">
+            <span class="definition-data__title">Finalización</span>
+							18 septiembre 2016
+						</span>
+          </div>
+					<div class="definition-data__item">
+            <span class="definition-data__title">Grupo promotor</span>
+							Ajuntament de Barcelona
+						</span>
+          </div>
+					<div class="definition-data__item">
+            <span class="definition-data__title">Área</span>
+							Urbanismo
+						</span>
+          </div>
+        </div>
+				<button class="button secondary hollow expanded small button--icon">
+          <svg class="icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bell"></use>
+          </svg>
+          <span>Seguir proceso</span>
+        </button>
 			</div>
 		</div>
 </div>
