@@ -52,4 +52,7 @@ body{
 //Sections
 .section{
   margin-bottom: 3rem;
+  @include breakpoint(large){
+    margin-bottom: 5rem;
+  }
 }
