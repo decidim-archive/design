@@ -49,6 +49,19 @@ $datetime-font-weight: 600;
   margin-bottom: 0;
 }
 
+/* Card meetings */
+
+.card--meeting{
+  .card__content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    .address{
+      margin-top: auto;
+    }
+  }
+}
+
 
 /* Card datetime */
 
