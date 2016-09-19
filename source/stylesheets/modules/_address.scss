@@ -1,11 +1,7 @@
 //Variables
-$address-bg: $light-gray-dark;
-$address-padding: 1rem;
 
 /* Card address */
 .address{
-  background: $address-bg;
-  padding: $address-padding;
   @include clearfix;
   display: flex;
 }
