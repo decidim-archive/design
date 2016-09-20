@@ -14,7 +14,7 @@
 
 .heading2{
   line-height: 1.2;
-  font-weight: 800;
+  font-weight: 600;
   font-size: map-get(map-get($header-sizes, small), h2) / 16 + em;
   @include breakpoint(medium){
     font-size: map-get(map-get($header-sizes, medium), h2) / 16 + em;

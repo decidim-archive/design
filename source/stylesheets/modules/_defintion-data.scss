@@ -1,14 +1,25 @@
 .definition-data{
-  //padding: .5rem 0; 
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .definition-data__item{
 	display: block;
 	padding: .75rem .5rem;
   border-bottom: $border;
+  flex-basis: 100%;
 	&:last-child{
 		border-bottom: 0;
 	}
+}
+
+.definition-data__item--double{
+  display: inline-block;
+  flex-basis: 50%;
+  border-left: $border;
+  &:nth-of-type(odd){
+    border-left: 0;
+  }
 }
 
 .definition-data__title{
@@ -18,4 +29,22 @@
   line-height: 1;
   margin-bottom: .25rem;
   color: $muted;
+}
+
+.definition-data__number{
+  display: block;
+  line-height: 1;
+  font-weight: 600;
+  font-size: rem-calc(20);
+  color: $body-font-color;
+  margin-bottom: .2rem;
+}
+
+.definition-data__text{
+  display: block;
+  margin: .5rem;
+  color: $body-font-color;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: $global-lineheight;
 }

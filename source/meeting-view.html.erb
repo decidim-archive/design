@@ -11,7 +11,7 @@ activepage : meetings
   <div class="wrapper">
     <%= partial 'partials/process_header' %>
     <div class="row column view-header">
-      <h2 class="view-title">Cooperatives i economia solidària</h2>
+      <h2 class="heading2">Cooperatives i economia solidària</h2>
       <div class="author-data">
         <div class="author-data__main">
           <div class="author author--inline">
@@ -40,19 +40,21 @@ activepage : meetings
               Voy a ir</button>
           </div>
         </div>
-        <ul class="card card--secondary extra action-data">
-          <li class="action-data__item">
-            <span class="action-data__item__number">8</span>assistents
-          </li>
-          <li class="action-data__item">
-            <span class="action-data__item__number">25</span>intervencions
-          </li>
-          <li class="action-data__item action-data__item--single">
-            Organitzacions participants
-            <span class="action-data__item__text">Arcàdia, La Col, Impuls,
+        <div class="card card--secondary extra definition-data">
+          <div class="definition-data__item definition-data__item--double">
+            <span class="definition-data__title">Assistents</span>
+						<span class="definition-data__number">8</span>
+          </div>
+          <div class="definition-data__item definition-data__item--double">
+            <span class="definition-data__title">Intervencions</span>
+						<span class="definition-data__number">25</span>
+          </div>
+          <div class="definition-data__item">
+            <span class="definition-data__title">Organitzacions participants</span>
+            <span class="definition-data__text">Arcàdia, La Col, Impuls,
               Comissionat d'Economia cooperativa, social i solidària.</span>
-          </li>
-        </ul>
+          </div>
+        </div>
         <div class="text-center">
           <button class="link text-center">
             Compartir debate
@@ -97,11 +99,11 @@ activepage : meetings
           </ul>
         </div>
         <div class="section">
-          <h3>Fotografías de la cita</h3>
+          <h3 class="section-heading heading3">Fotografías de la cita</h3>
           <%= partial 'partials/gallery' %>
         </div>
         <div class="section">
-          <h3>Resumen de la cita</h3>
+          <h3 class="section-heading heading3">Resumen de la cita</h3>
             <p>El debat s’inicia amb un anàlisi de les necessitats del Parc de
               manera individual a través d’escriure 3 o 4 idees (les més
               rellevants). D’aquestes necessitats se n’ha fet un esquema a un
