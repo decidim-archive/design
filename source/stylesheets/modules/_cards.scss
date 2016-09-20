@@ -349,6 +349,10 @@ $datetime-bg: $primary;
 
 .card--full{
   margin-bottom: $card-margin-bottom*2;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	
   .card__content{
     padding: $card-padding*2;
   }
@@ -356,6 +360,8 @@ $datetime-bg: $primary;
 
 .card--full__image{
   background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
   position: relative;
   &:after{
     content: "";
@@ -380,6 +386,15 @@ $datetime-bg: $primary;
     }
   }
 }
+
+//small card with top image
+.card__image-top{
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 10rem;
+}
+
 
 /* Card full width process variant */
 
