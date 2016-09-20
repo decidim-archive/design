@@ -3,23 +3,55 @@
 
 /* Typography - Foundation overrides */
 
-
-h2{
-  line-height: 1.2;
+.heading1{
+  line-height: 1.1;
+  font-weight: 800;
+  font-size: map-get(map-get($header-sizes, small), h1) / 16 + em;
+  @include breakpoint(medium){
+    font-size: map-get(map-get($header-sizes, medium), h1) / 16 + em;
+  }
 }
 
-h4{
+.heading2{
   line-height: 1.2;
+  font-size: map-get(map-get($header-sizes, small), h2) / 16 + em;
+  @include breakpoint(medium){
+    font-size: map-get(map-get($header-sizes, medium), h2) / 16 + em;
+  }
 }
 
-h5{
+.heading3{
   line-height: 1.2;
+  font-size: map-get(map-get($header-sizes, small), h3) / 16 + em;
+  @include breakpoint(medium){
+    font-size: map-get(map-get($header-sizes, medium), h3) / 16 + em;
+  }
 }
 
-h6{
+.heading4{
+  line-height: 1.2;
+  font-size: map-get(map-get($header-sizes, small), h4) / 16 + em;
+  @include breakpoint(medium){
+    font-size: map-get(map-get($header-sizes, medium), h4) / 16 + em;
+  }
+}
+
+.heading5{
+  line-height: 1.2;
+  font-size: map-get(map-get($header-sizes, small), h5) / 16 + em;
+  @include breakpoint(medium){
+    font-size: map-get(map-get($header-sizes, medium), h5) / 16 + em;
+  }
+}
+
+.heading6{
   text-transform: uppercase;
   letter-spacing: .03em;
   font-weight: 600;
+  font-size: map-get(map-get($header-sizes, small), h6) / 16 + em;
+  @include breakpoint(medium){
+    font-size: map-get(map-get($header-sizes, medium), h6) / 16 + em;
+  }
 }
 
 hr{
@@ -28,20 +60,31 @@ hr{
 
 /* New typographic styles */
 
+.section-heading{
+  position: relative;
+  padding-left: 8px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  &:before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: .8em;
+    background-color: $primary;
+    position: absolute;
+    top: 0;
+    top: calc(50% - .4em);
+    left: 0;
+  }
+}
+
 .text-highlight{
   color: $white;
-  margin-bottom: 4px;
-  margin-right: 20px;
-  font-weight: 800;
 	text-shadow: 0 0 10px rgba(black, .8);
-  &--large{
-    color: $white;
-    line-height: 1.35;
-  }
   > a{
     color: inherit;
     &:hover{
-      opacity: .85;
+      color: $primary;
     }
   }
 }
