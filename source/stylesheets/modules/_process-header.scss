@@ -1,13 +1,5 @@
 .process-header{
   margin-bottom: 3rem;
-	
-	.heading1{
-		line-height: 1.1;
-	}
-	
-	.heading2{
-		font-size: 1rem;
-	}
 }
 
 .process-header__main{
@@ -34,6 +26,15 @@
   @include breakpoint(medium){
     display: flex;
     align-items: center;
+  }
+}
+
+.process-header__hashtag{
+  font-weight: 600;
+  &:after{
+    content: "·";
+    margin-left: .5rem;
+    margin-right: .5rem;
   }
 }
 
