@@ -33,6 +33,13 @@
   color: $primary;
 }
 
+.button--muted{
+  background-color: $muted;
+  &:hover{
+    background-color: $secondary;
+  }
+}
+
 .button--sc{
   text-transform: uppercase;
   letter-spacing: .05em;
