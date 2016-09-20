@@ -46,7 +46,7 @@ $(function () {
       meetingTime+
       '</div>'+
       '</div>'+
-      '<div class="address">'+
+      '<div class="address card__extra">'+
       '<div class="address__icon">'+
       '<svg width="40" height="70">'+
       '<use xlink:href="#shape-icon-meetings" />'+
@@ -60,7 +60,7 @@ $(function () {
       '</div>'+
       '</div>'+
       '<div class="map-info__button">'+
-      '<a href="'+meetingLink+'" class="button button--sc">Ver cita</a>'+
+      '<a href="'+meetingLink+'" class="button button--sc">Ver encuentro</a>'+
       '</div>'+
       '</div>'+
       '</div>';
