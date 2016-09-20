@@ -42,6 +42,10 @@ $datetime-bg: $primary;
   }
 }
 
+.card__title{
+  @extend .heading4;
+}
+
 .card__extra{
   background: $card-secondary-bg;
   padding: $card-padding-small;
@@ -352,7 +356,9 @@ $datetime-bg: $primary;
 	&:last-child{
 		margin-bottom: 0;
 	}
-	
+  .card__title{
+    @extend .heading2;
+  }
   .card__content{
     padding: $card-padding*2;
   }
