@@ -1,23 +1,13 @@
 /* Variables */
 
-$process-bg: $white;
-$process-nav-color: $body-font-color;
-$process-nav-padding-x: .5rem;
-$process-nav-padding-y: $container-padding-y;
-
-$process-nav-info: $primary;
-$process-nav-proposals: $proposals;
-$process-nav-actions: $actions;
-$process-nav-debates: $debates;
-$process-nav-meetings: $meetings;
 
 /* Navigation */
 
 .process-nav{
-  background-color: $process-bg;
+  background-color: $white;
   border: $border;
-  padding: $process-nav-padding-x $process-nav-padding-y;
-  margin-top: .5rem;
+  padding: .75rem $container-padding-y;
+  margin-top: 1rem;
   ul{
     margin: 0;
     list-style: none;
@@ -28,6 +18,8 @@ $process-nav-meetings: $meetings;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       white-space: nowrap;
+      display: flex;
+      align-items: center;
     }
     ul::-webkit-scrollbar{
       display: none;
@@ -40,6 +32,7 @@ $process-nav-meetings: $meetings;
       font-size: 80%;
       float: right;
       margin-right: 0;
+      margin-left: auto;
     }
   }
 }
@@ -78,68 +71,27 @@ $process-nav-meetings: $meetings;
 
 .process-nav__link{
   display: block;
-  color: $process-nav-color;
+  color: $muted;
   text-transform: uppercase;
-  &:hover{
-    color: $process-nav-color;
-  }
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+ 
 
   svg{
-    margin-right: .2em;
-    vertical-align: -5px;
+    margin-right: .4em;
+    width: 25px;
+    height: 25px;
     fill: $muted;
   }
 }
 
 @include breakpoint(medium){
-  .process-nav__link:hover span,
-  .process-nav__link.is-active span{
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
+  .process-nav__link:hover,
+  .process-nav__link.is-active{
+    color: $primary;
+    svg{
+      fill: $primary;
+    }
   }
 }
-
-/*.process-nav__link--info{
-  i{
-    color: $process-nav-info;
-  }
-  span{
-    border-bottom-color: $process-nav-info;
-  }
-}
-
-.process-nav__link--proposals{
-  i{
-    color: $process-nav-proposals;
-  }
-  span{
-    border-bottom-color: $process-nav-proposals;
-  }
-}
-
-.process-nav__link--actions{
-  i{
-    color: $process-nav-actions;
-  }
-  span{
-    border-bottom-color: $process-nav-actions;
-  }
-}
-
-.process-nav__link--debates{
-  i{
-    color: $process-nav-debates;
-  }
-  span{
-    border-bottom-color: $process-nav-debates;
-  }
-}
-
-.process-nav__link--meetings{
-  i{
-    color: $process-nav-meetings;
-  }
-  span{
-    border-bottom-color: $process-nav-meetings;
-  }
-}*/

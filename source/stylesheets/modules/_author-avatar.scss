@@ -23,10 +23,14 @@ $author-data-color: $muted;
   .author__name{
     color: $anchor-color;
   }
-  .author__avatar--small{
+  .author__avatar{
     position: absolute;
     margin-left: -30px;
   }
+}
+
+.author-data--small{
+  padding-left: 25px;
 }
 
 .author-data--noavatar{
@@ -92,14 +96,18 @@ a:hover .author__name{
   img{
     border-radius: 50%;
     width: 100%;
-    max-width: 40px;
+    max-width: 25px;
+    margin-top: -5px;
   }
 }
 
 .author__avatar--small{
+  .author-data &{
+    margin-left: -25px;
+  }
   img{
-    max-width: 25px;
-    margin-top: -5px;
+    max-width: 20px;
+    margin-top: -3px;
   }
 }
 

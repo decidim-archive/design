@@ -1,8 +1,4 @@
 //Variables
-$tag-proposal-color: $proposals;
-$tag-action-color: $actions;
-$tag-debate-color: $debates;
-$tag-meeting-color: $meetings;
 
 $tags-border: $border;
 
@@ -10,7 +6,7 @@ $tags-border: $border;
 
 .tags{
   list-style: none;
-  margin: 0;
+  margin: 0 0 1rem;
   font-size: 90%;
   li{
     display: inline-block;
@@ -24,19 +20,10 @@ $tags-border: $border;
   }
 }
 
-.tags--inline{
-  display: inline;
+.tags:last-child{
+	margin-bottom: -.5rem;
 }
 
-.tags--proposal a{
-  color: $tag-proposal-color;
-}
-.tags--action a{
-  color: $tag-action-color;
-}
-.tags--debate a{
-  color: $tag-debate-color;
-}
-.tags--meeting a{
-  color: $tag-meeting-color;
+.tags--inline{
+  display: inline;
 }

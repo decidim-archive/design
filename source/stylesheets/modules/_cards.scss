@@ -6,10 +6,9 @@ $card-border: $border;
 $card-border-radius: $global-radius;
 $card-shadow: 0 2px 7px rgba(black,.1);
 
-$card-padding: 1rem;
+$card-padding-small: 1rem;
+$card-padding: 1.5rem;
 $card-margin-bottom: map-get($grid-column-gutter, medium);
-
-$card-desc-color: $muted;
 
 $card-footer-bg: $light-gray-dark;
 
@@ -19,7 +18,6 @@ $card-debate: $debates;
 $card-meeting: $meetings;
 
 $datetime-bg: $primary;
-$datetime-font-weight: 600;
 
 
 /* Cards */
@@ -28,7 +26,8 @@ $datetime-font-weight: 600;
   background: $card-bg;
   border: $card-border;
   border-radius: $card-border-radius;
-  box-shadow: $card-shadow;
+  overflow: hidden;
+  //box-shadow: $card-shadow;
 }
 
 .card--secondary{
@@ -37,39 +36,57 @@ $datetime-font-weight: 600;
 }
 
 .card__content{
+   padding: $card-padding-small;
+  @include breakpoint(medium){
    padding: $card-padding;
+  }
 }
 
-.card__desc{
-  color: $card-desc-color;
-  clear: both;
+.card__extra{
+  background: $card-secondary-bg;
+  padding: $card-padding-small;
+}
+
+.card__title{
+  margin-bottom: 1rem;
 }
 
 .card__button{
   margin-bottom: 0;
 }
 
+/* Card meetings */
+
+.card--meeting{
+  .card__content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    .address{
+      margin-top: auto;
+    }
+  }
+}
+
 
 /* Card datetime */
 
 .card__datetime{
-  float: left;
+  flex-shrink: 0;
   text-align: center;
-  border: 2px solid $datetime-bg;
-  padding: .3em .5em;
-  margin: 0 .5em .5em 0;
-  font-weight: $datetime-font-weight;
-  .card--debate &{
-    border-color: $card-debate;
-  }
-  .card--meeting &{
-    border-color: $card-meeting;
-  }
+  margin-bottom: 1rem;
+  padding: .5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  border-left: 4px solid $primary;
+  background: $card-secondary-bg;
+  line-height: 1;
 }
 
 .card__datetime__date{
   font-size: 1.4rem;
-  line-height: 1.1;
+  margin-right: 1rem;
 }
 
 .card__datetime__month{
@@ -115,6 +132,10 @@ $datetime-font-weight: 600;
   }
 }
 
+.card__author{
+  margin-top: -.3rem;
+  margin-bottom: .5rem;
+}
 
 .card__voting{
   display: inline-block;
@@ -161,10 +182,37 @@ $datetime-font-weight: 600;
   margin-bottom: .2rem;
 }
 
+/* Card popularity */
+
+.card__popularity{
+  padding: $card-padding;
+  text-align: center;
+  .icon{
+    fill: $medium-gray;
+  }
+}
+
+.card__popularity__data{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 85%;
+  line-height: 1;
+  margin-bottom: .2rem;
+  color: $muted;
+}
+
+
+
 /* Card support */
 
 .card__support{
   padding: $card-padding;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  .card__button{
+    margin-left: auto;
+  }
 }
 
 .card__support__data{
@@ -174,6 +222,7 @@ $datetime-font-weight: 600;
   line-height: 1;
   margin-bottom: .2rem;
   color: $muted;
+  margin-right: auto;
 }
 
 .card__support__number{
@@ -222,29 +271,35 @@ $datetime-font-weight: 600;
 
 .card--list__item{
   display: flex;
+  align-items: center;
+  padding-left: $card-padding-small;
+  .card--list--mini &{
+    padding-left: $card-padding-small;
+  }
   @include breakpoint(medium){
-    align-items: center;
-  }
-  padding: .5em 0;
-  &:first-of-type{
-    margin-top: -.5rem;
-  }
-  &:last-of-type{
-    margin-bottom: -.5rem;
+    padding-left: $card-padding;
   }
 }
 
 .card--list__icon{
-  margin-right: .5rem;
-  flex-shrink: 0;
-  flex-basis: 15px;
+  display: none;
+  fill: $anchor-color;
   @include breakpoint(medium){
-    flex-basis: auto;
+    margin-right: 1rem;
+    display: block;
+    width: 30px;
+    height: 30px;
   }
 }
 
 .card--list__text{
   flex-grow: 1;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 0;
+  .card--list--mini &{
+    padding: .5rem 0;
+  }
   .author{
     margin-top: .3rem;
     margin-right: 1rem;
@@ -265,22 +320,39 @@ $datetime-font-weight: 600;
 
 .card--list__data{
   flex-shrink: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
   font-size: 85%;
   line-height: 1;
   color: $muted;
-  padding-left: .5rem;
+  padding: $card-padding-small;
+  background: $card-secondary-bg;
+  @include breakpoint(medium){
+    padding: 1rem $card-padding;
+  }
+  .card--list--mini &{
+    padding: .5rem $card-padding-small;
+  }
 }
 
 .card--list__data__number{
   @extend .card-data__item__number;
+  font-size: 1.5rem;
 }
 
 /* Card full width variant */
 
 .card--full{
   margin-bottom: $card-margin-bottom*2;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	
   .card__content{
     padding: $card-padding*2;
   }
@@ -288,6 +360,8 @@ $datetime-font-weight: 600;
 
 .card--full__image{
   background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
   position: relative;
   &:after{
     content: "";
@@ -312,6 +386,15 @@ $datetime-font-weight: 600;
     }
   }
 }
+
+//small card with top image
+.card__image-top{
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 10rem;
+}
+
 
 /* Card full width process variant */
 
@@ -339,6 +422,9 @@ $datetime-font-weight: 600;
 
 .card--process__date{
   font-size: $small-font-size;
+	&:last-child{
+		margin-bottom: 0;
+	}
 }
 
 .card--process__footer{

@@ -14,6 +14,20 @@
 
 /*Extra buttons styles*/
 
+.button--icon{
+  display: flex;
+  align-items: center;
+  .icon{
+    margin: 0 2px;
+  }
+  &.small{
+    .icon{
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
 .button--frosted{
   background-color: rgba($white, .65);
   color: $primary;
@@ -28,8 +42,21 @@
   }
 }
 
+.button--checked{
+  opacity: .6;
+}
+
+.button__info{
+  text-transform: none;
+  font-weight: normal;
+  font-size: 80%;
+  margin-top: .25rem;
+  display: block;
+}
+
 .link{
   color: $anchor-color;
+  font-weight: bold;
 }
 
 .link--no-color{

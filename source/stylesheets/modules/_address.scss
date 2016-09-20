@@ -1,13 +1,7 @@
 //Variables
-$address-bg: $light-gray;
-$address-padding: 1rem;
 
 /* Card address */
 .address{
-  background: $address-bg;
-  border: $border;
-  margin-bottom: 1rem;
-  padding: $address-padding;
   @include clearfix;
   display: flex;
 }
@@ -21,6 +15,7 @@ $address-padding: 1rem;
   float: left;
   display: flex;
   align-self: center;
+  fill: $primary;
 }
 
 .address__details{

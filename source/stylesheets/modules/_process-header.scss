@@ -1,5 +1,13 @@
 .process-header{
   margin-bottom: 3rem;
+	
+	.heading1{
+		line-height: 1.1;
+	}
+	
+	.heading2{
+		font-size: 1rem;
+	}
 }
 
 .process-header__main{
@@ -79,4 +87,47 @@
 .process-header__nav{
   margin-top: auto;
   z-index: 1;
+}
+
+// Process header home
+
+.process-header--home{
+	
+	@include breakpoint(medium){
+		margin-bottom: 4.5rem;
+	}
+	
+	.process-header__container{
+		@include breakpoint(medium){
+			padding: 0 3rem;
+		}
+	}
+	
+	.process-header__main{
+		@include breakpoint(medium){
+			padding: 3em 1.5rem;
+		}
+	}
+	
+	.heading1{
+		@include breakpoint(medium){
+			font-size: 3.125em;
+		}
+	}
+	.heading2{
+		@include breakpoint(medium){
+			font-size: 1.5em;
+		}
+	}
+}
+
+.process-header--home__cta{
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin-top: 3rem;
+	.button{
+		margin-bottom: 0;
+	}
+	
 }
