@@ -42,21 +42,39 @@ $datetime-bg: $primary;
   }
 }
 
-.card__title{
-  @extend .heading4;
-}
-
 .card__extra{
   background: $card-secondary-bg;
   padding: $card-padding-small;
 }
 
 .card__title{
+  @extend .heading5;
   margin-bottom: 1rem;
 }
 
 .card__button{
   margin-bottom: 0;
+}
+
+.card__type{
+  background: $light-gray-dark;
+  padding: .1rem 1rem;
+  margin-top: .5rem;
+  margin-bottom: -.75rem;
+  font-size: 80%;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .05em;
+  color: $muted;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  .icon{
+    width: 14px;
+    height: 14px;
+    fill: $muted;
+    margin-right: .2rem;
+  }
 }
 
 /* Card meetings */
