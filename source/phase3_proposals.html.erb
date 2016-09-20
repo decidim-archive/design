@@ -11,9 +11,9 @@ activepage : proposals
   <%= partial 'partials/process_header' %>
   <div class="row columns">
     <div class="title-action">
-      <h2 class="title-action__title">168 propuestas abiertas</h2>
+      <h2 class="title-action__title heading2">168 propuestas abiertas</h2>
       <a href="#" class="title-action__action button small hollow button--sc">
-        Añadir propuesta 
+        Añadir propuesta
         <svg class="icon">
           <use xlink:href="#icon-plus" />
         </svg>
@@ -31,11 +31,11 @@ activepage : proposals
       <%= partial 'partials/order_by' %>
       <div class="row small-up-1 medium-up-2 card-grid">
         <div class="column">
-          <div class="card card--proposal">
+          <article class="card card--proposal">
             <div class="card__content">
-              <div class="card__title">
+              <div class="card__header">
                 <a href="/proposal-view" class="card__link">
-                  <h5>
+                  <h5 class="card__title">
                     Creació d'aules ambientals al Parc del Clot
                   </h5>
                 </a>
@@ -64,20 +64,20 @@ activepage : proposals
             </div>
             <div class="card__footer">
               <div class="card__support">
-                <button class="card__button button tiny secondary">
+                <button class="card__button button small button--sc secondary">
                   Ver propuesta
                 </button>
               </div>
             </div>
-          </div>
+          </article>
         </div>
         <div class="column">
-          <div class="card card--proposal">
+          <article class="card card--proposal">
             <div class="card__content">
-              <div class="card__title">
+              <div class="card__header">
                 <a href="/proposal-view" class="card__link">
-                  <h5>
-                    Creació d'aules ambientals al Parc del Clot
+                  <h5 class="card__title">
+                    Creació d'aules ambientals i d'estudi al Parc del Clot
                   </h5>
                 </a>
                 <div class="card__author author-data author-data--small">
@@ -107,12 +107,12 @@ activepage : proposals
             </div>
             <div class="card__footer">
               <div class="card__support">
-                <button class="card__button button tiny secondary">
+                <button class="card__button button small button--sc secondary">
                   Ver propuesta
                 </button>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </div>
