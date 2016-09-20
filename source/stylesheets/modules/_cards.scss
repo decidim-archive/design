@@ -49,6 +49,9 @@ $datetime-bg: $primary;
 
 .card__title{
   @extend .heading5;
+}
+
+.card__header{
   margin-bottom: 1rem;
 }
 
