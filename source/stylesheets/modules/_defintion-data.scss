@@ -1,13 +1,13 @@
 .definition-data{
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+  //padding: .5rem 0; 
 }
 
 .definition-data__item{
 	display: block;
-	margin-bottom: 1.2rem;
+	padding: .75rem .5rem;
+  border-bottom: $border;
 	&:last-child{
-		margin-bottom: 0;
+		border-bottom: 0;
 	}
 }
 
@@ -16,5 +16,6 @@
 	text-transform: uppercase;
   font-size: 85%;
   line-height: 1;
+  margin-bottom: .25rem;
   color: $muted;
 }
