@@ -231,10 +231,13 @@ $datetime-bg: $primary;
 /* Card support */
 
 .card__support{
-  padding: $card-padding;
   margin-left: auto;
   display: flex;
   align-items: center;
+  padding: $card-padding-small;
+  @include breakpoint(medium){
+    padding: $card-padding;
+  }
   .card__button{
     margin-left: auto;
   }
@@ -394,7 +397,10 @@ $datetime-bg: $primary;
     @extend .heading2;
   }
   .card__content{
-    padding: $card-padding*2;
+    padding: $card-padding*1.5;
+    @include breakpoint(large){
+      padding: $card-padding*2;
+    }
   }
 }
 
@@ -403,6 +409,12 @@ $datetime-bg: $primary;
 	background-position: center;
 	background-repeat: no-repeat;
   position: relative;
+  @include breakpoint(medium only){
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &:after{
     content: "";
     display: block;
@@ -412,14 +424,17 @@ $datetime-bg: $primary;
     top: 0;
     background: linear-gradient(to bottom, rgba($white,1),rgba($white,0) 80%);
     z-index: 0;
-    @include breakpoint(medium){
+    @include breakpoint(mediumlarge){
       background: linear-gradient(to right, rgba($white,1),rgba($white,0) 80%);
     }
   }
   > .card__content{
     position: relative;
     z-index: 1;
-    @include breakpoint(medium){
+    @include breakpoint(medium only){
+      min-width: 50%;
+    }
+    @include breakpoint(mediumlarge){
       position: absolute;
       top: 0;
       width: 100%;
@@ -433,13 +448,19 @@ $datetime-bg: $primary;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 10rem;
+  .card--process &{
+    display: none;
+    @include breakpoint(mediumlarge){
+      display: block;
+    }
+  }
 }
 
 
 /* Card full width process variant */
 
 
- @include breakpoint(medium){
+ @include breakpoint(mediumlarge){
   .card--process__row{
       display: flex;
   }
@@ -460,61 +481,11 @@ $datetime-bg: $primary;
   }
 }
 
-.card--process__date{
+.card--process__small{
   font-size: $small-font-size;
 	&:last-child{
 		margin-bottom: 0;
 	}
 }
 
-.card--process__footer{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card--process__footer__item{
-  border-top: $border;
-  border-right: $border;
-  padding: $card-padding/2 $card-padding;
-  flex-grow: 1;
-  flex-basis: 50%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  &:nth-of-type(2n){
-    border-right: 0;
-  }
-  .card--full &{
-    padding: $card-padding;
-    @include breakpoint(large){
-      width: 25%;
-      flex-basis: 25%;
-      padding: $card-padding $card-padding*2;
-      &:nth-of-type(n){
-        border-right: $border;
-      }
-      &:last-of-type{
-        border-right: 0;
-      }
-    }
-  }
-}
-
-.card--process__footer__desc{
-  text-transform: uppercase;
-  line-height: 1;
-  font-weight: 600;
-  margin-left: .25rem;
-  .card--full & {
-    font-size: 1.1rem;
-    margin-left: .5rem;
-  }
-}
-
-.card--process__footer__number{
-  display: block;
-  color: $muted;
-  font-size: 1rem;
-  font-weight: normal;
-}
 
