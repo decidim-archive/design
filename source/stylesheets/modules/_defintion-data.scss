@@ -16,10 +16,14 @@
 .definition-data__item--double{
   display: inline-block;
   flex-basis: 50%;
-  border-left: $border;
-  &:nth-of-type(odd){
-    border-left: 0;
+  width: 50%;
+  border-right: $border;
+  &:nth-of-type(even){
+    border-right: 0;
   }
+  &:nth-last-child(2):nth-child(odd){
+		border-bottom: 0;
+	}
 }
 
 .definition-data__title{
