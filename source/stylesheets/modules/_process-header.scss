@@ -45,6 +45,7 @@
   @include breakpoint(medium down){
     margin-top: 1rem;
     display: flex;
+    flex-wrap: wrap;
   }
   @include breakpoint(mediumlarge){
     text-align: right;
