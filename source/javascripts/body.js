@@ -20,6 +20,21 @@ $(document).ready(function() {
 
   //checks the active phase number before loading the carousel
   var activeSlide = $(".phase-nav__item.is-active").index();
+  var widowWidth = $(window).width();
+  var visibleSlides;
+  
+  if (widowWidth > 0 ){
+    visibleSlides = 0;
+  } 
+  if (widowWidth > 479 ){
+    visibleSlides = 1;
+  }
+  if (widowWidth > 768 ){
+    visibleSlides = 2;
+  }
+  if (widowWidth > 980 ){
+    visibleSlides = 3;
+  }
 
   $("[data-carousel]").owlCarousel({
     pagination: false,
@@ -33,6 +48,7 @@ $(document).ready(function() {
     owl.trigger("owl.prev");
   });
 
-  //focus on active phase
-  //owl.trigger('owl.jumpTo', activeSlide);
+  if(activeSlide > visibleSlides){
+    owl.trigger('owl.jumpTo', activeSlide);
+  }
 });
