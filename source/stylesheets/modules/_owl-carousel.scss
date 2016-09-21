@@ -23,6 +23,7 @@
 	display: none;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
+  background: rgba($dark-gray, .9);
 }
 .owl-carousel .owl-wrapper-outer{
 	overflow: hidden;
