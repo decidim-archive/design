@@ -21,7 +21,9 @@
         </div>
       </div>
       <div class="comment__content">
-        <p>Quan sento parlar de contaminació acústica, penso que no hi ha veïns
+        <p>
+          <span class="success label">A favor</span>
+          Quan sento parlar de contaminació acústica, penso que no hi ha veïns
           en tota la ciutat més perjudicats que nosaltres, els que vivim al Pg
           de la Vall d'Hebron des del 198 al 208. Per no parlar de la
           contaminació atmosfèrica, els tubs d'escapament dels vehicles gairabé
@@ -77,7 +79,9 @@
         </div>
       </div>
       <div class="comment__content">
-        <p>Treure l'àrea per a gossos de la platja de llevant i posar-la a una
+        <p>
+          <span class="alert label">En contra</span>
+          Treure l'àrea per a gossos de la platja de llevant i posar-la a una
           platja més centrica amb millor comunicació amb el transport públic i
           amb més espai.</p>
       </div>
@@ -320,12 +324,29 @@
     </button>
   </div>
   <div class="add-comment">
-    <h5>Deixa el teu comentari</h5>
+    <h5 class="section-heading">Deixa el teu comentari</h5>
+    <div class="opinion-toggle button-group">
+
+      <!--Add is-active class to the button to show the selected option-->
+      <button class="button small button--muted opinion-toggle--ok">
+        <svg class="icon icon--before">
+          <use xlink:href="#icon-thumb-up" />
+        </svg>
+        Estic a favor
+      </button>
+      <button class="button small button--muted opinion-toggle--ko">
+        <svg class="icon icon--before">
+          <use xlink:href="#icon-thumb-down" />
+        </svg>
+        Estic en contra
+      </button>
+
+    </div>
     <form>
       <label class="show-for-sr" for="add-comment">Comentari</label>
       <textarea id="add-comment" rows="4"
         placeholder="Què opines d'aquesta proposta?"></textarea>
-      <input type="submit" class="button hollow" value="Enviar">
+      <input type="submit" class="button button--sc" value="Enviar">
     </form>
   </div>
 </section>

@@ -33,6 +33,16 @@
   color: $primary;
 }
 
+.button--muted{
+  background-color: $muted;
+  &:hover{
+    background-color: $secondary;
+  }
+  &.hollow{
+    border-color: $muted;
+  }
+}
+
 .button--sc{
   text-transform: uppercase;
   letter-spacing: .05em;
@@ -40,10 +50,6 @@
   &.large{
     font-size: 1rem;
   }
-}
-
-.button--checked{
-  opacity: .6;
 }
 
 .button__info{

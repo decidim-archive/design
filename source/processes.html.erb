@@ -8,14 +8,13 @@ activepage : processes
 
 <main class="wrapper">
   <div class="row section">
-    <h1>Processos destacats</h1>
-
-    <div class="card card--full card--process">
+    <h1 class="section-heading">Processos destacats</h1>
+    <article class="card card--full card--process">
       <div class="row collapse card--process__row">
-        <div class="column large-6 medium-7 card--process__column">
+        <div class="columns mediumlarge-8 large-6 card--process__column">
           <div class="card__content">
             <a href="/info" class="card__link">
-              <h2>Plan urbanístico de Gracia</h2>
+              <h2 class="card__title">Plan urbanístico de Gracia</h2>
             </a>
             <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum
               quam volutpat aliquam. Integer et elit eget elit facilisis
@@ -30,17 +29,16 @@ activepage : processes
               rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem
               leo, vehicula at nibh quis...
             </p>
-            <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong>
-            </p>
-            <a href="/info" class="button secondary tiny hollow">Más información</a>
+            <a href="/info" class="button secondary small hollow card__button">
+              Más información
+            </a>
           </div>
         </div>
-        <div class="column large-6 medium-5 card--process__column">
+        <div class="columns mediumlarge-4 large-6 card--process__column">
           <div class="card--full__image"
             style="background-image:url(/images/demo-info-page.jpg)">
             <div class="card__content row collapse">
-              <div class="medium-6 medium-offset-6 columns">
+              <div class="large-6 large-offset-6 columns">
                 <a href="/info" class="button expanded button--sc">
                   Participa
                   <span class="button__info">Fase actual: Diagnóstico</span>
@@ -50,14 +48,16 @@ activepage : processes
           </div>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="card card--full card--process">
+    <article class="card card--full card--process">
       <div class="row collapse card--process__row">
-        <div class="column medium-6 card--process__column">
+        <div class="column large-6 card--process__column">
           <div class="card__content">
             <a href="/info" class="card__link">
-              <h2>Plan de fomento del turismo en la Barceloneta</h2>
+              <h2 class="card__title">
+                Plan de fomento del turismo en la Barceloneta
+              </h2>
             </a>
             <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum
               quam volutpat aliquam. Integer et elit eget elit facilisis
@@ -70,16 +70,16 @@ activepage : processes
               lorem leo, vehicula at nibh quis, facilisis accumsan turpis. Fusce
               rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem
               leo, vehicula at nibh quis...</p>
-            <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
-						<a href="/info" class="button secondary tiny hollow">Más información</a>
+						<a href="/info" class="button secondary small hollow">
+              Más información
+            </a>
           </div>
         </div>
-        <div class="column medium-6 card--process__column">
+        <div class="column large-6 card--process__column">
           <div class="card--full__image"
             style="background-image:url(/images/process2.jpg)">
             <div class="card__content row collapse">
-              <div class="medium-6 medium-offset-6 columns">
+              <div class="large-6 large-offset-6 columns">
                 <a href="/info" class="button expanded button--sc">
                   Participa
                   <span class="button__info">Fase actual: Diagnóstico</span>
@@ -89,7 +89,7 @@ activepage : processes
           </div>
         </div>
       </div>
-    </div>
+    </article>
 
   </div>
 
@@ -97,157 +97,230 @@ activepage : processes
     <%= partial 'partials/order_by_processes' %>
     <div class="row small-up-1 medium-up-2 large-up-3 card-grid">
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/demo-info-page.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan urbanístico de Gracia</h4>
+              <h4 class="card__title">Plan urbanístico de Gracia</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/process2.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan de fomento del tursimo de la Barceloneta</h4>
+              <h4 class="card__title">Plan de fomento del tursimo de la
+                Barceloneta</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/demo-info-page.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan urbanístico de Gracia</h4>
+              <h4 class="card__title">Plan urbanístico de Gracia</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/process2.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan urbanístico de Gracia</h4>
+              <h4 class="card__title">Plan urbanístico de Gracia</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/demo-info-page.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan urbanístico de Gracia</h4>
+              <h4 class="card__title">Plan urbanístico de Gracia</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/demo-info-page.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan urbanístico de Gracia</h4>
+              <h4 class="card__title">Plan urbanístico de Gracia</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/demo-info-page.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan urbanístico de Gracia</h4>
+              <h4 class="card__title">Plan urbanístico de Gracia</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/demo-info-page.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan urbanístico de Gracia</h4>
+              <h4 class="card__title">Plan urbanístico de Gracia</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="column">
-        <div class="card card--process">
+        <article class="card card--process">
 					<div class="card__image-top"
             style="background-image:url(/images/demo-info-page.jpg)"></div>
           <div class="card__content">
             <a href="/action-view" class="card__link">
-              <h4>Plan urbanístico de Gracia</h4>
+              <h4 class="card__title">Plan urbanístico de Gracia</h4>
             </a>
             <p class="card__desc">Implementar la instal·lació d’àrees estratègiques
               de càrrega i descàrrega per garantir uns fluxos de mobilitat
               sostenibles i respectuosos. Sed ullamcorper tellus erat, non
               ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit.</p>
-             <p class="card--process__date">Fecha de finalización:
-              <strong>23/10/2016</strong></p>
           </div>
-        </div>
+          <div class="card__footer">
+            <div class="card__support">
+              <span class="card--process__small">Fase activa:
+                <strong>Diagnóstico</strong>
+              </span>
+              <button class="card__button button small">
+                Participa
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>

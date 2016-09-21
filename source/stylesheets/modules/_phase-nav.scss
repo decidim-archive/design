@@ -31,6 +31,10 @@ $active-triangle-height: 12px;
   display: flex;
   align-items: center;
   position: relative;
+  .owl-wrapper &{
+    background: none;
+  }
+
   &:hover{
     color: $primary;
   }
