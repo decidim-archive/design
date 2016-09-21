@@ -75,6 +75,7 @@ $timeline-padding: 1rem;
 
 .timeline__desc{
   width: 90%;
+  width: calc(100% - 45px);
   float: right;
   padding: $timeline-padding/2 $timeline-padding 0;
   border: 1px solid $timeline-color;
