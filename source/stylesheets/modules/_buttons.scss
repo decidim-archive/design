@@ -38,6 +38,9 @@
   &:hover{
     background-color: $secondary;
   }
+  &.hollow{
+    border-color: $muted;
+  }
 }
 
 .button--sc{

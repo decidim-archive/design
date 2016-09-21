@@ -13,6 +13,10 @@ $comment-form-bg: $light-gray;
 
 /* Comments */
 
+.comments{
+  padding-top: 3rem;
+}
+
 .comment-thread{
   @extend .card;
 }
