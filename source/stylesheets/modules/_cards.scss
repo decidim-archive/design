@@ -397,7 +397,7 @@ $datetime-bg: $primary;
     @extend .heading2;
   }
   .card__content{
-    padding: $card-padding*1.5;
+    padding: $card-padding;
     @include breakpoint(large){
       padding: $card-padding*2;
     }
