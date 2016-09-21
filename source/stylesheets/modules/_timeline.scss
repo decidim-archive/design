@@ -79,6 +79,7 @@ $timeline-padding: 1rem;
   float: right;
   padding: $timeline-padding/2 $timeline-padding 0;
   border: 1px solid $timeline-color;
+  border-radius: $global-radius;
   transition: all .3s ease;
   transform: translateY(-.4rem);
   @include breakpoint(medium){
