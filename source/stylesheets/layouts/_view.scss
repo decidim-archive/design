@@ -12,3 +12,11 @@
     margin: 1rem 0;
   }
 }
+
+.view-side{
+  @include breakpoint(medium only){
+    width: 50%;
+    margin: 0 auto 2rem;
+    float: none
+  }
+}
