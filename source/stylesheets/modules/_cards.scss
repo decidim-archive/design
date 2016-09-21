@@ -233,6 +233,8 @@ $datetime-bg: $primary;
 .card__support{
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
   padding: $card-padding-small;
   @include breakpoint(medium){
@@ -240,6 +242,7 @@ $datetime-bg: $primary;
   }
   .card__button{
     margin-left: auto;
+    font-size: $small-font-size;
   }
 }
 
@@ -250,7 +253,6 @@ $datetime-bg: $primary;
   line-height: 1;
   margin-bottom: .2rem;
   color: $muted;
-  margin-right: auto;
 }
 
 .card__support__number{
