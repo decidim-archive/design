@@ -490,4 +490,21 @@ $datetime-bg: $primary;
 	}
 }
 
+/* Card mini */
+
+.card--mini{
+  .card__content{
+    padding: $card-padding $card-padding-small;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .card__image-top{
+    height: 8rem;
+  }
+  .card--process__small{
+    margin-top: auto;
+  }
+}
+
 

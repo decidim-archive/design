@@ -23,15 +23,43 @@
 }
 
 .hero-heading{
-  text-transform: uppercase;
-  letter-spacing: .02em;
   margin-bottom: 1.5rem;
+  font-size: 4.5rem;
+  line-height: 1;
+  text-shadow: 0 0 5px rgba(black, .8);
 }
 
 .hero-cta{
-  margin-top: 6rem;
-  .button{
-    min-width: 12rem;
-    margin: 0 .5rem;
-  }
+  margin-top: 4rem;
+  padding: 1.2rem 1rem;
+}
+
+.subhero{
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.subhero-cta{
+  margin-top: 3rem;
+  color: $primary;
+}
+
+.home-section{
+  background: $light-gray-dark;
+}
+
+.home-bullet{
+  overflow: hidden;
+  //display: flex;
+}
+
+.home-bullet__icon{
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 2rem;
+}
+
+.home-bullet__desc{
+  float: right;
 }
