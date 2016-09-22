@@ -68,11 +68,15 @@ $mini-footer-bg: $dark-gray;
   li{
     display: inline-block;
     padding-left: 1rem;
+    &:first-child{
+      padding-left: 0;
+    }
   }
 }
 
-.footer-social__icon{
-  font-size: 120%;
+.footer-social__icon .icon{
+  width: 16px;
+  height: 16px;
 }
 
 //Mini footer
