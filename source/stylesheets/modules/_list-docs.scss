@@ -19,7 +19,8 @@
 }
 
 .list-check__icon{
-  font-size: 1.4rem;
+  vertical-align: -.05rem;
+  margin-right: .2rem;
   .list-check__ok &{
     color: $success;
   }

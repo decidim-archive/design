@@ -1,7 +1,9 @@
 <div class="process-nav">
   <button class="process-nav__trigger show-for-small-only"
           data-toggle="process-nav-content">
-    <span class="fa fa-caret-down process-nav__trigger__icon"></span>
+    <svg class="icon icon--small process-nav__trigger__icon" aria-label="Desplegar" role="img">
+      <use xlink:href="#icon-caret-bottom"></use>
+    </svg>
     <% if current_page.data.activepage == "info" %>
       <div class="process-nav__link">
         <svg>
