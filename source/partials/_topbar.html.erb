@@ -27,7 +27,9 @@
     <div class="columns small-6 medium-4">
       <div class="hide-for-medium topbar__menu">
         <button type="button" data-toggle="offCanvas">
-          <span class="fa fa-bars"></span>
+          <svg class="icon" aria-label="Navegación" role="img">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
         </button>
       </div>
       <% if current_page.data.activeuser == "logged" %>
