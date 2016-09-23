@@ -19,19 +19,52 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 6rem 0;
+  padding: 3rem 0;
+  @include breakpoint(medium){
+    padding: 4rem 0;
+  }
+  @include breakpoint(mediumlarge){
+    padding: 5rem 0;
+  }
+   @include breakpoint(large){
+    padding: 6rem 0;
+  }
 }
 
 .hero-heading{
   margin-bottom: 1.5rem;
-  font-size: 4.5rem;
+  font-size: 2rem;
   line-height: 1;
   text-shadow: 0 0 5px rgba(black, .8);
+  br{
+    display: none;
+  }
+  @include breakpoint(medium){
+    font-size: 2.5rem;
+    br{
+      display: block;
+    }
+  }
+  @include breakpoint(mediumlarge){
+    font-size: 3.5rem;
+  }
+  @include breakpoint(large){
+    font-size: 4.5rem;
+  }
 }
 
 .hero-cta{
-  margin-top: 4rem;
+  margin-top: 1rem;
   padding: 1.2rem 1rem;
+  @include breakpoint(medium){
+    margin-top: 2rem;
+  }
+  @include breakpoint(mediumlarge){
+    margin-top: 3rem;
+  }
+  @include breakpoint(large){
+    margin-top: 4rem;
+  }
 }
 
 .wrapper-home{
@@ -58,20 +91,47 @@
 .subhero{
   padding: 4rem 0;
   text-align: center;
+  
+  .heading3{
+    @include breakpoint(medium down){
+      font-size: 1.3em;
+    }
+  }
+  .heading2{
+    @include breakpoint(medium down){
+      font-size: 1.5em;
+    }
+  }
+  .heading4{
+    @include breakpoint(medium down){
+      font-size: 1.2em;
+    }
+  }
 }
 
 .subhero-cta{
   margin-top: 2rem;
   color: $primary;
   display: inline-block;
+  .icon{
+    vertical-align: -1px;
+  }
 }
+
+.subhero-cta--secondary{
+  margin-top: 0;
+}
+
 
 .home-section__cta{
   margin-top: 2rem;
 }
 
 .home-bullets{
-  margin: 5rem 0;
+  margin: 2rem 0;
+  @include breakpoint(mediumlarge){
+    margin: 5rem 0;
+  }
 }
 
 .home-bullet{
@@ -108,7 +168,10 @@
 
 .home-pam{
   overflow: hidden;
-  margin: 5rem 0;
+  margin: 2rem 0;
+  @include breakpoint(mediumlarge){
+    margin: 5rem 0;
+  }
 }
 
 .home-pam__title{
@@ -125,28 +188,47 @@
 
 .home-pam__data{
   text-align: center;
-  float: left;
+  @include breakpoint(medium){
+    float: left;
+  }
   padding: .25rem;
   .home-pam__highlight &{
-    width: 50%;
     padding: 1rem 2rem;
-    border-bottom: $border;
-    border-right: $border;
+    @include breakpoint(medium){
+      width: 50%;
+      border-bottom: $border;
+      border-right: $border;
+    }
+    
     &:last-child{
       border-right: none;
     }
   }
   .home-pam__lowlight &{
-    width: 33.3%;
-    &:first-child{
-      text-align: left;
-      padding-left: 0;
-    }
-    &:last-child{
-      text-align: right;
-      padding-right: 0;
+    float: none;
+    @include breakpoint(mediumlarge){
+      float: left;
+      width: 33.33%;
+      &:first-child{
+        text-align: left;
+        padding-left: 0;
+      }
+      &:last-child{
+        text-align: right;
+        padding-right: 0;
+      }
     }
   }
+}
+
+.home-pam__highlight{
+  @include breakpoint(medium){
+    display: flex;
+  }
+}
+
+.home-pam__lowlight{
+  text-align: center;
 }
 
 .home-pam__number{

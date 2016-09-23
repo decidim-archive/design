@@ -81,13 +81,14 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
+  smallmedium: 450px,
   medium: 640px,
   mediumlarge: 800px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
-$breakpoint-classes: (small medium mediumlarge large);
+$breakpoint-classes: (small smallmedium medium mediumlarge large);
 
 // 3. The Grid
 // -----------

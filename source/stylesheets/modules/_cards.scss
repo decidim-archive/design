@@ -500,6 +500,7 @@ $datetime-bg: $primary;
     flex-grow: 1;
   }
   .card__image-top{
+    display: block;
     height: 8rem;
   }
   .card--process__small{
