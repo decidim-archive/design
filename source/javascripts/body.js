@@ -4,8 +4,6 @@
 
 //= require appendAround.js
 
-//= require map/marker
-//= require map/map
 
 //= require owl.carousel.min.js
 
