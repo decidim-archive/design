@@ -34,18 +34,31 @@
   padding: 1.2rem 1rem;
 }
 
-.subhero{
-  padding: 3rem 0;
-  text-align: center;
-}
-
-.subhero-cta{
-  margin-top: 3rem;
-  color: $primary;
+.wrapper-home{
+  padding: 4rem 1rem;
+  @include breakpoint(medium){
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @include breakpoint(large){
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .home-section{
   background: $light-gray-dark;
+}
+
+.subhero{
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.subhero-cta{
+  margin-top: 2rem;
+  color: $primary;
+  display: inline-block;
 }
 
 .home-bullet{
@@ -55,11 +68,26 @@
 
 .home-bullet__icon{
   float: left;
-  width: 50px;
-  height: 50px;
-  margin-right: 2rem;
+  width: 20%;
+  text-align: right;
+  svg{
+    width: 50px;
+    height: 50px;
+    fill: $muted;
+  }
 }
 
 .home-bullet__desc{
   float: right;
+  width: 80%;
+  padding-left: 2rem;
+}
+
+.home-map{
+  .wrapper-home{
+    padding-bottom: 0;
+  }
+  #google-map{
+    margin-bottom: 0;
+  }
 }

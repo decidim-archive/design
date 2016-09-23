@@ -40,7 +40,7 @@ activesection: home
       </div>
     </div>
   </section>
-  <section class="wrapper section">
+  <section class="wrapper-home">
     <div class="row">
       <h3 class="section-heading">Processos destacats</h3>
       <div class="row collapse">
@@ -120,14 +120,16 @@ activesection: home
       </div>
     </div>
   </section>
-  <section class="extended home-section">
-    <div class="wrapper">
+  <section class="extended">
+    <div class="wrapper-home home-section">
       <div class="row small-up-1 medium-up-2">
         <div class="column">
           <div class="home-bullet">
-            <svg class="home-bullet__icon">
-              <use xlink:href="#shape-icon-debates" />
-            </svg>
+            <div class="home-bullet__icon">
+              <svg>
+                <use xlink:href="#shape-icon-debates" />
+              </svg>
+            </div>
             <div class="home-bullet__desc">
               <h4 class="heading6">Debates</h4>
               <p>Encontrarnos, debatir y compartir lo que nos parece importante en
@@ -137,9 +139,11 @@ activesection: home
         </div>
         <div class="column">
           <div class="home-bullet">
-            <svg class="home-bullet__icon">
-              <use xlink:href="#shape-icon-proposals" />
-            </svg>
+            <div class="home-bullet__icon">
+              <svg>
+                <use xlink:href="#shape-icon-proposals" />
+              </svg>
+            </div>
             <div class="home-bullet__desc">
               <h4 class="heading6">Propuestas</h4>
               <p>Encontrarnos, debatir y compartir lo que nos parece importante en
@@ -149,9 +153,11 @@ activesection: home
         </div>
         <div class="column">
           <div class="home-bullet">
-            <svg class="home-bullet__icon">
-              <use xlink:href="#shape-icon-meetings" />
-            </svg>
+            <div class="home-bullet__icon">
+              <svg>
+                <use xlink:href="#shape-icon-meetings" />
+              </svg>
+            </div>
             <div class="home-bullet__desc">
               <h4 class="heading6">Encuentros</h4>
               <p>Encontrarnos, debatir y compartir lo que nos parece importante en
@@ -161,9 +167,11 @@ activesection: home
         </div>
         <div class="column">
           <div class="home-bullet">
-            <svg class="home-bullet__icon">
-              <use xlink:href="#shape-icon-actions" />
-            </svg>
+            <div class="home-bullet__icon">
+              <svg>
+                <use xlink:href="#shape-icon-actions" />
+              </svg>
+            </div>
             <div class="home-bullet__desc">
               <h4 class="heading6">Resultados</h4>
               <p>Encontrarnos, debatir y compartir lo que nos parece importante en
@@ -171,6 +179,44 @@ activesection: home
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="extended subhero">
+    <div class="row">
+      <div class="columns small-centered large-10">
+        <h2 class="heading3">Únete a la plataforma online de
+        participación ciudadana y participa de forma activa para mejorar tu
+        ciudad. Ya somos 156000.</h2>
+        <a href="/user-register" class="button--sc link subhero-cta">
+          Regístrate
+          <svg class="icon icon--after" aria-hidden="true">
+            <use xlink:href="#icon-chevron-right"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="home-map">
+    <div class="wrapper-home home-section">
+      <div class="row column">
+        <h3 class="section-heading">Pròximes trobades</h3>
+      </div>
+    </div>
+    <%= partial 'partials/meetings_map' %>
+  </section>
+  <section class="extended subhero home-section">
+    <div class="row">
+      <div class="columns small-centered large-10">
+        <h2 class="heading3">Únete a la plataforma online de
+        participación ciudadana y participa de forma activa para mejorar tu
+        ciudad. Ya somos 156000.</h2>
+        <a href="/user-register" class="button--sc link subhero-cta">
+          Regístrate
+          <svg class="icon icon--after" aria-hidden="true">
+            <use xlink:href="#icon-chevron-right"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
