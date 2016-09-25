@@ -18,7 +18,7 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
 /* Top bar */
 
 .topbar{
-  @include breakpoint(small down){
+  @include breakpoint(smallmedium down){
     border-top: 34px solid $dark-gray;
   }
 }
@@ -53,7 +53,7 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
 }
 
 .topbar__dropmenu{
-  @include breakpoint(small down){
+  @include breakpoint(smallmedium down){
     font-size: .8rem;
     position: absolute;
     top: 0;

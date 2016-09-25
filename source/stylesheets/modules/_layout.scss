@@ -22,7 +22,7 @@ body{
   flex-direction: column;
   height: auto;
   min-height: 100%;
-  @include breakpoint(small down){
+  @include breakpoint(smallmedium down){
     background-color: $dark-gray;
   }
 }
