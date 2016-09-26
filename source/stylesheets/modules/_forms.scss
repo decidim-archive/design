@@ -9,6 +9,11 @@
   line-height: 1.2;
 }
 
+label > [type='checkbox'],
+label > [type='radio']{
+  margin-bottom: 0; //fixes some problems with line-height in double-line labels
+}
+
 /* Switch additional styles */
 
 .switch-with-label{
