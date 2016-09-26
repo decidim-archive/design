@@ -3,6 +3,10 @@ $card-grid-margin-bottom: map-get($grid-column-gutter, medium);
 .card-grid{
   display: flex;
   flex-wrap: wrap;
+  
+  &:before{
+    width: 0; //fixes a flexbox bug in Safari with the clearfix element
+  }
 
   .column{
     margin-bottom: $card-grid-margin-bottom;

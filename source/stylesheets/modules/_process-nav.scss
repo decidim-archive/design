@@ -39,6 +39,7 @@
 }
 
 .process-nav__trigger{
+  display: block;
   width: 100%;
   text-align: left;
   position: relative;
@@ -51,7 +52,7 @@
 }
 
 .js .process-nav__content{
-  @include breakpoint(small down){
+  @include breakpoint(smallmedium down){
     display: none;
   }
   &.is-active{
@@ -60,11 +61,11 @@
 }
 
 .process-nav__content li{
-  @include breakpoint(small down){
+  @include breakpoint(smallmedium down){
     margin-top: 1rem;
   }
   &.is-active{
-    @include breakpoint(small down){
+    @include breakpoint(smallmedium down){
       display: none;
     }
   }
