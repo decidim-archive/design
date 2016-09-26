@@ -232,14 +232,14 @@ $datetime-bg: $primary;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: $card-padding-small;
   @include breakpoint(medium){
     padding: $card-padding;
   }
   .card__button{
-    margin-left: auto;
+    //margin-left: auto;
     font-size: $small-font-size;
   }
 }
