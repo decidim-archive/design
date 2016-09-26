@@ -1,15 +1,12 @@
 .social-register{
   margin: 2rem 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .button--social{
   padding: 0 1.5rem 0 0;
-  margin: 0 .5rem 1rem;
   text-align: left;
-  flex-basis: 250px;
+  display: block;
+  min-width: 250px;
   &--twitter{
     background-color: $twitter;
     &:hover{
@@ -46,7 +43,7 @@
   position: relative;
   z-index: 1;
   font-style: italic;
-  margin-bottom: 2rem;
+  margin: 4rem 0;
   &:before{
     content: "";
     display: block;
