@@ -22,10 +22,10 @@ activeuser: logged
                   <a href="#userProposals" aria-selected="true">11 propostes</a>
                 </li>
                 <li class="tabs-title">
-                  <a href="#accountStatus">125 comentaris</a>
+                  <a href="#userComments">125 comentaris</a>
                 </li>
                 <li class="tabs-title">
-                  <a href="#userNotifications">3 trobades</a>
+                  <a href="#userMeetings">3 trobades</a>
                 </li>
               </ul>
             </div>
@@ -56,126 +56,118 @@ activeuser: logged
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div class="tabs-panel" id="accountStatus">
-                  <div class="row">
-                    <div class="columns large-4">
-                      <ul class="list-check">
-                        <li class="list-check__ok">
-                          <svg class="icon list-check__icon"
-                               aria-label="Incluye" role="img">
-                            <use xlink:href="#icon-check"></use>
+                    <div class="card--list__item">
+                      <div class="card--list__text">
+                        <a href="#">
+                          <svg class="card--list__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="#shape-icon-proposals"></use>
                           </svg>
-                          Participar en debates</li>
-                        <li class="list-check__ok">
-                          <svg class="icon list-check__icon"
-                               aria-label="Incluye" role="img">
-                            <use xlink:href="#icon-check"></use>
-                          </svg>
-                          Crear nuevas propuestas</li>
-                        <li class="list-check__ko">
-                          <svg class="icon list-check__icon"
-                               aria-label="No incluye" role="img">
-                            <use xlink:href="#icon-x"></use>
-                          </svg>
-                          Apoyar propuestas</li>
-                      </ul>
-                      <p></p>
-                    </div>
-                    <div class="columns large-8 end">
-                      <div class="callout warning">
-                        <p>Tu cuenta no está verificada.</p>
-                      </div>
-                      <p>Solo las personas empadronadas en Barcelona pueden apoyar
-                        propuestas. Si estás inscrito en el padrón, por favor
-                        verifica tu cuenta para sacarle el máximo partido a
-                        Decidim.</p>
-                      <a href="/user-verification" class="button">
-                        Verifica tu cuenta ahora</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tabs-panel" id="userNotifications">
-                  <h3 class="heading3">Quiero recibir notificaciones:</h3>
-                  <form>
-                    <div class="switch tiny switch-with-label">
-                      <label>
-                        <input class="switch-input" type="checkbox">
-                        <span class="switch-paddle"></span>
-                        <span class="switch-label">
-                          Cuando alguien comenta en mis propuestas o debates
-                        </span>
-                      </label>
-                    </div>
-                    <div class="switch tiny switch-with-label">
-                      <label>
-                        <input class="switch-input" type="checkbox">
-                        <span class="switch-paddle"></span>
-                        <span class="switch-label">
-                          Cuando alguien contesta a mis comentarios
-                        </span>
-                      </label>
-                    </div>
-                    <div class="switch tiny switch-with-label">
-                      <label>
-                        <input class="switch-input" type="checkbox" checked>
-                        <span class="switch-paddle"></span>
-                        <span class="switch-label">
-                          Resumen semanal de actividad
-                        </span>
-                      </label>
-                    </div>
-                    <div class="switch tiny switch-with-label">
-                      <label>
-                        <input class="switch-input" type="checkbox" checked>
-                        <span class="switch-paddle"></span>
-                        <span class="switch-label">
-                          Información sobre futuros procesos de participación
-                        </span>
-                      </label>
-                    </div>
-                    <button type="submit" class="button disabled">
-                        Guarda els canvis</button>
-                  </form>
-                </div>
-
-                <div class="tabs-panel" id="deleteAccount">
-                  <div class="row">
-                    <div class="columns large-8 end">
-                      <div class="callout alert">
-                        <p>Aquesta acció no es pot desfer. Una vegada donis de
-                          baixa teu compte, no podràs tornar a entrar-hi com a
-                          usuari.</p>
-                      </div>
-                      <p>Si lo deseas, puedes indicarnos el motivo por el que te
-                        quieres dar de baja (opcional)</p>
-                      <form class="user-form">
+                        </a>
                         <div>
-                          <label>
-                            <span class="user-form__label">Motivo de la baja</span>
-                            <textarea type="text" rows="2"
-                              placeholder="Escribe aquí tu motivo"></textarea>
-                          </label>
+                          <a href="#" class="card__link">
+                            <h5 class="card--list__heading">
+                              Creació d'aules ambientals al Parc del Clot
+                            </h5>
+                          </a>
+                          <span class="text-small">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Suspendisse ut semper
+                            mi, et ullamcorper elit.</span>
                         </div>
-                        <button class="button" data-open="deleteConfirm">
-                          Borrar mi cuenta</button>
-                        <div class="tiny reveal" id="deleteConfirm"
-                          data-reveal>
-                          <p>Estás seguro de que quieres borrar tu cuenta?</p>
-                          <button class="button expanded">
-                          Sí, quiero borrar mi cuenta</button>
-                          <button class="close-button" data-close
-                            aria-label="Cerrar ventana" type="button">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                    </form>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="tabs-panel" id="userComments">
+                  <div class="card card--list">
+                    <div class="card--list__item">
+                      <div class="card--list__text">
+                        <a href="#">
+                          <svg class="card--list__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="#shape-icon-proposals"></use>
+                          </svg>
+                        </a>
+                        <div>
+                          <a href="#" class="card__link">
+                            <h5 class="card--list__heading">
+                              Cubriment de la Ronda de Dalt al seu pas per la Vall d'Hebrón
+                            </h5>
+                          </a>
+                          <span class="text-small">Quan sento parlar de contaminació acústica, penso que no
+                        hi ha veïns en tota la ciutat més perjudicats que
+                        nosaltres, els que vivim al Pg de la Vall d'Hebron des
+                        del 198 al 208. Per no parlar de la contaminació
+                        atmosfèrica, els tubs d'escapament dels vehicles gairabé
+                        s'evacuarien directament al nostre menjador si no fos
+                        que mantenim les finestres i terrasses tencades de
+                        manera permanent.</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card--list__item">
+                      <div class="card--list__text">
+                        <a href="#">
+                          <svg class="card--list__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="#shape-icon-debates"></use>
+                          </svg>
+                        </a>
+                        <div>
+                          <a href="#" class="card__link">
+                            <h5 class="card--list__heading">
+                              Decidim amb Ada Colau sobre el futur de la ciutat
+                            </h5>
+                          </a>
+                          <span class="text-small">Excelente la herramienta de participación decidim.barcelona mas de 4500 propuestas y miles de participantes. Ya sabemos que solo es uno de los muchos foros abiertos de participación pero sin ser garantia de nada recuerde que la propuesta más votada con diferencia a fecha de hoy es "Cubriment de la Ronda de Dalt al seu pas per la Vall d'Hebrón" .Para cuando la Mesa de trabajo y su reunión con las entidades vecinales y los medios de comunicación, comprometida personalmente para febrero y todavia pendiente ???</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tabs-panel" id="userMeetings">
+                  <div class="card card--list">
+                    <div class="card--list__item">
+                      <div class="card--list__text">
+                        <a href="#">
+                          <svg class="card--list__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="#shape-icon-meetings"></use>
+                          </svg>
+                        </a>
+                        <div>
+                          <a href="#" class="card__link">
+                            <h5 class="card--list__heading">
+                              Cooperatives i economia solidària
+                            </h5>
+                          </a>
+                          <span class="text-small">20 Agost 2015</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card--list__item">
+                      <div class="card--list__text">
+                        <a href="#">
+                          <svg class="card--list__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="#shape-icon-meetings"></use>
+                          </svg>
+                        </a>
+                        <div>
+                          <a href="#" class="card__link">
+                            <h5 class="card--list__heading">
+                              Ús de l'espai públic a Badal
+                            </h5>
+                          </a>
+                          <span class="text-small">20 Agost 2015</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
         </div>
