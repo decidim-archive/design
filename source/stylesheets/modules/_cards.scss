@@ -467,12 +467,16 @@ $datetime-bg: $primary;
   }
 
   .card--process__column{
+    position: relative;
     .card--full__image-wrapper{
       height: 100%;
       overflow: hidden;
     }
     .card--full__image{
       height: 100%;
+      position: absolute;
+      right: -1px;
+      left: 0;
       > img{
         min-height: 100%;
         max-width: initial;
