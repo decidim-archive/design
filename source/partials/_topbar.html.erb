@@ -27,7 +27,7 @@
       </a>
     </div>
     
-    <div class="topbar__dropmenu">
+    <div class="topbar__dropmenu language-choose">
       <ul class="dropdown menu" data-dropdown-menu>
         <li class="is-dropdown-submenu-parent">
           <a href="#">Català</a>
@@ -46,17 +46,18 @@
     </div>
     <% if current_page.data.activeuser == "logged" %>
       <div class="topbar__dropmenu topbar__user__logged">
+        <!-- No new notifications? Remove is-active class -->
+        <a href="/user-notifications" class="topbar__notifications is-active"
+           title="Notificaciones">
+          <svg class="icon" data>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xlink:href="#icon-bell"></use>
+          </svg>
+        </a>
         <ul class="dropdown menu" data-dropdown-menu>
           <li class="is-dropdown-submenu-parent show-for-medium">
-              <a href="#">
-                <span class="author author--inline">
-                  <span class="author__name">
-                    <span class="author__avatar">
-                      <img src="/images/demo-avatar.jpg" alt="">
-                    </span>
-                    María Martínez
-                  </span>
-                </span>
+              <a href="#">           
+                  María Martínez
               </a>
             <ul class="menu is-dropdown-submenu js-append usermenu-off-canvas">
               <li><a href="#">Notificaciones (35)</a></li>
