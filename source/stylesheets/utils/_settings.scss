@@ -265,12 +265,12 @@ $buttongroup-expand-max: 6;
 
 $callout-background: $white;
 $callout-background-fade: 90%;
-$callout-border: 1px solid $medium-gray;
+$callout-border: 0;
 $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
 $callout-font-color-alt: $body-background;
-$callout-radius: $global-radius;
+$callout-radius: 0;
 $callout-link-tint: 30%;
 
 // 14. Close Button
