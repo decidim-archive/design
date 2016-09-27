@@ -1,12 +1,31 @@
 <!-- Topbar -->
-<a target="_blank" href="http://ajuntament.barcelona.cat/"
-   class="logo-cityhall">
-  <img src="/images/badge-ajuntament-header.svg"
-       alt="Ajuntament de Barcelona">
-</a>
-<div class="topbar title-bar">
-  <div class="row">
-    <div class="columns small-12 medium-4 topbar__dropmenu">
+<div class="title-bar">
+  <a target="_blank" href="http://ajuntament.barcelona.cat/"
+     class="logo-cityhall">
+    <img src="/images/badge-ajuntament-header.svg"
+         alt="Ajuntament de Barcelona">
+  </a>
+  <div class="row topbar">
+    <div class="logo-wrapper">
+      <a href="/">
+        <!-- Remove this, use the final SVG logo -->
+          <span>
+            Decidim<br>
+            Barcelona
+          </span>
+          <style>
+            .logo-wrapper span{ color: white; font-weight: 600;
+                                display: inline-block; text-align: left;
+                                padding-left: 8px; line-height: 1;
+                                position: relative; }
+            .logo-wrapper span:before{ content: ""; display: block;
+              position: absolute; border-left: 4px solid white; height: 88%;
+              top: 6%; left: 0; }
+          </style>
+        <!-- /Remove-->
+      </a>
+    </div>
+    <div class="topbar__dropmenu language-choose">
       <ul class="dropdown menu" data-dropdown-menu>
         <li class="is-dropdown-submenu-parent">
           <a href="#">Català</a>
@@ -16,69 +35,53 @@
         </li>
       </ul>
     </div>
-    <div class="columns small-6 medium-4 logo-wrapper">
-      <a href="">
-        <span>
-          Decidim<br>
-          Barcelona
-        </span>
-      </a>
+    <div class="hide-for-medium topbar__menu">
+      <button type="button" data-toggle="offCanvas">
+        <svg class="icon" aria-label="Navegación" role="img">
+          <use xlink:href="#icon-menu"></use>
+        </svg>
+      </button>
     </div>
-    <div class="columns small-6 medium-4">
-      <div class="hide-for-medium topbar__menu">
-        <button type="button" data-toggle="offCanvas">
-          <svg class="icon" aria-label="Navegación" role="img">
-            <use xlink:href="#icon-menu"></use>
+    <% if current_page.data.activeuser == "logged" %>
+      <div class="topbar__dropmenu topbar__user__logged">
+        <!-- No new notifications? Remove is-active class -->
+        <a href="/user-notifications" class="topbar__notifications is-active"
+           title="Notificaciones">
+          <svg class="icon" data>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xlink:href="#icon-bell"></use>
           </svg>
-        </button>
-      </div>
-      <% if current_page.data.activeuser == "logged" %>
-        <div class="topbar__dropmenu topbar__user__logged">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="is-dropdown-submenu-parent show-for-medium">
-                <a href="#">
-                  <span class="author author--inline">
-                    <span class="author__name">
-                      <span class="author__avatar">
-                        <img src="/images/demo-avatar.jpg" alt="">
-                      </span>
-                      María Martínez
-                    </span>
-                    <!-- add .is-active only with new notifications-->
-                    <span class="notifications-badge is-active">
-                      <svg class="icon icon--small"
-                           aria-label="Notificaciones" role="img">
-                        <use xlink:href="#icon-bell"></use>
-                      </svg>
-                    </span>
-                  </span>
-                </a>
+        </a>
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="is-dropdown-submenu-parent show-for-medium">
+              <a href="#">           
+                  María Martínez
+              </a>
+            <ul class="menu is-dropdown-submenu js-append usermenu-off-canvas">
+              <li><a href="#">Notificaciones (35)</a></li>
+              <li><a href="#">Siguiendo (12)</a></li>
+              <li><a href="#">Tu cuenta</a></li>
+              <li><a href="#">Salir</a></li>
+            </ul>
+            <span data-set="nav-login-holder" class="show-for-medium">
+              <!-- Repeated due to dropdown limitations -->
               <ul class="menu is-dropdown-submenu js-append usermenu-off-canvas">
                 <li><a href="#">Notificaciones (35)</a></li>
                 <li><a href="#">Siguiendo (12)</a></li>
                 <li><a href="#">Tu cuenta</a></li>
                 <li><a href="#">Salir</a></li>
               </ul>
-              <span data-set="nav-login-holder" class="show-for-medium">
-                <!-- Repeated due to dropdown limitations -->
-                <ul class="menu is-dropdown-submenu js-append usermenu-off-canvas">
-                  <li><a href="#">Notificaciones (35)</a></li>
-                  <li><a href="#">Siguiendo (12)</a></li>
-                  <li><a href="#">Tu cuenta</a></li>
-                  <li><a href="#">Salir</a></li>
-                </ul>
-              </span>
-            </li>
-          </ul>
-        </div>
-      <% else %>
-        <div class="topbar__user show-for-medium" data-set="nav-login-holder">
-            <div class="topbar__user__login js-append">
-              <a href="/user-register">Regístrate</a>
-              <a href="/user-login">Entra</a>
-            </div>
-        </div>
-      <% end %>
-    </div>
+            </span>
+          </li>
+        </ul>
+      </div>
+    <% else %>
+      <div class="topbar__user show-for-medium" data-set="nav-login-holder">
+          <div class="topbar__user__login js-append">
+            <a href="/user-register">Regístrate</a>
+            <a href="/user-login">Entra</a>
+          </div>
+      </div>
+    <% end %>
   </div>
 </div>
