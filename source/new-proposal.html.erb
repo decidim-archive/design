@@ -1,0 +1,47 @@
+---
+title: Proceso -- Decidim Barcelona
+activesection: processes
+activephase: phase3
+activepage : proposals
+---
+
+<%= partial 'partials/template_top' %>
+
+<main class="wrapper">
+  <%= partial 'partials/process_header' %>
+  <div class="row columns">
+    <a href="" class="muted-link">
+      <svg class="icon icon--small">
+        <use xlink:href="#icon-chevron-left" />
+      </svg>
+      Volver
+    </a>
+    <h2 class="section-heading">Nueva propuesta</h2>
+  </div>
+  <div class="row">
+    <div class="columns large-6 medium-centered">
+      <div class="card">
+        <div class="card__content">
+          <form class="register-form">
+            <div>
+              <div>
+                <label>Título de la propuesta
+                  <input type="text" placeholder="Nueva propuesta en decidim.barcelona">
+                </label>
+              </div>
+              <div>
+                <label>Descripción de la propuesta
+                  <textarea placeholder="¿Qué propones?" rows="10"></textarea>
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="button expanded">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%= partial 'partials/template_bottom' %>
+
