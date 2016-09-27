@@ -30,6 +30,10 @@ $datetime-bg: $primary;
   //box-shadow: $card-shadow;
 }
 
+.card--nomargin{
+  margin-bottom: 0;
+}
+
 .card--secondary{
   background: $card-secondary-bg;
   box-shadow: none;
