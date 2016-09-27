@@ -15,58 +15,67 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   background: $navbar-bg;
 }
 
-/* Top bar */
+/* Title bar */
 
-.topbar{
+.title-bar{
+  position: relative;
   @include breakpoint(smallmedium down){
-    border-top: 34px solid $dark-gray;
+    border-top: 2.125rem solid $dark-gray;
   }
 }
 
-.logo-wrapper{
-  padding: 0 1rem;
+.logo-cityhall{
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  margin-top: -1.95rem;
+  img{
+    width: auto;
+    height: 22px !important;
+  }
+
   @include breakpoint(medium){
-    text-align: center;
-    padding: .5rem 1rem;
-  }
-  a{
-    display: inline-block;
-  }
-  span{
-    color: $white;
-    font-weight: 600;
-    display: inline-block;
-    text-align: left;
-    padding-left: .3rem;
-    line-height: 1;
-    position: relative;
-    &:before{
-      content: "";
-      display: block;
-      position: absolute;
-      border-left: 4px solid $white;
-      height: 88%;
-      top: 6%;
-      left: -5px;
+    top: 50%;
+    margin-top: -19px;
+    img{ 
+      height: 38px !important;
     }
   }
 }
 
+
+/* Top bar */
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-wrapper{
+  display: inline-block;
+  flex-grow: 1;
+  a, img{
+    display: block;
+  }
+}
+
 .topbar__dropmenu{
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 0;
   @include breakpoint(smallmedium down){
     font-size: .8rem;
     position: absolute;
-    top: 0;
+    top: -2.2rem;
+    left: .5rem;
     .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
       border-width: 3px;
       right: 10px;
       margin-top: 0;
     }
   }
-  
-  @include breakpoint(medium){
-    padding-top: .4rem;
-  }
+
   .menu > li > a{
     padding-left: 0;
   }
@@ -77,8 +86,8 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   .is-dropdown-submenu{
     text-align: left;
     padding-left: .3rem;
-    background-color: rgba($white, .8);
-    border-radius: $global-radius;
+    background-color: $dark-gray;
+    border-collapse: $medium-gray;
     min-width: 150px;
     a{
       padding: 0.3rem 1rem;
@@ -94,8 +103,9 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
 }
 
 .topbar__user{
-  padding-top: 1rem;
-  padding-right: 2rem;
+  display: inline-block;
+  padding-right: 2.5rem;
+  margin-left: 1rem;
   @media (min-width: 1270px){
     padding-right: 0;
   }
@@ -113,11 +123,12 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
 .topbar__menu{
   text-align: right;
   font-size: 20px;
+  margin-right: .1rem;
 }
 
 .topbar__user__logged{
   text-align: right;
-  padding-right: 2rem;
+  padding-right: 2.5rem;
   @media (min-width: 1270px){
     padding-right: 0;
   }
@@ -174,17 +185,6 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   }
 }
 
-.logo-cityhall{
-  position: absolute;
-  z-index: 1;
-  top: 3px;
-  right: 0;
-  width: 24px;
-  @include breakpoint(medium){
-    top: 1rem;
-    width: 40px;
-  }
-}
 
 /* Main nav */
 .main-nav{
