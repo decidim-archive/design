@@ -22,6 +22,7 @@
 
 .address__details{
   float: left;
+  max-width: 100%; //IE10 bug fix
   padding-left: .5em;
   align-self: center;
 }
