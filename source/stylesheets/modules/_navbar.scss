@@ -106,7 +106,7 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   display: inline-block;
   padding-right: 2.5rem;
   margin-left: 1rem;
-  @media (min-width: 1270px){
+  @media (min-width: (1300 / 16) + em){
     padding-right: 0;
   }
 }
