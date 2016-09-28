@@ -1,46 +1,34 @@
 <div class="process-nav">
   <button class="process-nav__trigger hide-for-medium"
           data-toggle="process-nav-content">
-    <svg class="icon icon--small process-nav__trigger__icon" aria-label="Desplegar" role="img">
-      <use xlink:href="#icon-caret-bottom"></use>
-    </svg>
+    <%= icon "caret-bottom", class: "icon--small process-nav__trigger__icon", aria_label: "Desplegar", role: "img" %>
     <% if current_page.data.activepage == "info" %>
       <div class="process-nav__link">
-        <svg>
-          <use xlink:href="#shape-icon-info" />
-        </svg>
+        <%= icon(:information) %>
         <span>Informació</span>
       </div>
     <% end %>
     <% if current_page.data.activepage == "proposals" %>
       <div class="process-nav__link">
-        <svg>
-          <use xlink:href="#shape-icon-proposals" />
-        </svg>
+        <%= icon(:proposals) %>
         <span>Propostes</span>
       </div>
     <% end %>
     <% if current_page.data.activepage == "actions" %>
       <div class="process-nav__link">
-        <svg>
-          <use xlink:href="#shape-icon-actions" />
-        </svg>
+        <%= icon "actions" %>
         <span>Resultats</span>
       </div>
     <% end %>
     <% if current_page.data.activepage == "debates" %>
       <div class="process-nav__link">
-        <svg>
-          <use xlink:href="#shape-icon-debates" />
-        </svg>
+        <%= icon "debates" %>
         <span>Debats</span>
       </div>
     <% end %>
     <% if current_page.data.activepage == "meetings" %>
       <div class="process-nav__link">
-        <svg>
-          <use xlink:href="#shape-icon-meetings" />
-        </svg>
+        <%= icon "meetings" %>
         <span>Trobades</span>
       </div>
     <% end %>
@@ -53,9 +41,7 @@
                  <% end %>">
         <a href="/phase1_info" class="process-nav__link
           <% if current_page.data.activepage == "info" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-info" />
-          </svg>
+          <%= icon(:info) %>
           <span>Informació</span>
         </a>
       </li>
@@ -63,9 +49,7 @@
                  <% end %>">
         <a href="/phase1_meetings" class="process-nav__link
           <% if current_page.data.activepage == "meetings" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-meetings" />
-          </svg>
+          <%= icon "meetings" %>
           <span>Trobades</span>
         </a>
       </li>
@@ -83,9 +67,7 @@
                  <% end %>">
         <a href="/phase2_debates" class="process-nav__link
           <% if current_page.data.activepage == "debates" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-debates" />
-          </svg>
+          <%= icon "debates" %>
           <span>Debats</span>
         </a>
       </li>
@@ -93,9 +75,7 @@
                  <% end %>">
         <a href="/phase2_meetings" class="process-nav__link
           <% if current_page.data.activepage == "meetings" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-meetings" />
-          </svg>
+          <%= icon "meetings" %>
           <span>Trobades</span>
         </a>
       </li>
@@ -113,9 +93,7 @@
                  <% end %>">
         <a href="/phase3_proposals" class="process-nav__link
           <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-proposals" />
-          </svg>
+          <%= icon "proposals" %>
           <span>Propostes</span>
         </a>
       </li>
@@ -123,9 +101,7 @@
                  <% end %>">
         <a href="/phase3_debates" class="process-nav__link
           <% if current_page.data.activepage == "debates" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-debates" />
-          </svg>
+          <%= icon "debates" %>
           <span>Debats</span>
         </a>
       </li>
@@ -133,9 +109,7 @@
                  <% end %>">
         <a href="/phase3_meetings" class="process-nav__link
           <% if current_page.data.activepage == "meetings" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-meetings" />
-          </svg>
+          <%= icon "meetings" %>
           <span>Trobades</span>
         </a>
       </li>
@@ -153,9 +127,7 @@
                  <% end %>">
         <a href="/phase4_proposals" class="process-nav__link
           <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-proposals" />
-          </svg>
+          <%= icon "proposals" %>
           <span>Propostes</span>
         </a>
       </li>
@@ -163,9 +135,7 @@
                  <% end %>">
         <a href="/phase4_proposals_2" class="process-nav__link
           <% if current_page.data.activepage == "proposals2" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-proposals" />
-          </svg>
+          <%= icon "proposals" %>
           <span>Propostes 2</span>
         </a>
       </li>
@@ -183,9 +153,7 @@
                  <% end %>">
         <a href="/phase5_results" class="process-nav__link
           <% if current_page.data.activepage == "results" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-actions" />
-          </svg>
+          <%= icon "actions" %>
           <span>Resultados</span>
         </a>
       </li>
@@ -203,9 +171,7 @@
                  <% end %>">
         <a href="/info" class="process-nav__link
           <% if current_page.data.activepage == "info" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-info" />
-          </svg>
+          <%= icon "information" %>
           <span>Informació</span>
         </a>
       </li>
@@ -213,9 +179,7 @@
                  <% end %>">
         <a href="/proposals" class="process-nav__link
           <% if current_page.data.activepage == "proposals" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-proposals" />
-          </svg>
+          <%= icon "proposals" %>
           <span>Propostes</span>
         </a>
       </li>
@@ -223,9 +187,7 @@
                  <% end %>">
         <a href="/actions" class="process-nav__link
           <% if current_page.data.activepage == "actions" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-actions" />
-          </svg>
+          <%= icon "actions" %>
           <span>Resultats</span>
         </a>
       </li>
@@ -233,9 +195,7 @@
                  <% end %>">
         <a href="/debates" class="process-nav__link
           <% if current_page.data.activepage == "debates" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-debates" />
-          </svg>
+          <%= icon "debates" %>
           <span>Debats</span>
         </a>
       </li>
@@ -243,9 +203,7 @@
                  <% end %>">
         <a href="/meetings" class="process-nav__link
           <% if current_page.data.activepage == "meetings" %>is-active<% end %>">
-          <svg>
-            <use xlink:href="#shape-icon-meetings" />
-          </svg>
+          <%= icon "meetings" %>
           <span>Trobades</span>
         </a>
       </li>
