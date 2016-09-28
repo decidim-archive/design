@@ -59,3 +59,18 @@ activate :email do |email|
   email.domain = 'mg.marsbased.com'
   email.address = 'smtp.mailgun.org'
 end
+
+helpers do
+  def icon(name, options = {})
+    size = ''
+    size += " width=\"#{options[:width]}\"" if options[:width]
+    size += " height=\"#{options[:height]}\"" if options[:height]
+
+    aria_label = "aria-label=\"#{options[:aria_label]}\"" if options[:aria_label]
+    aria_hidden = "aria-hidden=\"true\"" if options[:aria_hidden]
+
+    role = "role=\"#{options[:role]}\"" if options[:role]
+
+    "<svg class=\"icon icon--#{name} #{options[:class]}\"#{size} #{role} #{aria_label} #{aria_hidden}> <use xlink:href=\"#{asset_url '/images/icons.svg'}#icon-#{name}\" /> </svg>"
+  end
+end
