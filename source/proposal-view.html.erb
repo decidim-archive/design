@@ -27,9 +27,7 @@ activepage : proposals
         </div>
         <div class="author-data__extra">
           <a href="#comments" title="Comentarios">
-            <svg class="icon icon--small" aria-label="Comentarios" role="img">
-              <use xlink:href="/images/shapes.svg#icon-comment-square"></use>
-            </svg> 108
+            <%= icon "comment-square", class: "icon--small", aria_label: "Comentarios", role: "img" %> 108
           </a>
           <%= partial 'partials/flag' %>
         </div>
@@ -55,9 +53,7 @@ activepage : proposals
             </div>
             <button class="button expanded button--sc">Apoyar</button>
             <button class="button secondary hollow expanded small button--icon">
-          <svg class="icon">
-            <use xlink:href="/images/icons.svg#icon-bell" />
-          </svg>
+          <%= icon "bell" %>
           <span>Seguir propuesta</span>
         </button>
           </div>
@@ -68,9 +64,7 @@ activepage : proposals
         <div class="text-center">
           <button class="link text-center">
             Compartir propuesta
-            <svg class="icon icon--share icon--after">
-              <use xlink:href="/images/icons.svg#icon-share" />
-            </svg>
+            <%= icon "share", class: "icon--share icon--after" %>
           </button>
         </div>
       </div>

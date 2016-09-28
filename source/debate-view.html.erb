@@ -28,9 +28,7 @@ activepage : debates
         </div>
         <div class="author-data__extra">
           <a href="#comments" title="Comentarios">
-            <svg class="icon icon--small" aria-label="Comentarios" role="img">
-              <use xlink:href="/images/icons.svg#icon-comment-square"></use>
-            </svg> 108
+            <%= icon "comment-square", aria_label: "Comentarios", role: "img" %> 108
           </a>
         </div>
       </div>
@@ -41,9 +39,7 @@ activepage : debates
         <div class="text-center">
           <button class="link text-center">
             Compartir debate
-            <svg class="icon icon--share icon--after">
-              <use xlink:href="/images/icons.svg#icon-share" />
-            </svg>
+            <%= icon "share", class: "icon--after" %>
           </button>
         </div>
       </div>
