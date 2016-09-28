@@ -5,9 +5,7 @@
         <input class="input-group-field" type="search" placeholder="Buscar">
         <div class="input-group-button">
           <button type="submit" class="button button--muted">
-            <svg class="icon" aria-label="Buscar" role="img">
-              <use xlink:href="#icon-magnifying-glass"></use>
-            </svg>
+            <%= icon "magnifying-glass", aria_label: "Buscar", role: "img" %>
           </button>
         </div>
       </div>
@@ -20,9 +18,7 @@
           <h6 class="heading6">
             Origen 
             <span class="help">
-              <svg class="icon icon--after">
-                <use xlink:href="#icon-info" />
-              </svg>
+              <%= icon "info", class: "icon--after" %>
             </span>
           </h6>
         </legend>
@@ -82,9 +78,7 @@
           <h6 class="heading6">
             Eix
             <span class="help">
-              <svg class="icon icon--after">
-                <use xlink:href="#icon-info" />
-              </svg>
+              <%= icon "info", class: "icon--after" %>
             </span>
           </h6>
         </legend>

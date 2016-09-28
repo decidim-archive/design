@@ -131,6 +131,19 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   }
 }
 
+.topbar__user__logged{
+  text-align: right;
+  padding-right: 2.5rem;
+  display: none;
+  @include breakpoint(medium){
+    display: block;
+  }
+  @media (min-width: (1300 / 16) + em){
+    padding-right: 0;
+  }
+}
+
+
 .topbar__notifications{
   margin-right: .5rem;
   vertical-align: -4px;
@@ -166,17 +179,6 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   }
 }
 
-.topbar__user__logged{
-  text-align: right;
-  padding-right: 2.5rem;
-  display: none;
-  @include breakpoint(medium){
-    display: block;
-  }
-  @media (min-width: 1270px){
-    padding-right: 0;
-  }
-}
 
 /* Menu icon and off-canvas */
 .topbar__menu{

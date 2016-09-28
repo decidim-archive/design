@@ -5,37 +5,15 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     cfg: {
-      shapesPath: 'source/shapes',
-      partialsPath: 'source/partials'
-    },
-
-    // Optimize the SVGs dropped inside the icons folder
-    svgmin: {
-      dev: {
-        options: {
-          plugins: [
-            {
-              removeTitle: true
-            }
-          ]
-        },
-        files: [
-          {
-            expand: true,
-            cwd: '<%= cfg.shapesPath %>/',
-            src: ['*.svg'],
-            //src: ['*.svg', '*/*.svg'], //with subfolders
-            dest: '<%= cfg.shapesPath %>/'
-          }
-        ]
-      }
+      iconsPath: 'source/icons',
+      imagesPath: 'source/images'
     },
 
     // SVG Sprite generator
     svgstore: {
       dev: {
         options: {
-          prefix : 'shape-',
+          prefix : 'icon-',
           cleanup: false,
           svg: {
             viewBox : '0 0 100 100',
@@ -43,12 +21,12 @@ module.exports = function (grunt) {
             style: 'display:none'
           }
         },
-        src: ['<%= cfg.shapesPath %>/*.svg'],
-        //src: ['<%= cfg.shapesPath %>/*.svg', '<%= cfg.shapesPath %>/*/*.svg'],
-        dest: '<%= cfg.partialsPath %>/_shapes.html.erb'
+        src: ['<%= cfg.iconsPath %>/*.svg'],
+        //src: ['<%= cfg.iconsPath %>/*.svg', '<%= cfg.shapesPath %>/*/*.svg'],
+        dest: '<%= cfg.imagesPath%>/icons.svg'
       },
     },
   });
 
-  grunt.registerTask('svg', ['svgmin', 'svgstore:dev']);
+  grunt.registerTask('svg', ['svgstore']);
 }

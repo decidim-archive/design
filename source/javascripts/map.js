@@ -49,7 +49,7 @@ $(function () {
       '<div class="address card__extra">'+
       '<div class="address__icon">'+
       '<svg width="40" height="70">'+
-      '<use xlink:href="#shape-icon-meetings" />'+
+      '<use xlink:href="/images/icons.svg#icon-meetings" />'+
       '</svg>'+
       '</div>'+
       '<div class="address__details">'+
