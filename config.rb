@@ -71,6 +71,9 @@ helpers do
 
     role = "role=\"#{options[:role]}\"" if options[:role]
 
-    "<svg class=\"icon icon--#{name} #{options[:class]}\"#{size} #{role} #{aria_label} #{aria_hidden}> <use xlink:href=\"#{asset_url '/images/icons.svg'}#icon-#{name}\" /> </svg>"
+    iconClass = "icon"
+    iconClass = "" if options[:removeIconClass]
+
+    "<svg class=\"#{iconClass} icon--#{name} #{options[:class]}\"#{size} #{role} #{aria_label} #{aria_hidden}> <use xlink:href=\"#{asset_url '/images/icons.svg'}#icon-#{name}\" /> </svg>"
   end
 end
