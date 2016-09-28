@@ -3,7 +3,7 @@
 //= require foundation-sites/dist/foundation.min
 
 //= require appendAround.js
-
+//= require svg4everybody.min.js
 
 //= require owl.carousel.min.js
 
@@ -54,4 +54,8 @@ $(document).ready(function() {
   if(activeSlide > visibleSlides){
     owl.trigger('owl.jumpTo', activeSlide);
   }
+});
+
+$(function(){
+  svg4everybody();
 });

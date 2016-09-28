@@ -5,8 +5,8 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     cfg: {
-      shapesPath: 'source/shapes',
-      partialsPath: 'source/partials'
+      iconsPath: 'source/icons',
+      imagesPath: 'source/images'
     },
 
     // Optimize the SVGs dropped inside the icons folder
@@ -22,10 +22,10 @@ module.exports = function (grunt) {
         files: [
           {
             expand: true,
-            cwd: '<%= cfg.shapesPath %>/',
+            cwd: '<%= cfg.iconsPath %>/',
             src: ['*.svg'],
             //src: ['*.svg', '*/*.svg'], //with subfolders
-            dest: '<%= cfg.shapesPath %>/'
+            dest: '<%= cfg.iconsPath %>/'
           }
         ]
       }
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
     svgstore: {
       dev: {
         options: {
-          prefix : 'shape-',
+          prefix : 'icon-',
           cleanup: false,
           svg: {
             viewBox : '0 0 100 100',
@@ -43,9 +43,9 @@ module.exports = function (grunt) {
             style: 'display:none'
           }
         },
-        src: ['<%= cfg.shapesPath %>/*.svg'],
-        //src: ['<%= cfg.shapesPath %>/*.svg', '<%= cfg.shapesPath %>/*/*.svg'],
-        dest: '<%= cfg.partialsPath %>/_shapes.html.erb'
+        src: ['<%= cfg.iconsPath %>/*.svg'],
+        //src: ['<%= cfg.iconsPath %>/*.svg', '<%= cfg.shapesPath %>/*/*.svg'],
+        dest: '<%= cfg.imagesPath%>/icons.svg'
       },
     },
   });
