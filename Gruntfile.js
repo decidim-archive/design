@@ -9,28 +9,6 @@ module.exports = function (grunt) {
       imagesPath: 'source/images'
     },
 
-    // Optimize the SVGs dropped inside the icons folder
-    svgmin: {
-      dev: {
-        options: {
-          plugins: [
-            {
-              removeTitle: true
-            }
-          ]
-        },
-        files: [
-          {
-            expand: true,
-            cwd: '<%= cfg.iconsPath %>/',
-            src: ['*.svg'],
-            //src: ['*.svg', '*/*.svg'], //with subfolders
-            dest: '<%= cfg.iconsPath %>/'
-          }
-        ]
-      }
-    },
-
     // SVG Sprite generator
     svgstore: {
       dev: {
@@ -50,5 +28,5 @@ module.exports = function (grunt) {
     },
   });
 
-  grunt.registerTask('svg', ['svgmin', 'svgstore:dev']);
+  grunt.registerTask('svg', ['svgstore']);
 }
