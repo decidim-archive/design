@@ -64,7 +64,7 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
     display: block;
     max-width: 100px;
     @include breakpoint(mediumlarge){
-      max-width: 100%;
+      max-width: 140px;
     }
   }
 }
