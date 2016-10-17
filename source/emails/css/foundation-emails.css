@@ -902,14 +902,14 @@ small {
   color: #cacaca; }
 
 a {
-  color: #5295ad;
+  color: #599aa6;
   text-decoration: none; }
   a:hover {
     color: #147dc2; }
   a:active {
     color: #147dc2; }
   a:visited {
-    color: #5295ad; }
+    color: #599aa6; }
 
 h1 a,
 h1 a:visited,
@@ -923,7 +923,7 @@ h5 a,
 h5 a:visited,
 h6 a,
 h6 a:visited {
-  color: #5295ad; }
+  color: #599aa6; }
 
 pre {
   background: #f3f3f3;
@@ -977,8 +977,8 @@ table.button {
   table.button table td {
     text-align: left;
     color: #fefefe;
-    background: #c24b29;
-    border: 2px solid #c24b29; }
+    background: #ef604d;
+    border: 2px solid #ef604d; }
     table.button table td a {
       font-family: Helvetica, Arial, sans-serif;
       font-size: 16px;
@@ -987,7 +987,7 @@ table.button {
       text-decoration: none;
       display: inline-block;
       padding: 8px 16px 8px 16px;
-      border: 0 solid #c24b29;
+      border: 0 solid #ef604d;
       border-radius: 3px; }
   table.button.radius table td {
     border-radius: 3px;
@@ -1046,13 +1046,13 @@ table.button.expanded {
 table.button:hover table td,
 table.button:visited table td,
 table.button:active table td {
-  background: #147dc2;
+  background: #eb3c24;
   color: #fefefe; }
 
 table.button:hover table a,
 table.button:visited table a,
 table.button:active table a {
-  border: 0 solid #147dc2; }
+  border: 0 solid #eb3c24; }
 
 table.button.secondary table td {
   background: #777777;
@@ -1168,7 +1168,7 @@ table.menu {
     padding-right: 10px; }
     table.menu td.menu-item a,
     table.menu th.menu-item a {
-      color: #5295ad; }
+      color: #599aa6; }
 
 table.menu.vertical td.menu-item,
 table.menu.vertical th.menu-item {
