@@ -22,15 +22,6 @@ call:
 grunt svg
 ```
 
-## Deploy
-
-The deploy is configured to work only with MarsBased servers and MarsBased
-employees credentials.
-
-```
-bundle exec middleman deploy --build-before
-```
-
 ## Compatibility
 
 **Browser compatibility:**
