@@ -1,23 +1,9 @@
-# Marsman Template
-Middleman Template for starting new projects.
+# Decidim Design
 
-## Installation of the Marsman Template
+Decidim Design is an open source project that contains the new design and the front-end implementation of the [Decidim Barcelona](http://decidim.barcelona) platform, from [Ajuntament de Barcelona](http://ajuntament.barcelona.cat/en/).
 
-To use Marsman as a template, clone the Git repository into ~/.middleman, like so:
-
-```
-git clone https://github.com/MarsBased/marsman-template.git ~/.middleman/marsman
-```
-
-Then use the new template argument for the middleman init command:
-
-```
-middleman init new_project --template=marsman
-```
-
-## Project README
-
-Developed with Middleman (https://middlemanapp.com/)
+Developed originally by [MarsBased](http://www.marsbased.com).
+Developed with [Middleman](https://middlemanapp.com/).
 Uses Grunt to automatize SVG inline generation.
 
 ## Development
