@@ -22,7 +22,7 @@ configure :development do
   set :environment, 'development'
 end
 
-if ENV["RACK_ENV"] == "production"
+if ENV['RACK_ENV'] == 'production'
   activate :minify_css
   activate :minify_javascript
 else
