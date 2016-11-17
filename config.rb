@@ -17,10 +17,16 @@ set :images_dir, 'images'
 set :fonts_dir, 'fonts'
 
 activate :autoprefixer
-activate :livereload
 
 configure :development do
   set :environment, 'development'
+end
+
+if ENV["RACK_ENV"] == "production"
+  activate :minify_css
+  activate :minify_javascript
+else
+  activate :livereload
 end
 
 activate :directory_indexes
