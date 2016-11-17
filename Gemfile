@@ -15,5 +15,4 @@ source 'https://rails-assets.org' do
   ## gem 'rails-assets-ngDialog'
 end
 
-gem "puma"
 gem "foreman"
