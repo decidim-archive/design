@@ -1,6 +1,6 @@
 # Decidim Design
 
-Decidim Design is an open source project that contains the new design and the front-end implementation of the [Decidim Barcelona](http://decidim.barcelona) platform, from [Ajuntament de Barcelona](http://ajuntament.barcelona.cat/en/). The repository that contains the platform development can be found [here](https://github.com/AjuntamentdeBarcelona/decidim.barcelona).
+Decidim Design is an open source project that contains the new design and the front-end implementation of the [Decidim Barcelona](http://decidim.barcelona) platform, from [Ajuntament de Barcelona](http://ajuntament.barcelona.cat/en/). The repository that contains the platform development can be found [here](https://github.com/AjuntamentdeBarcelona/decidim).
 
 
 Developed originally by [MarsBased](http://www.marsbased.com).
