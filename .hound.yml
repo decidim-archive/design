@@ -2,3 +2,5 @@ scss:
   config_file: .scss-lint.yml
 ruby:
   config_file: .rubocop.yml
+eslint:
+  enabled: true
