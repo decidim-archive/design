@@ -2,10 +2,10 @@
   <button class="process-nav__trigger hide-for-medium"
           data-toggle="process-nav-content">
     <%= icon "caret-bottom", class: "icon--small process-nav__trigger__icon", aria_label: "Desplegar", role: "img" %>
-    <% if current_page.data.activepage == "info" %>
+    <% if current_page.data.activepage == "processhome" %>
       <div class="process-nav__link">
-        <%= icon(:information) %>
-        <span>Informació</span>
+        <%= icon "process" %>
+        <span>En aquesta fase</span>
       </div>
     <% end %>
     <% if current_page.data.activepage == "proposals" %>
@@ -35,6 +35,22 @@
   </button>
   <div class="row column process-nav__content" id="process-nav-content"
        data-toggler=".is-active">
+    <% if current_page.data.activepage == "processhome" %>
+      <ul>
+        <li>
+          <a href="/phase2_debates" class="process-nav__link">
+            <%= icon "debates" %>
+            <span>Debats</span>
+          </a>
+        </li>
+        <li>
+          <a href="/phase2_meetings" class="process-nav__link">
+            <%= icon "meetings" %>
+            <span>Trobades</span>
+          </a>
+        </li>
+      </ul>
+    <% end %>
     <% if current_page.data.activephase == "phase1" %>
     <ul>
       <li class="<% if current_page.data.activepage == "info" %>is-active
