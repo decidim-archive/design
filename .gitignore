@@ -6,6 +6,7 @@
 
 # Ignore the build directory
 /build
+/public
 
 # Ignore the bower directory
 /source/bower_components
