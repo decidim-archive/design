@@ -1,16 +1,22 @@
+dist: trusty
+
 language: ruby
 
 before_install:
   # Repo for newer Node.js versions
   - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
   - yarn
+  - bower install
+
+cache:
+  bundler: true
+  directories:
+    - $HOME/.yarn-cache
+
+script: bundle exec middleman build
 
 rvm:
   - 2.3.3
 
-install:
-  - bundle install --path vendor/bundle
-  - yarn
-  - bower install
-
-script: bundle exec middleman build
+notifications:
+  email: false
