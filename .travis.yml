@@ -1,17 +1,22 @@
-language: node_js
+dist: trusty
 
-node_js:
-  - "6"
+language: ruby
 
 before_install:
-  - rvm install 2.3.1
-  - npm install --global yarn
-  - sudo apt-get update -qq
-  - sudo apt-get install -y -qq yarn
-
-install:
-  - bundle install --path vendor/bundle
+  # Repo for newer Node.js versions
+  - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
   - yarn
-  - bower install
+  - yarn run bower -- install
+
+cache:
+  bundler: true
+  directories:
+    - $HOME/.yarn-cache
 
 script: bundle exec middleman build
+
+rvm:
+  - 2.3.3
+
+notifications:
+  email: false
