@@ -1,7 +1,9 @@
-language: node_js
+language: ruby
 
-node_js:
-  - "6"
+before_install:
+  # Repo for newer Node.js versions
+  - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+  - yarn
 
 rvm:
   - 2.3.3
