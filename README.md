@@ -1,4 +1,4 @@
-# Decidim Design ([Demo](https://decidim-design.herokuapp.com)) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![Travis](https://img.shields.io/travis/AjuntamentdeBarcelona/decidim-design.svg)](https://travis-ci.org/AjuntamentdeBarcelona/decidim-design)
+# Decidim Design ([Demo](https://decidim-design.herokuapp.com)) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![Travis](https://img.shields.io/travis/AjuntamentdeBarcelona/decidim-design.svg)](https://travis-ci.org/AjuntamentdeBarcelona/decidim-design) [![License: AGPL v3](https://img.shields.io/github/license/AjuntamentdeBarcelona/decidim-design.svg)](https://github.com/AjuntamentdeBarcelona/decidim-design/blob/master/LICENSE-AGPLv3.txt)
 
 Decidim Design is an open source project that contains the new design and the front-end implementation of [Decidim Barcelona](http://decidim.barcelona) platform for [Ajuntament de Barcelona](http://ajuntament.barcelona.cat/en/). The platform code can be found at its [own repository](https://github.com/AjuntamentdeBarcelona/decidim).
 
