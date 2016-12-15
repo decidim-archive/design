@@ -97,3 +97,14 @@
     }
   }
 }
+
+
+/////////////////////////////////////////////////
+/////OVERWRITE STYLES FOR NEW PROCESS HEADER/////
+/////////////////////////////////////////////////
+
+.process-header--np{
+  .process-nav{
+    margin-top: 0;
+  }
+}

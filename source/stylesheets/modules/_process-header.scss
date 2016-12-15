@@ -144,6 +144,82 @@
 	margin-top: 3rem;
 	.button{
 		margin-bottom: 0;
-	}
-	
+	}	
+}
+
+
+/////////////////////////////////////////////////
+/////OVERWRITE STYLES FOR NEW PROCESS HEADER/////
+/////////////////////////////////////////////////
+
+.process-header--np{
+  .process-header__container{
+    padding: 0 0 0 1.5rem;
+  }
+  .process-header__phase{
+    background: rgba($dark-gray, .8);
+    color: $white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-left: -1rem;
+    .button{
+      margin-top: 1rem;
+      margin-bottom: 0;
+      color: $white;
+      border-color: $white;
+      &:hover{
+        color: $primary;
+        border-color: $primary;
+      }
+    }
+  }
+  .process-header__progress{
+    margin-bottom: 1rem;
+    ol{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    li{
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 100%;
+      text-align: center;
+      &:after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $muted;
+        position: absolute;
+        top: 4px;
+        z-index: 0;
+      }
+      span{
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $muted;
+        margin: auto;
+        z-index: 1;
+      }
+    }
+    .phase-item--past{
+      &:after{
+        background-color: $primary;
+      }
+      span{
+        background-color: $primary;
+        opacity: 1;
+      }
+    }
+    .phase-current{
+      font-weight: 600;
+      font-size: 90%;
+    }
+  }
 }
