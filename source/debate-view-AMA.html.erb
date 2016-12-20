@@ -51,12 +51,7 @@ activepage : debates
         </div>
         <button class="button expanded" data-open="debate-info">
           Com participo al debat?</button>
-        <div class="text-center">
-          <button class="link text-center">
-            Compartir debate
-            <%= icon "share", class: "icon--after" %>
-          </button>
-        </div>
+        <%= partial 'partials/share' %>
       </div>
       <div class="reveal" id="debate-info" data-reveal>
         <div class="reveal__header">

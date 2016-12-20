@@ -1,6 +1,10 @@
 <div class="text-center">
   <button class="link text-center" data-open="processShare">
-    Compartir propuesta
+    Compartir
+    <% if current_page.data.activepage == "actions" %> resultat<% end %>
+    <% if current_page.data.activepage == "meetings" %> trobada<% end %>
+    <% if current_page.data.activepage == "debates" %> debat<% end %>
+    <% if current_page.data.activepage == "proposals" %> proposta<% end %>
     <%= icon "share", class: "icon--after"%>
   </button>
 </div>
