@@ -60,7 +60,7 @@
 
 .process-header__hashtag{
   font-weight: 600;
-  &:after{
+  &::after{
     content: "·";
     margin-left: .5rem;
     margin-right: .5rem;
