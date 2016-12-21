@@ -31,7 +31,7 @@
     position: relative;
     width: 100%;
     text-align: center;
-    &:after{
+    &::after{
       content: "";
       display: block;
       height: 2px;
@@ -58,7 +58,7 @@
       width: 5px;
       height: 5px;
     }
-    &:after{
+    &::after{
       height: 1px;
       top: 2px;
     }
