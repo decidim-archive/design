@@ -1,3 +1,13 @@
+<div class="text-center">
+  <button class="link text-center" data-open="processShare">
+    Compartir
+    <% if current_page.data.activepage == "actions" %> resultat<% end %>
+    <% if current_page.data.activepage == "meetings" %> trobada<% end %>
+    <% if current_page.data.activepage == "debates" %> debat<% end %>
+    <% if current_page.data.activepage == "proposals" %> proposta<% end %>
+    <%= icon "share", class: "icon--after"%>
+  </button>
+</div>
 <div class="reveal" id="processShare" data-reveal>
   <div class="reveal__header">
     <h3 class="reveal__title">Compartir:</h3>
@@ -22,7 +32,7 @@
       <%= icon "instagram" %>
     </a>
     <a class="button secondary" data-open="urlShare">
-      <%= icon "link-itact" %>
+      <%= icon "link-intact" %>
     </a>
   </div>
 </div>
