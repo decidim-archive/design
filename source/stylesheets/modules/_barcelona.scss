@@ -1,7 +1,7 @@
 //Section heading
 .section-heading.section-heading:before{
   //double selector to increase specificity
-  background: url(/images/barcelona/heading-icon.svg) no-repeat center;
+  background: image-url("barcelona/heading-icon.svg") no-repeat center;
   width: .9rem;
   height: .9rem;
   margin-right: .3rem;
@@ -18,7 +18,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/images/barcelona/pattern-big.svg) no-repeat left top;
+    background: image-url("barcelona/pattern-big.svg") no-repeat left top;
     z-index: 0;
     background-size: 32px;
     @include breakpoint(medium){
@@ -43,7 +43,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/images/barcelona/pattern.svg) no-repeat left bottom;
+    background: image-url("barcelona/pattern.svg") no-repeat left bottom;
     z-index: 0;
     background-size: 40px;
   }
