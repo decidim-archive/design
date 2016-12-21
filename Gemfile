@@ -8,7 +8,7 @@ gem 'font-awesome-sass', '~> 4.3.0', require: false
 gem 'middleman-autoprefixer'
 gem 'middleman-email', github: 'marsbased/middleman-email'
 
-gem "scss-lint", require: false
+gem "scss_lint", require: false
 
 gem 'middleman-deploy', '~> 1.0'
 
