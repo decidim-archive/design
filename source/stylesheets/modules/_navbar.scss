@@ -62,9 +62,9 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   }
   img{
     display: block;
-    max-width: 100px;
+    max-height: 33px;
     @include breakpoint(mediumlarge){
-      max-width: 140px;
+      max-height: 45px;
     }
   }
 }
