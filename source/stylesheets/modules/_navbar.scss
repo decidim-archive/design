@@ -190,6 +190,9 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 $primary;
   text-align: right;
   font-size: 20px;
   margin-right: .1rem;
+  button {
+    color: inherit;
+  }
 }
 
 .usermenu-off-canvas-holder .usermenu-off-canvas{
