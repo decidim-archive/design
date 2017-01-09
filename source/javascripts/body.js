@@ -1,6 +1,6 @@
 //= require jquery/dist/jquery
-//= require what-input/what-input.min
-//= require foundation-sites/dist/foundation.min
+//= require what-input/dist/what-input.min
+//= require foundation-sites/dist/js/foundation.min
 
 //= require appendAround.js
 //= require svg4everybody.min.js
