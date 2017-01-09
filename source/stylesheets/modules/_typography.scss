@@ -9,16 +9,16 @@ input{
 
 @mixin heading($heading) {
   line-height: 1.2;
-  font-size: map-get(map-get(map-get($header-styles, small), h1), 'font-size') / 16 + em;
+  font-size: map-get(map-get(map-get($header-styles, small), $heading), 'font-size') / 16 + em;
   @include breakpoint(medium){
-    font-size: map-get(map-get(map-get($header-styles, medium), h1), 'font-size') / 16 + em;
+    font-size: map-get(map-get(map-get($header-styles, medium), $heading), 'font-size') / 16 + em;
   }
 }
 
 .heading1{
-  line-height: 1.1;
   font-weight: 600;
   @include heading(h1);
+  line-height: 1.1;
 }
 
 .heading2{
