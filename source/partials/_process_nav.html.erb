@@ -2,6 +2,12 @@
   <button class="process-nav__trigger hide-for-medium"
           data-toggle="process-nav-content">
     <%= icon "caret-bottom", class: "icon--small process-nav__trigger__icon", aria_label: "Desplegar", role: "img" %>
+    <% if current_page.data.activepage == "phases" %>
+      <div class="process-nav__link">
+        <%= icon "information" %>
+        <span>Continguts</span>
+      </div>
+    <% end %>
     <% if current_page.data.activepage == "info" %>
       <div class="process-nav__link">
         <%= icon "process" %>
