@@ -57,7 +57,8 @@ $comment-form-bg: $light-gray;
   }
 }
 
-.comment__footer{
+.comment__footer,
+.comment__additionalreply{
   padding: $comment-padding;
   font-size: 90%;
   @include clearfix;
