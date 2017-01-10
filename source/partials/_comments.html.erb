@@ -67,7 +67,6 @@
           </div>
           <div class="author-data__extra">
             <%= partial 'partials/flag_empty' %>
-            
             <!-- optional permalink; should launch a modal with the link -->
             <a href="#">
               <%= icon "link-intact", class: "icon--small", aria_label: "Enlace permanente" %>
@@ -381,24 +380,30 @@
   </div>
   <div class="add-comment">
     <h5 class="section-heading">Deixa el teu comentari</h5>
-    <div class="opinion-toggle button-group">
+    <% if current_page.data.logoutcomments == true %>
+      <p>
+        <a href="/user-login">Entra en tu cuenta</a> o <a href="/user-register">regístrate</a> para poder dejar un comentario.
+      </p>
+    <% else %>
+      <div class="opinion-toggle button-group">
 
-      <!--Add is-active class to the button to show the selected option-->
-      <button class="button small button--muted opinion-toggle--ok">
-        <%= icon "thumb-up", class: "icon--before" %>
-        Estic a favor
-      </button>
-      <button class="button small button--muted opinion-toggle--ko">
-        <%= icon "thumb-down", class: "icon--before" %>
-        Estic en contra
-      </button>
+        <!--Add is-active class to the button to show the selected option-->
+        <button class="button small button--muted opinion-toggle--ok">
+          <%= icon "thumb-up", class: "icon--before" %>
+          Estic a favor
+        </button>
+        <button class="button small button--muted opinion-toggle--ko">
+          <%= icon "thumb-down", class: "icon--before" %>
+          Estic en contra
+        </button>
 
-    </div>
-    <form>
-      <label class="show-for-sr" for="add-comment">Comentari</label>
-      <textarea id="add-comment" rows="4"
-        placeholder="Què opines d'aquesta proposta?"></textarea>
-      <input type="submit" class="button button--sc" value="Enviar">
-    </form>
+      </div>
+      <form>
+        <label class="show-for-sr" for="add-comment">Comentari</label>
+        <textarea id="add-comment" rows="4"
+          placeholder="Què opines d'aquesta proposta?"></textarea>
+        <input type="submit" class="button button--sc" value="Enviar">
+      </form>
+    <% end %>
   </div>
 </section>
