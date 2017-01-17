@@ -42,9 +42,31 @@ activepage : proposals2
       </div>
 
       <div class="card__content budget-summary__selected">
-        <strong>5</strong> proyectos seleccionados. <a data-toggle="reveal-selected">Ver seleccionados</a>
+        <button data-toggle="reveal-selected">
+          <strong>5</strong> proyectos seleccionados
+          <%= icon("caret-bottom", class:"icon--small", aria_label: "Veure", role: "img") %>
+        </button>
         <div id="reveal-selected" class="hide" data-toggler=".hide">
-          [SELECCIONADOS]
+          <ul class="budget-summary__selected-list">
+            <li class="budget-summary__selected-item">
+              <a href="#">
+                Diagnòstic sobre l'existència i la necessitat de menjadors socials per a gent gran al Districte
+              </a>
+              <strong class="budget-summary__selected-number">22.000.000€</strong>
+              <a href="#">
+                <%= icon("trash", aria_label: "Treure", role: "img") %>
+              </a>
+            </li>
+            <li class="budget-summary__selected-item">
+              <a href="#">
+                Diagnòstic sobre l'existència i la necessitat de menjadors
+              </a>
+              <strong class="budget-summary__selected-number">22.000.000€</strong>
+              <a href="#">
+                <%= icon("trash", aria_label: "Treure", role: "img") %>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
