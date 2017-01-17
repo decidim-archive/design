@@ -62,20 +62,48 @@ activepage : proposals2
     </div>
     <div class="columns mediumlarge-8 large-9">
       <%= partial 'partials/order_by' %>
-      <div class="card card--list card--list--smallwrap">
+      <div class="card card--list budget-list">
           <div class="card--list__item">
             <div class="card--list__text">
-              <div>
-                  <a href="#" class="card__link">
-                    <h5 class="card__title">
-                      Diagnòstic sobre l'existència i la necessitat de menjadors socials per a gent gran al Districte
-                    </h5>
-                  </a>
-              </div>
+              <a href="#" class="card__link">
+                <h5 class="card__title budget-list__title">
+                  Diagnòstic sobre l'existència i la necessitat de menjadors socials per a gent gran al Districte
+                </h5>
+              </a>
             </div>
-            <div class="card--list__data-action">
-              2.000.000€
-              <a href="#" class="button tiny hollow">
+            <div class="card--list__data budget-list__data">
+              <span class="card--list__data__number budget-list__number">22.000.000€</span>
+              <a href="#" class="button tiny hollow budget--list__action">
+                <%= icon("check", class: "icon--small", aria_label: "Afegir", role: "img") %>
+              </a>
+            </div>
+          </div>
+          <div class="card--list__item">
+            <div class="card--list__text">
+              <a href="#" class="card__link">
+                <h5 class="card__title budget-list__title">
+                  Diagnòstic sobre l'existència i la necessitat de menjadors
+                </h5>
+              </a>
+            </div>
+            <div class="card--list__data budget-list__data budget-list__data--added">
+              <span class="card--list__data__number budget-list__number">30.000€</span>
+              <a href="#" class="button tiny success budget--list__action">
+                <%= icon("check", class: "icon--small", aria_label: "Afegir", role: "img") %>
+              </a>
+            </div>
+          </div>
+          <div class="card--list__item">
+            <div class="card--list__text">
+              <a href="#" class="card__link">
+                <h5 class="card__title budget-list__title">
+                  Menjadors socials per a gent gran al Districte
+                </h5>
+              </a>
+            </div>
+            <div class="card--list__data budget-list__data">
+              <span class="card--list__data__number budget-list__number">150.000.000€</span>
+              <a href="#" class="button tiny hollow budget--list__action">
                 <%= icon("check", class: "icon--small", aria_label: "Afegir", role: "img") %>
               </a>
             </div>
