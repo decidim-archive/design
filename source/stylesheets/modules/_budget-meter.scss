@@ -16,6 +16,31 @@
   }
 }
 
+.progressbox-fixed-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: $white;
+  box-shadow: 0 2px 7px rgba(black,.1);
+  display: none;
+  &.is-progressbox-visible{
+    display: block;
+  }
+
+}
+
+.budget-summary__progressbox--fixed{
+  margin: auto;
+  max-width: $global-width;
+  padding: 1rem 2rem;
+  @include breakpoint(mediumlarge){
+    padding: 1rem 4rem;
+  }
+  display: flex;
+}
+
 .budget-progress{
   flex-grow: 1;
   margin-bottom: .5rem;
@@ -26,6 +51,13 @@
     margin-right: 1rem;
   }
 }
+
+.budget-progress--fixed{
+  height: auto;
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
+
 
 .budget-progress__meter{
   min-width: 0.1%;

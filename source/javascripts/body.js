@@ -4,6 +4,7 @@
 
 //= require appendAround.js
 //= require svg4everybody.min.js
+//= require progressFixed.js
 
 $(document).foundation();
 
@@ -12,4 +13,5 @@ $(".js-append").appendAround();
 
 $(function(){
   svg4everybody();
+  progressFixed();
 });
