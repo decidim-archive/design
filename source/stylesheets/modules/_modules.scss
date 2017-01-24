@@ -1,43 +1,58 @@
-@import "address";
-@import "author-avatar";
-@import "budget-list";
+//Basic modules
+@import "typography";
+@import "title-action";
 @import "buttons";
-@import "callout";
+@import "forms";
+@import "icons";
+@import "video";
+
+//Foundation overrides
+@import "reveal";
+
+//Layout
+@import "layout";
+@import "navbar";
+@import "main-container";
+@import "footer";
+@import "static-pages";
+
+//Cards and containers
 @import "card-grid";
 @import "cards";
-@import "comments";
-@import "cookie-bar";
-@import "definition-data";
 @import "extra";
-@import "filter-tags";
-@import "filters";
-@import "flag";
-@import "footer";
-@import "forms";
-@import "help";
-@import "icons";
-@import "layout";
-@import "list-docs";
-@import "main-container";
-@import "map";
-@import "navbar";
+@import "definition-data";
+@import "callout";
+
+//Shared modules
+@import "comments";
 @import "opinion-toggle";
+@import "flag";
+@import "author-avatar";
+@import "address";
 @import "order-by";
-@import "popularity";
+@import "tags";
+
+//Process elements
 @import "process-header";
 @import "process-info";
 @import "process-nav";
 @import "process-phase";
-@import "progress";
-@import "reference";
-@import "reveal";
-@import "share";
-@import "signup";
-@import "static-pages";
-@import "status-labels";
-@import "tags";
 @import "timeline";
-@import "title-action";
-@import "typography";
+@import "filter-tags";
+@import "filters";
+@import "reference";
+@import "status-labels";
+
+//User interface
 @import "user-form";
-@import "video";
+@import "signup";
+
+//Additional elements
+@import "share";
+@import "help";
+@import "cookie-bar";
+@import "map";
+
+
+//Unused modules
+//@import "list-docs";
