@@ -1,10 +1,9 @@
 //@import compass
+@import "variables";
 @import "utils/*";
 
 @import "foundation";
 @include foundation-everything;
-
-@import "variables";
 
 @import "modules/modules";
 @import "features/features";
