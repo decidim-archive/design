@@ -113,34 +113,48 @@ activeuser: logged
                       257
                     </a>
                   </div>
-                  <div class="button-group">
-                    <button class="button small button--muted opinion-toggle--ok">
-                      <%= icon "thumb-up", class: "icon--before" %>
-                      Estic a favor
+                  <div class="opinion-toggle button-group">
+                    <button class="button tiny button--muted opinion-toggle--ok" title="Comentari a favor">
+                      <%= icon "thumb-up", aria_label: "A favor" %>
                     </button>
-                    <button class="button small button--muted opinion-toggle--ko">
-                      <%= icon "thumb-down", class: "icon--before" %>
-                      Estic en contra
+                    <button class="button tiny button--muted opinion-toggle--meh" title="Comentari neutral">
+                      Neutral
                     </button>
-                  </div>
-                  <div class="button-group">
-                    <button class="button small button--muted opinion-toggle--ok is-active">
-                      <%= icon "thumb-up", class: "icon--before" %>
-                      Estic a favor
-                    </button>
-                    <button class="button small button--muted opinion-toggle--ko">
-                      <%= icon "thumb-down", class: "icon--before" %>
-                      Estic en contra
+                    <button class="button tiny button--muted opinion-toggle--ko" title="Comentari en contra">
+                      <%= icon "thumb-down", aria_label: "En contra" %>
                     </button>
                   </div>
-                  <div class="button-group">
-                    <button class="button small button--muted opinion-toggle--ok">
-                      <%= icon "thumb-up", class: "icon--before" %>
-                      Estic a favor
+                  <div class="opinion-toggle button-group">
+                    <button class="button tiny button--muted opinion-toggle--ok is-active" title="Comentari a favor">
+                      <%= icon "thumb-up", aria_label: "A favor" %>
                     </button>
-                    <button class="button small button--muted opinion-toggle--ko is-active">
-                      <%= icon "thumb-down", class: "icon--before" %>
-                      Estic en contra
+                    <button class="button tiny button--muted opinion-toggle--meh is-inactive" title="Comentari neutral">
+                      Neutral
+                    </button>
+                    <button class="button tiny button--muted opinion-toggle--ko is-inactive" title="Comentari en contra">
+                      <%= icon "thumb-down", aria_label: "En contra" %>
+                    </button>
+                  </div>
+                  <div class="opinion-toggle button-group">
+                    <button class="button tiny button--muted opinion-toggle--ok is-inactive" title="Comentari a favor">
+                      <%= icon "thumb-up", aria_label: "A favor" %>
+                    </button>
+                    <button class="button tiny button--muted opinion-toggle--meh is-active" title="Comentari neutral">
+                      Neutral
+                    </button>
+                    <button class="button tiny button--muted opinion-toggle--ko is-inactive" title="Comentari en contra">
+                      <%= icon "thumb-down", aria_label: "En contra" %>
+                    </button>
+                  </div>
+                  <div class="opinion-toggle button-group">
+                    <button class="button tiny button--muted opinion-toggle--ok is-inactive" title="Comentari a favor">
+                      <%= icon "thumb-up", aria_label: "A favor" %>
+                    </button>
+                    <button class="button tiny button--muted opinion-toggle--meh is-inactive" title="Comentari neutral">
+                      Neutral
+                    </button>
+                    <button class="button tiny button--muted opinion-toggle--ko is-active" title="Comentari en contra">
+                      <%= icon "thumb-down", aria_label: "En contra" %>
                     </button>
                   </div>
                 </div>

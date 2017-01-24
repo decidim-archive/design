@@ -390,19 +390,20 @@
         <a href="/user-login">Entra en tu cuenta</a> o <a href="/user-register">regístrate</a> para poder dejar un comentario.
       </p>
     <% else %>
+
       <div class="opinion-toggle button-group">
-
-        <!--Add is-active class to the button to show the selected option-->
-        <button class="button small button--muted opinion-toggle--ok">
-          <%= icon "thumb-up", class: "icon--before" %>
-          Estic a favor
+        <!--Add is-active class to the button to show the selected option, add is-inactive class to the rest-->
+        <button class="button tiny button--muted opinion-toggle--ok" title="Comentari a favor">
+          <%= icon "thumb-up", aria_label: "A favor" %>
         </button>
-        <button class="button small button--muted opinion-toggle--ko">
-          <%= icon "thumb-down", class: "icon--before" %>
-          Estic en contra
+        <button class="button tiny button--muted opinion-toggle--meh" title="Comentari neutral">
+          Neutral
         </button>
-
+        <button class="button tiny button--muted opinion-toggle--ko" title="Comentari en contra">
+          <%= icon "thumb-down", aria_label: "En contra" %>
+        </button>
       </div>
+
       <form>
         <label class="show-for-sr" for="add-comment">Comentari</label>
         <textarea id="add-comment" rows="4"
