@@ -34,11 +34,11 @@
         <a href="" class="comment__reply muted-link">
           Ver comentario</a>
         <div class="comment__votes">
-          <a href="" class="comment__votes--up">
+          <a href="" class="comment__votes--up is-vote-selected">
             <%= icon "chevron-top", class: "icon--small", aria_label: "Votar a favor", role: "img" %>
             257
           </a>
-          <a href="" class="comment__votes--down">
+          <a href="" class="comment__votes--down is-vote-notselected">
             <%= icon "chevron-bottom", class: "icon--small", aria_label: "Votar en contra", role: "img" %>
             257
           </a>
@@ -88,11 +88,11 @@
         <button class="comment__reply muted-link" data-toggle="comment1-reply">
           Responder</button>
         <div class="comment__votes">
-          <a href="" class="comment__votes--up">
+          <a href="" class="comment__votes--up is-vote-notselected">
             <%= icon "chevron-top", class: "icon--small", aria_label: "Votar a favor", role: "img" %>
             257
           </a>
-          <a href="" class="comment__votes--down">
+          <a href="" class="comment__votes--down is-vote-selected">
             <%= icon "chevron-bottom", class: "icon--small", aria_label: "Votar en contra", role: "img" %>
             257
           </a>
