@@ -9,6 +9,13 @@ activepage : info
 <main class="wrapper">
   <%= partial 'partials/process_header' %>
   <div class="row column">
+    <div class="row column">
+      <div class="callout secondary">
+        <p>
+          Los presupuestos participativos ya están abiertos. <a href="#">¡Consúltalos y vota!</a>
+        </p>
+      </div>
+    </div>
 		<div class="row">
 			<div class="columns medium-7 mediumlarge-8">
 				<div class="section">
@@ -44,9 +51,9 @@ activepage : info
 						a l'Av. de Borbó i projecte...
 					</p>
 					<div class="show-more">
-						<button class="muted-link">
-              Leer más <span aria-hidden="true">+</span>
-						</button>
+            <button class="button button--muted tiny">
+              Leer más
+            </button>
 					</div>
 				</div>
       </div>
@@ -77,6 +84,14 @@ activepage : info
     </div>
     <div class="row">
       <div class="columns large-8">
+        <div class="section">
+          <h4 class="section-heading">Citas destacadas</h4>
+					<%= partial 'partials/meetings_highlights' %>
+				</div>
+        <div class="section">
+          <h4 class="section-heading">Propuestas destacadas</h4>
+					<%= partial 'partials/proposals_highlights' %>
+				</div>
 				<div class="section">
 					<h4 class="section-heading">Documentos relacionados</h4>
 					<div class="card card--list">
