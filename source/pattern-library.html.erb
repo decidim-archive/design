@@ -55,6 +55,29 @@ activeuser: logged
                   <button class="button hollow">.hollow</button>
                   <button class="button hollow secondary">.hollow .secondary</button>
                   <hr>
+                  <h2 class="section-heading">Paginación</h2>
+                  <div class="section">
+                    <div class="show-more">
+                      <!--primary load more -->
+                      <button class="button button--muted small">
+                        Ver más propouestas
+                      </button>
+                    </div>
+                    <div class="show-more">
+                      <!--primary load more -->
+                      <button class="button button--muted small">
+                        Ver más comentarios
+                      </button>
+                    </div>
+                    <div class="show-more">
+                      <!--secondary load more -->
+                      <button class="muted-link">
+                        Ver más comentarios
+                      </button>
+                    </div>
+                  </div>
+                  <%= partial 'partials/pagination' %>
+                  <hr>
                   <h2 class="section-heading">Botones y estados</h2>
                   <button class="button small">Apoyar</button>
                   <button class="button small success">Apoyando</button>
