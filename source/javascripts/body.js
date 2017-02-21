@@ -7,6 +7,8 @@
 //= require foundation-datepicker/js/locales/foundation-datepicker.ca.js
 
 //= require form_datepicker
+//= require form_validation_custom_errors
+
 //= require appendAround.js
 //= require svg4everybody.min.js
 //= require progressFixed.js
@@ -19,4 +21,5 @@ $(function(){
   svg4everybody();
   progressFixed();
   formDatePicker();
+  formValidationCustomErrors();
 });

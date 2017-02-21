@@ -1,4 +1,6 @@
-/* Froms foundation overwrites*/
+$input-margin: 1.5rem;
+
+// Froms foundation overwrites
 
 .input-group-button button{
   height: 2.5rem;
@@ -14,7 +16,7 @@ label > [type='radio']{
   margin-bottom: 0; //fixes some problems with line-height in double-line labels
 }
 
-/* Switch additional styles */
+// Switch additional styles
 
 .switch-with-label{
   > label{
@@ -27,4 +29,17 @@ label > [type='radio']{
     margin-right: 1rem;
     flex-shrink: 0;
   }
+}
+
+//Custom errors
+.custom-error{
+  @extend .form-error;
+}
+
+.custom-error--simple{
+  margin-top: 0;
+}
+
+.is-custom-error-visible{
+  display: block;
 }
