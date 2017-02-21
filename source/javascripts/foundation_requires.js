@@ -15,3 +15,4 @@
 // = require foundation-sites/dist/js/plugins/foundation.util.nest.js
 // = require foundation-sites/dist/js/plugins/foundation.util.touch.js
 // = require foundation-sites/dist/js/plugins/foundation.util.triggers.js
+// = require foundation-sites/dist/js/plugins/foundation.abide.js
