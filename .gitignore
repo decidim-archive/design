@@ -30,3 +30,6 @@
 
 # Ignore Personal Icon
 Icon
+
+# Ignore package-lock
+package-lock.json
