@@ -9,6 +9,13 @@
           " href="/home">Inici</a></li>
         <li>
           <a class="main-nav__link
+          <% if current_page.data.activesection == "consultations" %>
+           main-nav__link--active
+          <% end %>
+          " href="/consultations">Multiconsulta</a>
+        </li>
+        <li>
+          <a class="main-nav__link
           <% if current_page.data.activesection == "processes" %>
            main-nav__link--active
           <% end %>
