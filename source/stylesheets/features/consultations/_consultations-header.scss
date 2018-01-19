@@ -49,21 +49,27 @@
 .consultations-header__link{
   font-weight: 600;
   color: $white;
+  &:hover{
+    color: $primary;
+  }
   .icon{
     width: 8px;
     height: 8px;
   }
 }
 
-.consultations-header__action{
+.consultations-header__extra{
   background: rgba($dark-gray, .8);
   color: $white;
   text-align: center;
   padding: 2rem 1rem;
   margin-left: -1rem;
+  @include breakpoint(medium down){
+    display: none;
+  }
 }
 
-.consultations-header__action-title{
+.consultations-header__extra-title{
   display: block;
   font-weight: 600;
   font-size: 1rem;
@@ -74,6 +80,6 @@
   text-transform: uppercase;
 }
 
-.consultations-header__action-date{
+.consultations-header__extra-date{
   font-weight: 900;
 }

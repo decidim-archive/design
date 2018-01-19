@@ -7,7 +7,7 @@ activepage : info
 <%= partial 'partials/template_top' %>
 
 <main class="wrapper">
-  <%= partial 'partials/consultations_header' %>
+  <%= partial 'partials/consultations_header_home' %>
   <div class="row column">
     <%= partial 'partials/consultations_nav' %>
   </div>
@@ -50,31 +50,51 @@ activepage : info
         <%= partial 'partials/documents' %>
       </div>
       <div class="section columns medium-5 mediumlarge-4 large-3">
-        <button class="button secondary hollow expanded button--icon">
-          <%= icon "bell" %>
-          <span>Seguir</span>
-        </button>
-				<div class="card extra definition-data">
-          <div class="definition-data__item">
-						<span class="definition-data__title">Ámbito</span>
-							Districte de Gràcia
-          </div>
-					<div class="definition-data__item">
-            <span class="definition-data__title">Finalización</span>
-							18 septiembre 2016
-          </div>
-					<div class="definition-data__item">
-            <span class="definition-data__title">Grupo promotor</span>
-							Ajuntament de Barcelona
-          </div>
-					<div class="definition-data__item">
-            <span class="definition-data__title">Área</span>
-							Urbanismo
+        <div class="card extra">
+          <div class="card__content">
+            <button class="button secondary hollow expanded button--icon">
+              <%= icon "bell" %>
+              <span>Seguir</span>
+            </button>
           </div>
         </div>
+        <div class="reference">
+          Referencia: BCN-2016-01-173
+        </div>
+        <div class="card extra">
+          <div class="definition-data">
+            <div class="definition-data__item definition-data__item--double">
+              <span class="definition-data__title">Adhesiones</span>
+						  <span class="definition-data__number">57</span>
+            </div>
+            <div class="definition-data__item definition-data__item--double">
+              <span class="definition-data__title">Comentarios</span>
+						  <span class="definition-data__number">30</span>
+            </div>
+            <div class="definition-data__item definition-data__item--double">
+              <span class="definition-data__title">Encuentros</span>
+						  <span class="definition-data__number">2</span>
+            </div>
+            <div class="definition-data__item definition-data__item--double">
+              <span class="definition-data__title">Asistentes</span>
+						  <span class="definition-data__number">130</span>
+            </div>
+          </div>
+        </div>
+        <%= partial 'partials/share' %>
+
 			</div>
     </div>
   </div>
 </main>
+<div class="expanded">
+  <div class="wrapper wrapper--inner">
+    <div class="row">
+      <div class="columns large-9" id="comments">
+        <%= partial 'partials/comments' %>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%= partial 'partials/template_bottom' %>
