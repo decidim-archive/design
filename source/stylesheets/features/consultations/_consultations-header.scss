@@ -49,7 +49,7 @@
 .consultations-header__link{
   font-weight: 600;
   color: $white;
-  &:hover{
+  &:hover, &:focus{
     color: $primary;
   }
   .icon{
