@@ -1,6 +1,6 @@
 .card--process__column .consultations-card__image{
   min-height: 0;
-  &:after{
+  &::after{
     display: none;
   }
   > div{

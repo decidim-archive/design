@@ -14,7 +14,7 @@
   z-index: 0;
   display: flex;
   flex-direction: column;
-  &:after{
+  &::after{
     content: "";
     display: block;
     position: absolute;
@@ -59,7 +59,8 @@
 .consultations-header__link{
   font-weight: 600;
   color: $white;
-  &:hover, &:focus{
+  &:hover,
+  &:focus{
     color: $primary;
   }
   .icon{

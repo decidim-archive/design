@@ -6,7 +6,8 @@
   a{
     color: $white;
   }
-  a:hover, a:focus{
+  a:hover,
+  a:focus{
     color: rgba($white, .8);
   }
 }
